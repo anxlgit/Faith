@@ -1,4 +1,4 @@
-$('#work').click(function(){
+a.onclick(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);

@@ -31,46 +31,4 @@
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
-  <header>
-    <img src="media/pure.jpg" id="pure">
-    <h1>anxl</h1>
-    <h2>art director.</h2>
-    <h2>writer.</h2>
-    <h2>graphic designer.</h2>
-    <nav>
-      <h2><a href="#projects">projects.</a></h2>
-      <h2><a href="#work">work.</a></h2>
-    </nav>
-  </header>
-
-  <section id="projects">
-    <h1>anxl / projects.</h1>
-    <a href="https://www.behance.net/gallery/52850679/Bodyes"><img src="media/hand2.jpg" alt="Bodyes Project"></a>
-    <a href="https://twitter.com/OXNHM"><img src="media/sun.jpg"></a>
-    <a href="#"><img src="media/luminiscencia.png"></a>
-  </section>
-  <section id="work">
-    <h1>anxl / work.</h1>
-    <ul>
-      <li>
-        <h2>Campaign Manager</h2>
-        <p>SFF Foundation</p>
-        <p>Sofia, Bulgaria</p>
-      </li>
-      <li>
-        <h2>Web Manager & Editor</h2>
-        <p>El Periódico de Aragón</p>
-        <p>Zaragoza, España</p>
-      </li>
-      <li>
-        <h2>Web & Graphic Designer</h2>
-        <p>Freelance</p>
-        <p>India, Denmark, Great Britain</p>
-      </li>
-    </ul>
-  </section>
-  <footer>made by <a href="https://twitter.com/anxlacc">anxl</a>.</footer>
-  <script type="text/javascript" src="links/js/script.js"></script>
-</body>

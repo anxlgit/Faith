@@ -6,6 +6,10 @@
   font-size: 3em;
   margin-bottom: 10px; }
 
+.blog span {
+  font-size: 1.8em;
+  font-style: italic; }
+
 .blog p {
   max-width: 80%;
   margin: 0 auto;
