@@ -2,7 +2,7 @@
 
   <header>
     <img src="media/pure.jpg" id="pure">
-    <h1><a href="https://twitter.com/anxlacc">anxl</a></h1>
+    <h1><a href="me.php">anxl</a></h1>
     <h2>art director.</h2>
     <h2>writer.</h2>
     <h2>graphic designer.</h2>
