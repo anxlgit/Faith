@@ -1,9 +1,5 @@
 # Created by https://www.gitignore.io/api/macos
 
-# Documents to ignore
-links/css/blog.sass
-links/css/style.sass
-
 ### macOS ###
 *.DS_Store
 .AppleDouble
@@ -32,5 +28,10 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/macos
+
+links/css/blog.sass
+links/css/style.sass
+
+luminiscencia/*
 
 links/css/style.sass
