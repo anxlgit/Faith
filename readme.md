@@ -1,2 +1,3 @@
-# FAITH
-By Anxl.
+# faith
+
+By anxl
