@@ -2,11 +2,12 @@
 
   <header>
     <img src="media/pure.jpg" id="pure">
-    <h1><a href="me.php">anxl</a></h1>
+    <h1>anxl.</h1>
     <h2>art director.</h2>
     <h2>writer.</h2>
     <h2>graphic designer.</h2>
     <nav>
+      <h2><a href="me.php">me.</a></h2>
       <h2><a href="projects.php">projects.</a></h2>
       <h2><a href="work.php">work.</a></h2>
     </nav>

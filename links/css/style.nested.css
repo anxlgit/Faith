@@ -81,10 +81,21 @@ section {
   display: block;
   margin: 0 auto;
   margin-bottom: 100px;
-  animation: fadeInUp 2s both ease; }
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opactiy 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
 
 #projects img:hover {
-  animation: grow 0.5s both ease; }
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opactiy 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5; }
 
 #work h2 {
   font-size: 10pt;
