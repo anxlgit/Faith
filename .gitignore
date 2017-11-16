@@ -1,3 +1,6 @@
+luminiscencia/*
+
+
 # Created by https://www.gitignore.io/api/macos
 
 ### macOS ###
@@ -28,10 +31,3 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/macos
-
-links/css/blog.sass
-links/css/style.sass
-
-luminiscencia/*
-
-links/css/style.sass

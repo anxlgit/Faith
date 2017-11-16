@@ -1,3 +1,0 @@
-# faith
-
-By anxl

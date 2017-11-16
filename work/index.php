@@ -1,7 +1,10 @@
-<?php include("head.php");?>
+
+<!-- Work Index -->
+
+<?php include("../modules/head.php");?>
 
 <section id="work">
-  <h1><a href="index.php">anxl</a> / work.</h1>
+  <h1><a href="../index.php">anxl</a> / work.</h1>
   <ul class="roles">
     <li>
       <h2>Campaign Manager</h2>
@@ -21,4 +24,4 @@
   </ul>
 </section>
 
-<?php include("footer.php");?>
+<?php include("../modules/footer.php");?>

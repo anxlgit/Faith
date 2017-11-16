@@ -1,6 +1,7 @@
-a.onclick(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
+/* $('#projects img').mouseover(function() {
+  $(this.'title').css("visibility","visible");
 });
+
+$('#projects img').mouseout(function() {
+  $('this.title').css("visibility","hidden");
+}); */
