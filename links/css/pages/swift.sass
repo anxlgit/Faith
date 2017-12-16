@@ -1,0 +1,45 @@
+// main: ../style.sass
+
+.swift
+  h1
+    margin-bottom: 100px
+  h1 a
+    text-decoration: underline
+  a
+    text-decoration: none
+  figure
+    // whole post
+    position: relative
+    max-width: 80%
+    margin: 0 auto
+    margin-bottom: 5em
+    img
+      // img background
+      width: 100%
+      box-shadow: 3px 3px 3px #888888
+    figcaption
+      // hidden
+      visibility: hidden
+      color: white
+      text-shadow: 1px 1px 5px #000000
+      h2
+        margin-bottom: 0
+      span
+        text-decoration: underline
+    .poeminfo
+      // hidden
+      visibility: hidden
+      color: white
+      font-size: 0.7em
+      line-height: 1.4em
+      font-style: italic
+
+@media screen and (min-width: 600px)
+  .swift
+    figure
+      max-width: 60%
+
+@media screen and (min-width: 1000px)
+  .swift
+    figure
+      max-width: 45%

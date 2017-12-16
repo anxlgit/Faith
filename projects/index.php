@@ -3,16 +3,23 @@
 
 <?php include("../modules/head.php");?>
 
-<section id="projects">
-  <h1><a href="../index.php">anxl</a> / projects.</h1>
+<section class="projects">
+  <h1><a href="../index.php" class="back">anxl</a> / projects.</h1>
+
+  <a href="swift.php">
+    <img src="../media/projects/swift.jpg">
+  </a>
+
+  <br>
+
   <a href="https://www.behance.net/gallery/52850679/Bodyes">
-    <img src="../media/hand.jpg" alt="Bodyes Project">
+    <img src="../media/projects/hand.jpg" alt="Bodyes">
   </a>
   <a href="https://twitter.com/OXNHM">
-    <img src="../media/sun.jpg">
+    <img src="../media/projects/sun.jpg" alt="OXNHM">
   </a>
   <a href="projects/luminiscencia.php">
-    <img src="../media/luminiscencia.png">
+    <img src="../media/projects/luminiscencia.png" alt="luminiscencia">
   </a>
 </section>
 

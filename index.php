@@ -3,7 +3,7 @@
 
 <?php include("modules/head.php");?>
 
-  <header>
+  <header class="landing">
     <img src="media/pure.jpg" id="pure">
     <h1>anxl.</h1>
     <h2>art director.</h2>

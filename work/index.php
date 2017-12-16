@@ -7,12 +7,12 @@
   <h1><a href="../index.php">anxl</a> / work.</h1>
   <ul class="roles">
     <li>
-      <h2>Campaign Manager</h2>
+      <h2>Producer & Designer</h2>
       <p>SFF Foundation</p>
       <p>Sofia, Bulgaria</p>
     </li>
     <li>
-      <h2>Web Manager & Editor</h2>
+      <h2>Editor & Web Manager</h2>
       <p>El Periódico de Aragón</p>
       <p>Zaragoza, España</p>
     </li>

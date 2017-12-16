@@ -3,7 +3,7 @@
 
 <?php include("../modules/head.php");?>
 
-<section id="luminiscencia">
+<section class="luminiscencia">
   <h1><a href="../index.php">anxl</a> / luminiscencia.</h1>
   <img src="../media/luminiscencia/52miradas.png"></img>
   <img src="../media/luminiscencia/51destello.png"></img>

@@ -3,10 +3,11 @@
 
 <?php include("../modules/head.php");?>
 
-<section id="blog">
+<section class="blogindex">
+  <h1><a href="../index.php">anxl</a> / visions.</h1>
   <article>
-    <a href="visions/example.php">
-      <h1>Visions</h1>
+    <a href="visions/first.php">
+      <h1>One</h1>
     </a>
     <span>On the reasons of this space.</span>
   </article>
