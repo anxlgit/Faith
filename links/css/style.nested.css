@@ -154,9 +154,7 @@ footer {
     margin-bottom: 100px; }
 
 @media screen and (min-width: 1000px) {
-  .luminiscencia h1 {
-    margin-bottom: 300px; }
-  .luminiscencia img {
+  .luminiscencia {
     width: 55%;
     margin-left: 0; } }
 

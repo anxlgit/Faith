@@ -18,7 +18,7 @@
   <a href="https://twitter.com/OXNHM">
     <img src="../media/projects/sun.jpg" alt="OXNHM">
   </a>
-  <a href="projects/luminiscencia.php">
+  <a href="luminiscencia.php">
     <img src="../media/projects/luminiscencia.png" alt="luminiscencia">
   </a>
 </section>
