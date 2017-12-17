@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/ico" href="https://raw.githubusercontent.com/anxlgit/Faith/master/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="the devourer.">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/anxlgit/Faith/master/media/pure.jpg">
+    <meta name="twitter:title" content="anxl">
+    <meta name="twitter:description" content="the devourer.">
+    <meta name="twitter:site" content="@anxl">
+    <meta name="twitter:creator" content="@anxl">
+    <meta property="og:type" content="image/jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/anxlgit/Faith/master/media/pure.jpg">
+    <meta property="og:title" content="anxl">
+    <meta property="og:description" content="the devourer.">
+    <meta property="og:site_name" content="anxl">
+    <meta property="og:url" content="https://twitter.com/anxl">
+
+    <script src="/sources/jquery.min.js"></script>
+    <script src="/sources/jquery.onepage-scroll.js"></script>
+    <link rel="stylesheet" href="/sources/scroll.css">
+    <script>
+        $(document).ready(function () {
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                easing: "ease",
+                animationTime: 300,
+                pagination: true,
+                updateURL: false,
+                keyboard: true,
+                loop: false,
+                responsiveFallback: false,
+                direction: 'vertical'
+            });
+        });
+    </script>
+</head>
+
+<body>
+    {{ content }}
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/ico" href="https://raw.githubusercontent.com/anxlgit/Faith/master/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="the devourer.">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/anxlgit/Faith/master/media/pure.jpg">
+    <meta name="twitter:title" content="anxl">
+    <meta name="twitter:description" content="the devourer.">
+    <meta name="twitter:site" content="@anxl">
+    <meta name="twitter:creator" content="@anxl">
+    <meta property="og:type" content="image/jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/anxlgit/Faith/master/media/pure.jpg">
+    <meta property="og:title" content="anxl">
+    <meta property="og:description" content="the devourer.">
+    <meta property="og:site_name" content="anxl">
+    <meta property="og:url" content="https://twitter.com/anxl">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy');
+        body,
+        html {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            height: 100%;
+            font-family: 'Sorts Mill Goudy', serif;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 50px, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        a {
+            color: currentColor;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: currentColor;
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin-bottom: 75px;
+        }
+
+        .main {
+            margin: auto;
+        }
+
+        .header-image {
+            width: 200px;
+            z-index: -1;
+            margin-bottom: -175px;
+            pointer-events: none;
+            -webkit-animation: fadeInUp 2s;
+            -moz-animation: fadeInUp 2s;
+            -ms-animation: fadeInUp 2s;
+            -o-animation: fadeInUp 2s;
+            animation: fadeInUp 2s;
+        }
+
+        .title {
+            -webkit-animation: fadeInUp 1s;
+            -moz-animation: fadeInUp 1s;
+            -ms-animation: fadeInUp 1s;
+            -o-animation: fadeInUp 1s;
+            animation: fadeInUp 1s;
+        }
+
+        .nav {
+            margin: 40px 10px;
+            display: inline-block;
+            -webkit-animation: fadeInUp 2s;
+            -moz-animation: fadeInUp 2s;
+            -ms-animation: fadeInUp 2s;
+            -o-animation: fadeInUp 2s;
+            animation: fadeInUp 2s;
+        }
+
+        p {
+            font-size: 12pt
+        }
+
+        img {
+            max-width: 40vw;
+        }
+
+        footer {
+            -webkit-animation: fadeInUp 2.5s;
+            -moz-animation: fadeInUp 2.5s;
+            -ms-animation: fadeInUp 2.5s;
+            -o-animation: fadeInUp 2.5s;
+            animation: fadeInUp 2.5s;
+            font-size: 10pt
+        }
+    </style>
+</head>
+
+<body>
+    {{ content }}
+</body>
+
+</html>
