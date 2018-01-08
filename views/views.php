@@ -5,7 +5,7 @@
 
 <article class="blog">
   <header>
-  <h1>Visions</h1>
+  <h1>Views</h1>
   <a href=""><span>Ephemeral - Ester Torricelli</span></a>
   </header>
 
