@@ -1,5 +1,5 @@
 
-<!-- DESIRES -->
+<!-- Blog Page -->
 
 <?php include("../modules/head.php");?>
 
