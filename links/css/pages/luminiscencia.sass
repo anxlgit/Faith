@@ -4,11 +4,19 @@
   overflow: hidden
   img
     width: 150%
-    margin-left: -28%
+    margin-left: -24%
     margin-bottom: 100px
+
+.luminiscencia img:last-of-type
+    margin-bottom: 0
+
+@media screen and (min-width: 700px)
+  .luminiscencia
+    img
+      width: 100%
+      margin-left: 0
 
 @media screen and (min-width: 1000px)
   .luminiscencia
-      img
-      width: 55%
-      margin-left: 0
+    img
+      width: 70%

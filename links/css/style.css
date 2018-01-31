@@ -1,7 +1,8 @@
 @import url(resources/reset.css);
 body {
+  max-width: 100%;
   background: white;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
   font-size: 8pt;
   line-height: 1.4em;
   text-align: center;
@@ -9,6 +10,9 @@ body {
 
 .landing h1 {
   margin-bottom: 78px; }
+.landing h2 {
+  line-height: 0.3;
+  margin-bottom: 10px; }
 
 h2 {
   line-height: 1.4em;
@@ -24,8 +28,6 @@ header {
     animation: fadeInUp 2s both ease; }
   header h1 {
     margin-bottom: 90px; }
-  header h2 {
-    line-height: 0.3em; }
 
 nav {
   margin-top: 40px;
@@ -48,7 +50,7 @@ li {
   margin-bottom: 40px; }
 
 section {
-  margin-top: 100px; }
+  margin-top: 150px; }
   section h1 {
     margin-bottom: 50px; }
 
@@ -58,28 +60,30 @@ footer {
   margin-bottom: 40px;
   animation: fadeInUp 2.5s both ease; }
 
+@media screen and (min-width: 700px) {
+  .landing h2 {
+    line-height: 0.6; } }
 @media screen and (min-width: 1000px) {
-  body {
-    font-size: 8pt; }
+  .landing h2 {
+    margin-bottom: 10px; }
+
   header {
     margin-top: 200px; }
+
   section {
     margin-top: 120px; } }
-
 #work h2 {
-  font-size: 10pt;
+  font-size: 8pt;
   font-style: italic;
-  margin-bottom: 5px; }
-
+  margin-bottom: 4px; }
 #work p {
-  font-size: 8pt; }
-
+  font-size: 0.8em;
+  line-height: 1.4em; }
 #work .roles {
   animation: fadeInUp 2s both ease; }
 
 .projects h1 {
   margin-bottom: 70px; }
-
 .projects img {
   animation: fadeInUp 4s both ease;
   max-width: 120px;
@@ -87,7 +91,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 120px; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .projects {
     margin-bottom: 2em; }
     .projects a {
@@ -99,22 +103,17 @@ footer {
       margin: 0 2em;
       display: inline-block;
       margin-bottom: 0; } }
-
 @media screen and (min-width: 1000px) {
   .projects h2 {
     margin-bottom: 100px; }
   .projects img {
     max-width: 10%; } }
-
 .swift h1 {
   margin-bottom: 100px; }
-
 .swift h1 a {
   text-decoration: underline; }
-
 .swift a {
   text-decoration: none; }
-
 .swift figure {
   position: relative;
   max-width: 80%;
@@ -138,33 +137,34 @@ footer {
     line-height: 1.4em;
     font-style: italic; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .swift figure {
     max-width: 60%; } }
-
 @media screen and (min-width: 1000px) {
   .swift figure {
     max-width: 45%; } }
-
 .luminiscencia {
   overflow: hidden; }
   .luminiscencia img {
     width: 150%;
-    margin-left: -28%;
+    margin-left: -24%;
     margin-bottom: 100px; }
 
-@media screen and (min-width: 1000px) {
-  .luminiscencia {
-    width: 55%;
-    margin-left: 0; } }
+.luminiscencia img:last-of-type {
+  margin-bottom: 0; }
 
+@media screen and (min-width: 700px) {
+  .luminiscencia img {
+    width: 100%;
+    margin-left: 0; } }
+@media screen and (min-width: 1000px) {
+  .luminiscencia img {
+    width: 70%; } }
 .blogindex section h1 {
   margin-bottom: 200px; }
-
 .blogindex article {
   margin-bottom: 1em; }
   .blogindex article h1 {
-    font-size: 2em;
     margin-bottom: 0.4em; }
   .blogindex article span {
     font-style: italic; }
@@ -173,17 +173,13 @@ footer {
   margin-bottom: 50px;
   padding: 0;
   animation: fadeInUp 2s both ease; }
-
 .blog h1 {
   font-size: 2em;
   margin-bottom: 1em; }
-
 .blog span {
-  color: lightgray;
   display: block;
   margin-bottom: 1em;
   font-style: italic; }
-
 .blog p {
   text-align: justify;
   -webkit-hyphens: auto;
@@ -195,18 +191,16 @@ footer {
   font-size: 10pt;
   line-height: 1.3em;
   animation: fadeInUp 4s both ease; }
-
 .blog img {
   width: 100%;
   margin: 3em auto 4em auto;
   animation: fadeInUp 2s both ease; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .blog p {
     font-size: 12pt;
     line-height: 1.4em;
     max-width: 40%; } }
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -214,15 +208,15 @@ footer {
   100% {
     opacity: 1;
     transform: none; } }
-
 @keyframes grow {
   0% {
     transform: none; }
   100% {
     transform: scale(1.3); } }
-
 @keyframes shine {
   0% {
     color: inherit; }
   100% {
     color: darkred; } }
+
+/*# sourceMappingURL=style.css.map */

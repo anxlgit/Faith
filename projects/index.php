@@ -4,7 +4,7 @@
 <?php include("../modules/head.php");?>
 
 <section class="projects">
-  <h1><a href="../index.php" class="back">anxl</a> / projects.</h1>
+  <h1><a href="../" class="back">anxl</a> / projects.</h1>
 
   <a href="swift.php">
     <img src="../media/projects/swift.jpg">

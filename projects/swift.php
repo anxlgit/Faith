@@ -4,7 +4,7 @@
 <?php include("../modules/head.php");?>
 
 <section class="swift">
-  <h1><a href="../index.php">anxl</a> / swift.</h1>
+  <h1><a href="../">anxl</a> / swift.</h1>
 
   <!-- Come, child -->
   <figure>

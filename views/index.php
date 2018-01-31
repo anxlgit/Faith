@@ -6,10 +6,15 @@
 <section class="blogindex">
   <h1><a href="../index.php">anxl</a> / views.</h1>
   <article>
-    <a href="/first.php">
-      <h1>One</h1>
-    </a>
-    <span>On the reasons of this space.</span>
+    <a href="views.php"><h1>Views</h1></a>
+  </article>
+  <h2 class="point">.</h2>
+  <article>
+    <a href="desires.php"><h1>Desires</h1></a>
+  </article>
+  <h2 class="point">.</h2>
+  <article>
+    <a href="stories.php"><h1>Stories</h1></a>
   </article>
 </section>
 

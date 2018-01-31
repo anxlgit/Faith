@@ -1,6 +1,7 @@
 // main: style.sass
 
 body
+  max-width: 100%
   background: white
   font-family: 'Sorts Mill Goudy', serif
   font-size: 8pt
@@ -8,8 +9,12 @@ body
   text-align: center
   animation: fadeInUp 1s both ease
 
-.landing h1
-  margin-bottom: 78px
+.landing
+  h1
+    margin-bottom: 78px
+  h2
+    line-height: 0.3
+    margin-bottom: 10px
 
 h2
   line-height: 1.4em
@@ -26,7 +31,6 @@ header
   h1
     margin-bottom: 90px
   h2
-    line-height: 0.3em
 
 nav
   margin-top: 40px
@@ -49,7 +53,7 @@ li
   margin-bottom: 40px
 
 section
-  margin-top: 100px
+  margin-top: 150px
   h1
     margin-bottom: 50px
 
@@ -59,9 +63,17 @@ footer
   margin-bottom: 40px
   animation: fadeInUp 2.5s both ease
 
-@media screen and (min-width: 1000px)
+@media screen and (min-width: 700px)
   body
-    font-size: 8pt
+
+  .landing
+    h2
+      line-height: 0.6
+
+@media screen and (min-width: 1000px)
+  .landing
+    h2
+      margin-bottom: 10px
   header
     margin-top: 200px
   section
