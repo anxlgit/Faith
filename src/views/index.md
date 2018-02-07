@@ -5,12 +5,12 @@ layout: blog.hbs
 
 [anxl](../) / views.
 
-[Views](views.php)
+[Views](views.html)
 
 ## .
 
-[Desires](desires.php)
+[Desires](desires.html)
 
 ## .
 
-[Stories](stories.php)
+[Stories](stories.html)
