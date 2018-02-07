@@ -1,9 +1,11 @@
 ---
 title: luminiscencia.
-layout: projects.hbs
+layout: basic.hbs
 ---
 
-[anxl](../) / luminiscencia
+<section class="luminiscencia">
+
+<h1>[anxl](../) / luminiscencia.</h1>
 
 ![destello](../media/luminiscencia/51destello.png)
 ![cenizas](../media/luminiscencia/50cenizas.png)
@@ -24,3 +26,5 @@ layout: projects.hbs
 ![hilos](../media/luminiscencia/21hilos.png)
 ![polvo](../media/luminiscencia/17polvo.png)
 ![ojos](../media/luminiscencia/14ojos.png)
+
+</section>

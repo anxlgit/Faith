@@ -3,31 +3,24 @@ body {
   max-width: 100%;
   background: white;
   font-family: "Sorts Mill Goudy", serif;
-  font-size: 8pt;
-  line-height: 1.4em;
+  font-size: 10pt;
+  line-height: 1.2em;
   text-align: center;
   animation: fadeInUp 1s both ease; }
 
-.landing h1 {
-  margin-bottom: 78px; }
-.landing h2 {
-  line-height: 0.3;
-  margin-bottom: 10px; }
+section {
+  margin: 0 auto;
+  margin-top: 100px; }
+  section h1 {
+    margin-bottom: 50px; }
+
+h1 {
+  font-size: 1.3em; }
 
 h2 {
-  line-height: 1.4em;
+  font-size: 1.2em;
+  line-height: 1.6em;
   margin-bottom: 10px; }
-
-header {
-  margin-top: 100px; }
-  header #pure {
-    width: 200px;
-    z-index: -1;
-    margin-bottom: -165px;
-    position: relative;
-    animation: fadeInUp 2s both ease; }
-  header h1 {
-    margin-bottom: 90px; }
 
 nav {
   margin-top: 40px;
@@ -47,18 +40,87 @@ ul {
   -webkit-padding-start: 0; }
 
 li {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
-section {
-  margin-top: 150px; }
-  section h1 {
-    margin-bottom: 50px; }
+p {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.3em; }
 
 footer {
-  font-size: 8pt;
-  margin-top: 70px;
+  font-size: 0.8em;
+  margin-top: 50px;
   margin-bottom: 40px;
-  animation: fadeInUp 2.5s both ease; }
+  animation: fadeInUp 3s both ease; }
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 10pt; } }
+.progressbar {
+  max-width: 40%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-color: lightgray;
+  border-radius: 13px;
+  padding: 2px; }
+
+.progressbar > div {
+  background-color: gray;
+  height: 5px;
+  border-radius: 10px; }
+
+#spanish {
+  width: 90%; }
+
+#french {
+  width: 60%; }
+
+#portuguese {
+  width: 50%; }
+
+#italian {
+  width: 30%; }
+
+#english {
+  width: 80%; }
+
+#german {
+  width: 40%; }
+
+#bulgarian {
+  width: 30%; }
+
+#russian {
+  width: 20%; }
+
+#hindi {
+  width: 10%; }
+
+#japanese {
+  width: 30%; }
+
+#korean {
+  width: 10%; }
+
+#chinese {
+  width: 20%; }
+
+#arabic {
+  width: 20%; }
+
+.landing h1 {
+  margin-bottom: 78px; }
+.landing h2 {
+  line-height: 0.6em; }
+.landing p img {
+  max-width: 200px;
+  z-index: -1;
+  margin-bottom: -175px;
+  position: relative;
+  animation: fadeInUp 2s both ease; }
+.landing nav a {
+  display: inline-block;
+  margin: 0px 5px 10px 5px; }
 
 @media screen and (min-width: 700px) {
   .landing h2 {
@@ -108,34 +170,10 @@ footer {
     margin-bottom: 100px; }
   .projects img {
     max-width: 10%; } }
-.swift h1 {
-  margin-bottom: 100px; }
-.swift h1 a {
-  text-decoration: underline; }
-.swift a {
-  text-decoration: none; }
-.swift figure {
-  position: relative;
-  max-width: 80%;
-  margin: 0 auto;
-  margin-bottom: 5em; }
-  .swift figure img {
-    width: 100%;
-    box-shadow: 3px 3px 3px #888888; }
-  .swift figure figcaption {
-    visibility: hidden;
-    color: white;
-    text-shadow: 1px 1px 5px #000000; }
-    .swift figure figcaption h2 {
-      margin-bottom: 0; }
-    .swift figure figcaption span {
-      text-decoration: underline; }
-  .swift figure .poeminfo {
-    visibility: hidden;
-    color: white;
-    font-size: 0.7em;
-    line-height: 1.4em;
-    font-style: italic; }
+.swift img {
+  max-width: 70%;
+  margin-bottom: 150px;
+  box-shadow: 3px 3px 3px #888888; }
 
 @media screen and (min-width: 700px) {
   .swift figure {
@@ -149,17 +187,16 @@ footer {
     width: 150%;
     margin-left: -24%;
     margin-bottom: 100px; }
+  .luminiscencia h1 {
+    clear: both; }
 
 .luminiscencia img:last-of-type {
   margin-bottom: 0; }
 
 @media screen and (min-width: 700px) {
   .luminiscencia img {
-    width: 100%;
+    width: 70%;
     margin-left: 0; } }
-@media screen and (min-width: 1000px) {
-  .luminiscencia img {
-    width: 70%; } }
 .blogindex section h1 {
   margin-bottom: 200px; }
 .blogindex article {
@@ -169,38 +206,35 @@ footer {
   .blogindex article span {
     font-style: italic; }
 
-.blog header {
-  margin-bottom: 50px;
-  padding: 0;
-  animation: fadeInUp 2s both ease; }
-.blog h1 {
-  font-size: 2em;
-  margin-bottom: 1em; }
-.blog span {
-  display: block;
-  margin-bottom: 1em;
-  font-style: italic; }
-.blog p {
-  text-align: justify;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  max-width: 70%;
-  margin: 0 auto;
-  margin-bottom: 1.5em;
-  font-size: 10pt;
-  line-height: 1.3em;
-  animation: fadeInUp 4s both ease; }
-.blog img {
-  width: 100%;
-  margin: 3em auto 4em auto;
-  animation: fadeInUp 2s both ease; }
+.post {
+  max-width: 80%; }
+  .post header {
+    margin-bottom: 50px;
+    padding: 0;
+    animation: fadeInUp 2s both ease; }
+  .post h1 {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+    font-style: italic; }
+  .post p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    animation: fadeInUp 4s both ease; }
+  .post img {
+    width: 130%;
+    margin: 3em auto 4em auto;
+    margin-left: -15%;
+    animation: fadeInUp 2s both ease; }
 
 @media screen and (min-width: 700px) {
-  .blog p {
-    font-size: 12pt;
-    line-height: 1.4em;
-    max-width: 40%; } }
+  .post {
+    max-width: 60%; }
+    .post img {
+      width: 160%;
+      margin-left: -30%; } }
 @keyframes fadeInUp {
   0% {
     opacity: 0;

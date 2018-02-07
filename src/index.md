@@ -16,5 +16,5 @@ layout: landing.hbs
   [projects](/projects)
   [work](/work)
   <br>
-  [views](/views)
+  [blog](/views)
 </nav>

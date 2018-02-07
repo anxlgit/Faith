@@ -5,8 +5,8 @@ layout: projects.hbs
 
 [anxl](../) / projects.
 
-<a href="../media/projects/swift.jpg" rel="swift logo">
-  ![Foo](http://www.google.com.au/images/nav_logo7.png)
+<a href="swift.html" rel="swift logo">
+  ![swift](../media/projects/swift.jpg)
 </a>
 
 <br>
@@ -19,6 +19,6 @@ layout: projects.hbs
   ![OXNHM](../media/projects/sun.jpg)
 </a>
 
-<a href="luminiscencia.php">
+<a href="luminiscencia.html">
   ![Luminiscencia](../media/projects/luminiscencia.png)
 </a>
