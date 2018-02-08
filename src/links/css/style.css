@@ -1,6 +1,7 @@
 @import url(resources/reset.css);
 body {
   max-width: 100%;
+  overflow-x: hidden;
   background: white;
   font-family: "Sorts Mill Goudy", serif;
   font-size: 10pt;
@@ -10,7 +11,7 @@ body {
 
 section {
   margin: 0 auto;
-  margin-top: 100px; }
+  margin-top: 80px; }
   section h1 {
     margin-bottom: 50px; }
 
@@ -55,7 +56,10 @@ footer {
 
 @media screen and (min-width: 700px) {
   body {
-    font-size: 10pt; } }
+    font-size: 10pt; }
+
+  p {
+    line-height: 1.3em; } }
 .progressbar {
   max-width: 40%;
   margin: 0 auto;
@@ -147,7 +151,7 @@ footer {
 .projects h1 {
   margin-bottom: 70px; }
 .projects img {
-  animation: fadeInUp 4s both ease;
+  animation: fadeInUp 2s both ease;
   max-width: 120px;
   display: block;
   margin: 0 auto;
@@ -155,32 +159,25 @@ footer {
 
 @media screen and (min-width: 700px) {
   .projects {
-    margin-bottom: 2em; }
-    .projects a {
-      text-decoration: none; }
-    .projects .back {
-      text-decoration: underline; }
-    .projects img {
-      max-width: 13%;
-      margin: 0 2em;
+    max-width: 80%; }
+    .projects p {
+      max-width: 17%;
+      margin: 0 1em;
       display: inline-block;
+      margin-bottom: 0; }
+    .projects img {
       margin-bottom: 0; } }
-@media screen and (min-width: 1000px) {
-  .projects h2 {
-    margin-bottom: 100px; }
-  .projects img {
-    max-width: 10%; } }
+.swift h1 {
+  margin-bottom: 100px; }
+.swift p {
+  margin-bottom: 170px; }
 .swift img {
-  max-width: 70%;
-  margin-bottom: 150px;
+  max-width: 100%;
   box-shadow: 3px 3px 3px #888888; }
 
-@media screen and (min-width: 700px) {
-  .swift figure {
-    max-width: 60%; } }
-@media screen and (min-width: 1000px) {
-  .swift figure {
-    max-width: 45%; } }
+.swift p:last-of-type {
+  margin-bottom: 40px; }
+
 .luminiscencia {
   overflow: hidden; }
   .luminiscencia img {
@@ -197,44 +194,45 @@ footer {
   .luminiscencia img {
     width: 70%;
     margin-left: 0; } }
-.blogindex section h1 {
-  margin-bottom: 200px; }
-.blogindex article {
-  margin-bottom: 1em; }
-  .blogindex article h1 {
-    margin-bottom: 0.4em; }
-  .blogindex article span {
-    font-style: italic; }
+.blog p {
+  animation: fadeInUp 2s both ease; }
+.blog h2 {
+  margin: 0px;
+  animation: fadeInUp 2s both ease; }
+.blog p {
+  margin-bottom: 0; }
 
-.post {
-  max-width: 80%; }
-  .post header {
-    margin-bottom: 50px;
-    padding: 0;
-    animation: fadeInUp 2s both ease; }
-  .post h1 {
-    display: block;
-    margin-bottom: 1em;
-    font-size: 3em;
-    font-style: italic; }
-  .post p {
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-    animation: fadeInUp 4s both ease; }
-  .post img {
-    width: 130%;
-    margin: 3em auto 4em auto;
-    margin-left: -15%;
-    animation: fadeInUp 2s both ease; }
+.post h1 {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.5em; }
+.post h1 + p {
+  text-align: center;
+  animation: fadeInUp 3s both ease; }
+.post p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  animation: fadeInUp 4s both ease; }
+.post img {
+  width: 160%;
+  margin: 1.7em auto;
+  margin-left: -30%;
+  animation: fadeInUp 2s both ease; }
+
+.post p:last-of-type {
+  text-align: center; }
 
 @media screen and (min-width: 700px) {
   .post {
-    max-width: 60%; }
+    max-width: 70%; }
     .post img {
-      width: 160%;
-      margin-left: -30%; } }
+      width: 180%;
+      margin-left: -40%; } }
+@media screen and (min-width: 1000px) {
+  .post {
+    font-size: 12pt; } }
 @keyframes fadeInUp {
   0% {
     opacity: 0;

@@ -3,7 +3,7 @@ title: swift.
 layout: swift.hbs
 ---
 
-# [anxl](../) / swift.
+# [anxl](projects.html) / swift.
 
 <a href="https://twitter.com/anxlacc/status/907881959791190016">
   ![Before englightenment, Nina Lindfords](../media/swift/come.jpg)

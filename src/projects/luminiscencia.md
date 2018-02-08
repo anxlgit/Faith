@@ -5,7 +5,7 @@ layout: basic.hbs
 
 <section class="luminiscencia">
 
-<h1>[anxl](../) / luminiscencia.</h1>
+<h1>[anxl](projects.html) / luminiscencia.</h1>
 
 ![destello](../media/luminiscencia/51destello.png)
 ![cenizas](../media/luminiscencia/50cenizas.png)

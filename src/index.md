@@ -12,9 +12,9 @@ layout: landing.hbs
 ## graphic designer.
 
 <nav>
-  [me](/me)
-  [projects](/projects)
-  [work](/work)
+  [me](me/me.html)
+  [projects](projects/projects.html)
+  [work](work/work.html)
   <br>
-  [blog](/views)
+  [blog](views/index.html)
 </nav>

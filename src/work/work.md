@@ -3,7 +3,7 @@ title: desires.
 layout: work.hbs
 ---
 
-# [anxl](../) / work.
+# [anxl](../index.html) / work.
 
 ## Producer & Designer
 SFF Foundation

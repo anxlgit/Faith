@@ -3,13 +3,11 @@ title: projects.
 layout: projects.hbs
 ---
 
-[anxl](../) / projects.
+# [anxl](../index.html) / projects.
 
 <a href="swift.html" rel="swift logo">
   ![swift](../media/projects/swift.jpg)
 </a>
-
-<br>
 
 <a href="https://www.behance.net/gallery/52850679/Bodyes">
   ![bodies](../media/projects/hand.jpg)

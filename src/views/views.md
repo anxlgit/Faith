@@ -28,3 +28,5 @@ In them, it may appear that we're a part of something bigger. Grander. Grandiose
 These things, which are impossible to say -sunk into the depths of our words-, become thus common points, places of worship and rivers of thought. And in that way they open, as flowers blooming under innumerable questions, for the peering of our crescent lights.
 
 And in that process, they complete time. They make us close, ease the living, and keep the rivers flowing, everlasting, until everything is taken from us, and our heads crumble, and our bones sink into the bottoms of the oceans.
+
+[go back.](index.html)

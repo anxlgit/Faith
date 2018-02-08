@@ -1,16 +1,13 @@
 // main: ../style.sass
 
 .post
-  max-width: 80%
-  header
-    margin-bottom: 50px
-    padding: 0
-    animation: fadeInUp 2s both ease
   h1
     display: block
     margin-bottom: 1em
-    font-size: 3em
-    font-style: italic
+    font-size: 1.5em
+  h1 + p
+    text-align: center
+    animation: fadeInUp 3s both ease
   p
     text-align: justify
     -webkit-hyphens: auto
@@ -18,16 +15,22 @@
     hyphens: auto
     animation: fadeInUp 4s both ease
   img
-    width: 130%
-    margin: 3em auto 4em auto
-    margin-left: -15%
+    width: 160%
+    margin: 1.7em auto
+    margin-left: -30%
     animation: fadeInUp 2s both ease
+
+.post p:last-of-type
+  // go back
+  text-align: center
 
 @media screen and (min-width: 700px)
   .post
-    max-width: 60%
+    max-width: 70%
     img
-      width: 160%
-      margin-left: -30%
+      width: 180%
+      margin-left: -40%
 
 @media screen and (min-width: 1000px)
+  .post
+    font-size: 12pt

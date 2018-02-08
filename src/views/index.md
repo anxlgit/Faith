@@ -3,7 +3,7 @@ title: views posts.
 layout: blog.hbs
 ---
 
-[anxl](../) / views.
+# [anxl](../index.html) / views.
 
 [Views](views.html)
 
