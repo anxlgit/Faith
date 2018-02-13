@@ -1,6 +1,7 @@
 ---
 title: projects.
-layout: projects.hbs
+layout: basic.hbs
+class: projects
 ---
 
 # [anxl](../index.html) / projects.

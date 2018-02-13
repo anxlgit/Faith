@@ -1,6 +1,7 @@
 ---
 title: desires.
-layout: work.hbs
+layout: basic.hbs
+class: work
 ---
 
 # [anxl](../index.html) / work.

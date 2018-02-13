@@ -1,6 +1,7 @@
 ---
 title: views posts.
-layout: blog.hbs
+layout: basic.hbs
+class: blog
 ---
 
 # [anxl](../index.html) / views.

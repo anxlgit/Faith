@@ -1,6 +1,7 @@
 ---
 title: desires.
-layout: post.hbs
+layout: basic.hbs
+class: post
 ---
 
 # Desires

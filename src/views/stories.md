@@ -1,6 +1,7 @@
 ---
 title: stories
-layout: post.hbs
+layout: basic.hbs
+class: post
 ---
 
 # Stories

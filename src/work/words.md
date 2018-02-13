@@ -1,6 +1,7 @@
 ---
 title: words
 layout: basic.hbs
+class: words
 ---
 
 # [anxl](../) / words.

@@ -1,9 +1,10 @@
 ---
 title: swift.
-layout: swift.hbs
+layout: basic.hbs
+class: swift
 ---
 
-# [anxl](projects.html) / swift.
+# [anxl](projects.html) / swift.
 
 <a href="https://twitter.com/anxlacc/status/907881959791190016">
   ![Before englightenment, Nina Lindfords](../media/swift/come.jpg)

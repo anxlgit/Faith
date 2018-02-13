@@ -60,6 +60,32 @@ footer {
 
   p {
     line-height: 1.3em; } }
+.landing h1 {
+  margin-bottom: 78px; }
+.landing h2 {
+  line-height: 0.6em; }
+.landing p img {
+  max-width: 200px;
+  z-index: -1;
+  margin-bottom: -175px;
+  position: relative;
+  animation: fadeInUp 2s both ease; }
+.landing nav a {
+  display: inline-block;
+  margin: 0px 5px 10px 5px; }
+
+@media screen and (min-width: 700px) {
+  .landing h2 {
+    line-height: 0.6; } }
+@media screen and (min-width: 1000px) {
+  .landing h2 {
+    margin-bottom: 10px; }
+
+  header {
+    margin-top: 200px; }
+
+  section {
+    margin-top: 120px; } }
 .progressbar {
   max-width: 40%;
   margin: 0 auto;
@@ -112,42 +138,6 @@ footer {
 #arabic {
   width: 20%; }
 
-.landing h1 {
-  margin-bottom: 78px; }
-.landing h2 {
-  line-height: 0.6em; }
-.landing p img {
-  max-width: 200px;
-  z-index: -1;
-  margin-bottom: -175px;
-  position: relative;
-  animation: fadeInUp 2s both ease; }
-.landing nav a {
-  display: inline-block;
-  margin: 0px 5px 10px 5px; }
-
-@media screen and (min-width: 700px) {
-  .landing h2 {
-    line-height: 0.6; } }
-@media screen and (min-width: 1000px) {
-  .landing h2 {
-    margin-bottom: 10px; }
-
-  header {
-    margin-top: 200px; }
-
-  section {
-    margin-top: 120px; } }
-#work h2 {
-  font-size: 8pt;
-  font-style: italic;
-  margin-bottom: 4px; }
-#work p {
-  font-size: 0.8em;
-  line-height: 1.4em; }
-#work .roles {
-  animation: fadeInUp 2s both ease; }
-
 .projects h1 {
   margin-bottom: 70px; }
 .projects img {
@@ -167,6 +157,28 @@ footer {
       margin-bottom: 0; }
     .projects img {
       margin-bottom: 0; } }
+.luminiscencia {
+  overflow: hidden; }
+  .luminiscencia img {
+    width: 150%;
+    margin-left: -24%;
+    margin-bottom: 100px; }
+  .luminiscencia h1 {
+    clear: both; }
+
+.luminiscencia p img:last-of-type {
+  margin-bottom: 0; }
+
+.luminiscencia p:last-of-type {
+  margin-bottom: 0; }
+
+footer {
+  margin-top: 0; }
+
+@media screen and (min-width: 700px) {
+  .luminiscencia img {
+    width: 90%;
+    margin-left: 0; } }
 .swift h1 {
   margin-bottom: 100px; }
 .swift p {
@@ -178,22 +190,27 @@ footer {
 .swift p:last-of-type {
   margin-bottom: 40px; }
 
-.luminiscencia {
-  overflow: hidden; }
-  .luminiscencia img {
-    width: 150%;
-    margin-left: -24%;
-    margin-bottom: 100px; }
-  .luminiscencia h1 {
-    clear: both; }
-
-.luminiscencia img:last-of-type {
-  margin-bottom: 0; }
-
 @media screen and (min-width: 700px) {
-  .luminiscencia img {
-    width: 70%;
-    margin-left: 0; } }
+  .swift {
+    max-width: 70%; }
+    .swift p {
+      margin-bottom: 300px; }
+
+  .swift p:last-of-type {
+    margin-bottom: 100px; } }
+@media screen and (min-width: 1000px) {
+  .swift {
+    max-width: 50%; } }
+#work h2 {
+  font-size: 8pt;
+  font-style: italic;
+  margin-bottom: 4px; }
+#work p {
+  font-size: 0.8em;
+  line-height: 1.4em; }
+#work .roles {
+  animation: fadeInUp 2s both ease; }
+
 .blog p {
   animation: fadeInUp 2s both ease; }
 .blog h2 {

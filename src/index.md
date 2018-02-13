@@ -1,6 +1,7 @@
 ---
 title: faith
-layout: landing.hbs
+layout: index.hbs
+class: landing
 ---
 
 ![anxl - faith](media/pure.jpg)

@@ -1,9 +1,10 @@
 ---
 title: languages
 layout: basic.hbs
+class: languages
 ---
 
-# [anxl](../) / languages.
+# [anxl](me.html) / languages.
 
 ## Italic
 

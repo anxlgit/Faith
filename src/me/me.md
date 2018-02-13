@@ -1,6 +1,7 @@
 ---
 title: me.
-layout: me.hbs
+layout: basic.hbs
+class: me
 ---
 
 # [anxl](../index.html) / me.
