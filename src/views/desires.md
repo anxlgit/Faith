@@ -1,5 +1,5 @@
 ---
-title: desires.
+title: Desires
 layout: basic.hbs
 class: post
 ---

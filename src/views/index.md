@@ -1,5 +1,5 @@
 ---
-title: views posts.
+title: Views
 layout: basic.hbs
 class: blog
 ---
@@ -15,3 +15,7 @@ class: blog
 ## .
 
 [Stories](stories.html)
+
+## .
+
+[Goals](goals.html)

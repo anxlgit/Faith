@@ -1,4 +1,5 @@
 var Metalsmith  = require('metalsmith');
+var ignore = require('metalsmith-ignore');
 var markdown    = require('metalsmith-markdown');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
@@ -11,7 +12,11 @@ Metalsmith(__dirname)
   })
   .source('./src')
   .destination('./build')
-  .clean(false)
+  .clean(true)
+  .use(ignore([
+    'links/css/**',
+    '!links/css/style.css'
+  ]))
   .use(markdown())
   .use(layouts({
     engine: 'handlebars'

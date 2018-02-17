@@ -1,5 +1,5 @@
 ---
-title: views.
+title: Views
 layout: basic.hbs
 class: post
 ---
@@ -14,7 +14,7 @@ A picture is a snapshot of reality: a social act. The views are different: more 
 
 Their mechanism are complex, from aesthetics to the crafting of moods and imaginaries; and yet it all looks so close, so swift and unadulterated, so shiny and bright, at the reach of a single touch, a will so powerful to vanish the incongruences that haunt the mind.
 
-![ephemeral - ester torricelli](../media/posts/ephemeral1.jpg)
+![ephemeral - ester torricelli](../media/posts/views/views1.jpg)
 
 However powerful, that is but a problem of trust, and not capacity – for our reality is the same. In them is planted the idea that the innate complexity of an overreaching cosmos is compounded to reduce inside a little frame: a little space, enough to hold, and sustain, the weight of all eternity.
 
@@ -22,7 +22,7 @@ For eternity is what we all secretly fear, and wish for, when throughout the yea
 
 They calm us; for in them, time freezes.
 
-![ephemeral - ester torricelli](../media/posts/ephemeral2.jpg)
+![ephemeral - ester torricelli](../media/posts/views/views2.jpg)
 
 In them, it may appear that we're a part of something bigger. Grander. Grandiose. In these spaces, life becomes myth – becomes extraordinary.
 
