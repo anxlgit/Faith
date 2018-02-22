@@ -24,7 +24,7 @@ The ways are there, of becoming else, of lighting the shadows, of going empty, b
 
 Over time, they keep us alive. The stories. They keep us blundered, fill our waitings, stops decay and makes all white and powerful. And these fleeting points are stems, minds working at the birth of the things that please the spirit.
 
-In that moments the colliding forces stop, the lines do end, the days go over, the lights remain, and not disappear, but come back. Our hands are made open to hope and our legs un-tightened to the facts of reality, to the wheels of the time that goes spinning.
+In that moments the colliding forces stop, the lines end, the days go over, the lights remain. Our hands are made open to hope and our legs un-tightened to the facts of reality, to the wheels of the time that goes spinning.
 
 In these moments we seem capable of understanding each other.
 

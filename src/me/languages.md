@@ -1,12 +1,12 @@
 ---
-title: languages
+title: Languages
 layout: basic.hbs
 class: languages
 ---
 
 # [anxl](me.html) / languages.
 
-## Italic
+<h2 class="langtree">Italic</h2>
 
 Spanish
 
@@ -32,7 +32,7 @@ Italian
   <div id="italian"></div>
 </div>
 
-## Germanic
+<h2 class="langtree">Germanic</h2>
 
 English
 
@@ -46,7 +46,7 @@ German
   <div id="german"></div>
 </div>
 
-## Slavic
+<h2 class="langtree">Slavic</h2>
 
 Bulgarian
 
@@ -60,7 +60,7 @@ Russian
   <div id="russian"></div>
 </div>
 
-## Indic
+<h2 class="langtree">Indic</h2>
 
 Hindi
 
@@ -68,7 +68,7 @@ Hindi
   <div id="hindi"></div>
 </div>
 
-## Altaic
+<h2 class="langtree">Altaic</h2>
 
 Japanese
 
@@ -82,8 +82,7 @@ Korean
   <div id="korean"></div>
 </div>
 
-Sinic
----
+<h2 class="langtree">Sinic</h2>
 
 Chinese
 
@@ -91,7 +90,7 @@ Chinese
   <div id="chinese"></div>
 </div>
 
-## Semitic
+<h2 class="langtree">Semitic</h2>
 
 Arabic
 

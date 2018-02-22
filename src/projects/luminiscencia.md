@@ -1,5 +1,5 @@
 ---
-title: luminiscencia.
+title: Luminiscencia
 layout: basic.hbs
 class: luminiscencia
 ---

@@ -1,5 +1,5 @@
 ---
-title: faith
+title: Faith
 layout: index.hbs
 class: landing
 ---

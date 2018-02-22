@@ -10,7 +10,7 @@ Hi, my name is Anxl.
 
 I make and devour art constantly.
 
-I'm on the process of learning [13 different languages](languages.html).
+I'm quietly learning [13 different languages](languages.html).
 
 I have [worked](../work/work.html) in almost all facets of culture.
 

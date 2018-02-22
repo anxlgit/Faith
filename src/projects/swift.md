@@ -1,5 +1,5 @@
 ---
-title: swift.
+title: Swift
 layout: basic.hbs
 class: swift
 ---

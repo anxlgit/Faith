@@ -6,11 +6,11 @@ class: blog
 
 # [anxl](../index.html) / views.
 
-[Views](views.html)
+[Paths](paths.html)
 
 ## .
 
-[Desires](desires.html)
+[Goals](goals.html)
 
 ## .
 
@@ -18,4 +18,8 @@ class: blog
 
 ## .
 
-[Goals](goals.html)
+[Desires](desires.html)
+
+## .
+
+[Views](views.html)

@@ -1,5 +1,5 @@
 ---
-title: desires.
+title: Work
 layout: basic.hbs
 class: work
 ---
@@ -7,13 +7,12 @@ class: work
 # [anxl](../index.html) / work.
 
 ## Producer & Designer
-SFF Foundation
-Sofía, Bulgaria
+[IN THE PALACE](http://inthepalace.com/en/home.html)
 
-## Editor & Web Manager
-El Periódico de Aragón
-Zaragoza, España
+## Article Writer
+[Spanish Examples](words.html)
 
 ## Designer & Copywriter
-Freelance
-Great Britain, Denmark, India
+Freelance (UK, Denmark, India)
+
+etc.

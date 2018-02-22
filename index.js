@@ -14,6 +14,7 @@ Metalsmith(__dirname)
   .destination('./build')
   .clean(true)
   .use(ignore([
+    '*/.DS_Store',
     'links/css/**',
     '!links/css/style.css'
   ]))

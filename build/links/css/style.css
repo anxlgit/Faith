@@ -74,7 +74,7 @@ footer {
   animation: fadeInUp 2s both ease; }
 .landing nav a {
   display: inline-block;
-  margin: 0px 5px 10px 5px; }
+  margin: 0px 7px 14px 7px; }
 
 @media screen and (min-width: 700px) {
   .landing h2 {
@@ -88,8 +88,19 @@ footer {
 
   section {
     margin-top: 120px; } }
+.languages h2 {
+  margin-bottom: 10px; }
+.languages p {
+  margin-bottom: 5px; }
+
+.langtree:first-of-type {
+  margin-top: 0; }
+
+.langtree {
+  margin-top: 60px; }
+
 .progressbar {
-  max-width: 40%;
+  max-width: 50%;
   margin: 0 auto;
   margin-bottom: 15px;
   background-color: lightgray;
@@ -200,14 +211,12 @@ footer {
 @media screen and (min-width: 1000px) {
   .swift {
     max-width: 50%; } }
-#work h2 {
-  font-size: 8pt;
-  font-style: italic;
-  margin-bottom: 4px; }
-#work p {
-  font-size: 0.8em;
-  line-height: 1.4em; }
-#work .roles {
+.work h2 {
+  margin-bottom: 0.2em;
+  line-height: 1.2em; }
+.work p {
+  line-height: 1.5em; }
+.work .roles {
   animation: fadeInUp 2s both ease; }
 
 .blog p {

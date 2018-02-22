@@ -1,17 +1,25 @@
 ---
-title: projects.
+title: Projects
 layout: basic.hbs
 class: projects
 ---
 
 # [anxl](../index.html) / projects.
 
-<a href="swift.html" rel="swift logo">
-  ![swift](../media/projects/swift.jpg)
+<a href="swift.html">
+  ![Swift](../media/projects/swift.jpg)
 </a>
 
 <a href="https://www.behance.net/gallery/52850679/Bodyes">
-  ![bodies](../media/projects/hand.jpg)
+  ![Bodyes](../media/projects/hand.jpg)
+</a>
+
+<a href="https://www.behance.net/gallery/55951363/Fazes">
+  ![Fazes](../media/projects/fazes.png)
+</a>
+
+<a href="https://www.behance.net/gallery/52850991/Visions">
+  ![Visions](../media/projects/visions.png)
 </a>
 
 <a href="https://twitter.com/OXNHM">

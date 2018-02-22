@@ -1,10 +1,10 @@
 ---
-title: words
+title: Words
 layout: basic.hbs
 class: words
 ---
 
-# [anxl](../) / words.
+# [anxl](work.html) / words.
 
 <h2 id="art">art.</h2>
 
