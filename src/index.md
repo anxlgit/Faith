@@ -17,5 +17,5 @@ class: landing
   [projects](projects/projects.html)
   [work](work/work.html)
   <br>
-  [blog](views/index.html)
+  [essays](essays/index.html)
 </nav>

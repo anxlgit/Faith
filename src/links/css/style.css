@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
   background: white;
   font-family: "Sorts Mill Goudy", serif;
@@ -50,9 +50,16 @@ p {
   margin: 0 auto;
   margin-bottom: 1.3em; }
 
+::selection {
+  background: inherit;
+  color: gold; }
+
+::-moz-selection {
+  background: inherit;
+  color: gold; }
+
 footer {
   font-size: 0.8em;
-  margin-top: 50px;
   margin-bottom: 40px;
   animation: fadeInUp 3s both ease; }
 
@@ -241,9 +248,9 @@ footer {
   hyphens: auto;
   animation: fadeInUp 4s both ease; }
 .post img {
-  width: 160%;
+  width: 130%;
   margin: 1.7em auto;
-  margin-left: -30%;
+  margin-left: -15%;
   animation: fadeInUp 2s both ease; }
 
 .post p:last-of-type {

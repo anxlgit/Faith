@@ -22,7 +22,7 @@ class: projects
   ![Visions](../media/projects/visions.png)
 </a>
 
-<a href="https://twitter.com/OXNHM">
+<a href="oxnhm.html">
   ![OXNHM](../media/projects/sun.jpg)
 </a>
 
