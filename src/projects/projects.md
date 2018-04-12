@@ -10,7 +10,7 @@ class: projects
   ![Swift](../media/projects/swift.jpg)
 </a>
 
-<a href="https://www.behance.net/gallery/52850679/Bodyes">
+<a href="bodyes.html">
   ![Bodyes](../media/projects/hand.jpg)
 </a>
 

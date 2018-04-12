@@ -2,8 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
   background: white;
   font-family: "Sorts Mill Goudy", serif;
   font-size: 10pt;
@@ -52,15 +53,16 @@ p {
 
 ::selection {
   background: inherit;
-  color: gold; }
+  color: #DAA520; }
 
 ::-moz-selection {
   background: inherit;
-  color: gold; }
+  color: #DAA520; }
 
 footer {
   font-size: 0.8em;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   animation: fadeInUp 3s both ease; }
 
 @media screen and (min-width: 700px) {
@@ -69,6 +71,9 @@ footer {
 
   p {
     line-height: 1.3em; } }
+@media screen and (min-width: 1000px) {
+  section {
+    margin-top: 120px; } }
 .landing h1 {
   margin-bottom: 78px; }
 .landing h2 {
@@ -91,10 +96,7 @@ footer {
     margin-bottom: 10px; }
 
   header {
-    margin-top: 200px; }
-
-  section {
-    margin-top: 120px; } }
+    margin-top: 400px; } }
 .languages h2 {
   margin-bottom: 10px; }
 .languages p {
@@ -107,18 +109,24 @@ footer {
   margin-top: 60px; }
 
 .progressbar {
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
   margin-bottom: 15px;
-  background-color: lightgray;
+  background: gainsboro;
   border-radius: 13px;
   padding: 2px; }
 
 .progressbar > div {
-  background-color: gray;
+  background-color: #DAA520;
   height: 5px;
   border-radius: 10px; }
 
+@media screen and (min-width: 700px) {
+  .progressbar {
+    max-width: 40%; } }
+@media screen and (min-width: 1000px) {
+  .progressbar {
+    max-width: 20%; } }
 #spanish {
   width: 90%; }
 
@@ -186,16 +194,17 @@ footer {
   .luminiscencia h1 {
     clear: both; }
 
-.luminiscencia p img:last-of-type {
+.luminiscencia p:last-of-type {
   margin-bottom: 0; }
 
-.luminiscencia p:last-of-type {
+.luminiscencia p:last-of-type img {
   margin-bottom: 0; }
 
 @media screen and (min-width: 700px) {
   .luminiscencia img {
-    width: 90%;
-    margin-left: 0; } }
+    width: 70%;
+    margin-left: 0;
+    margin-bottom: 150px; } }
 .swift h1 {
   margin-bottom: 100px; }
 .swift p {

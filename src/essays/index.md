@@ -12,18 +12,6 @@ class: blog
 
 [Paths](paths.html)
 
-## .
-
-[Goals](goals.html)
-
-## .
-
-[Stories](stories.html)
-
-## .
-
-[Desires](desires.html)
-
 ## .
 
 [Views](views.html)

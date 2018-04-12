@@ -14,17 +14,25 @@
   margin-top: 60px
 
 .progressbar
-  max-width: 50%
+  max-width: 60%
   margin: 0 auto
   margin-bottom: 15px
-  background-color: lightgray
+  background: gainsboro
   border-radius: 13px
   padding: 2px
 
 .progressbar>div
-  background-color: gray
+  background-color: #DAA520
   height: 5px
   border-radius: 10px
+
+@media screen and (min-width: 700px)
+  .progressbar
+    max-width: 40%
+
+@media screen and (min-width: 1000px)
+  .progressbar
+    max-width: 20%
 
 #spanish
   width: 90%
