@@ -12,7 +12,7 @@ I felt it, then. I felt a need, a kind of pressure, a deep down aching. I had to
 
 My body ached of ages. My heart was full of pride.
 
-![gabe scalise](../media/posts/paths/paths1.jpg)
+![gabe scalise](../media/essays/paths/paths1.jpg)
 
 Yet something called me. I could feel it then – something mine was there. Something hidden. Something special. Something deeper, something strange – as in the sudden hours it wakened with strange eyes, looking me inside and peering into my depths without borders.
 
@@ -20,7 +20,7 @@ In these nights I could think of nothing else. I was devoured by these thoughts,
 
 I could not escape them. I had to go. So I went.
 
-![gabe scalise](../media/posts/paths/paths2.jpg)
+![gabe scalise](../media/essays/paths/paths2.jpg)
 
 At the beginning, it was so easy. I just followed those that went there: for they were plenty. They knew these places, had seen them somewhere – as I had. They had been enthused, as I had. They had been promised everything, had been regaled with the perspectives of glory and adventures. They were but fools. I was one too.
 
@@ -30,7 +30,7 @@ But there were paths that they would not go. Roads they wouldn't take. Before lo
 
 But nobody came.
 
-![gabe scalise](../media/posts/paths/paths3.jpg)
+![gabe scalise](../media/essays/paths/paths3.jpg)
 
 So I got lost – and how to do it, how to explain what I felt then. How all things whispered. How all mists fell, and feelings cut, and how oppressive the shadows, and the lights, and the sounds. How short come all the words in that, how alone I was.
 
@@ -40,7 +40,7 @@ I always thought of you. Have always done. I would have told you, everything: ha
 
 You were the one, always. I left you there, while I still owed you, after all the pleasures, and all the nights. For you, I would have come back. I would've. I would have done so, but I kept going. I could not stop. So I kept going.
 
-![gabe scalise](../media/posts/paths/paths4.jpg)
+![gabe scalise](../media/essays/paths/paths4.jpg)
 
 And now my ways are gone. Somewhere down here, my will has broken. My paths have taken me, driven me here – and here I am, amongst these sights, these things impossible.
 

@@ -12,7 +12,7 @@ Come hither, child, said she. And do not wonder – for all is brave, when all i
 
 She was enthused, and curious. She wanted more. So tell thy story, she said, but make it quick, be sure in so – for night is calling, and lights go low.
 
-![toffee maky](../media/posts/storms/storms1.jpg)
+![toffee maky](../media/essays/storms/storms1.jpg)
 
 Say why, then, thy paths are over, thy strength undone? I wonder: thy skies so closed, thy eyes so low?
 
@@ -20,7 +20,7 @@ I have been other, said he: I was not this, but different. I wandered then, was 
 
 Then I was younger, still, and also braver, still. I was not bent then, I was ready, had not been crossed then, had not been torn. But all rocks fought me, winds carved my bones. I was so different, then, than I become.
 
-![toffee maky](../media/posts/storms/storms2.jpg)
+![toffee maky](../media/essays/storms/storms2.jpg)
 
 But how so happened, said she, how thee went numb? How this world broke thee, how life went so?
 
@@ -30,7 +30,7 @@ His sides became my world, his fury storms. His sights my wordings, his shoulder
 
 But one day he was gone, he said, and was no more.
 
-![toffee maky](../media/posts/storms/storms3.jpg)
+![toffee maky](../media/essays/storms/storms3.jpg)
 
 And who was this man -asked her, eager- that could be so? Who could have broke you, have you so done?
 
@@ -38,7 +38,7 @@ I did not know then, said he, I know now not. I never asked it. He never told. H
 
 He governed all times then – he drove them on. He announced all mornings, closed all evenings, and so on. His dawn was everything – still is so. Would you care, he said so, finally, a full smile on, to meet him now?
 
-![toffee maky](../media/posts/storms/storms4.jpg)
+![toffee maky](../media/essays/storms/storms4.jpg)
 
 And then it happened: the sun then shone. She noticed then, how she'd been tricked. How all had gone. And thus she laughed, and quietly vanished.
 
