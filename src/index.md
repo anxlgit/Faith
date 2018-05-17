@@ -18,4 +18,6 @@ class: landing
   [work](work/work.html)
   <br>
   [essays](essays/index.html)
+  <br>
+  [webring](http://webring.xxiivv.com/#random)
 </nav>
