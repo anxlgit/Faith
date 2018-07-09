@@ -1,7 +1,7 @@
 ---
 title: Luminiscencia
 layout: basic.hbs
-class: luminiscencia
+class: gallery
 ---
 
 # [anxl](projects.html) / luminiscencia.

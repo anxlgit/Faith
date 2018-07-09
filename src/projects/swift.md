@@ -22,15 +22,30 @@ class: swift
   ![Autumn at the Lake, by Kilian Schönenberg](../media/swift/eyes.jpg)
 </a>
 
-
 <a href="https://twitter.com/anxlacc/status/899984769555066881">
-  ![???](../media/swift/desired.jpg)
+  ![Exploring with film, by Monica Raduta](../media/swift/desired.jpg)
 </a>
 
 <a href="https://twitter.com/anxlacc/status/896656854322999300">
-  ![???](../media/swift/god.jpg)
+  ![at the edge of the world, by Elsa Bleda](../media/swift/god.jpg)
 </a>
 
-<a href="https://twitter.com/anxlacc/status/896656854322999300">
-  ![???](../media/swift/sinners.jpg)
+<a href="https://twitter.com/anxlacc/status/891945857452568576">
+  ![ambient, by Fedor Novykh](../media/swift/sinners.jpg)
+</a>
+
+<a href="https://twitter.com/anxlacc/status/930428552805322752">
+  ![Felületek, by Dániel Králik](../media/swift/exquisite.jpg)
+</a>
+
+<a href="https://twitter.com/anxlacc/status/929749534779105280">
+  ![дикилиташ, by Georgi Todorov](../media/swift/comestone.jpg)
+</a>
+
+<a href="https://twitter.com/anxlacc/status/901841840093241344">
+  ![White, by Paul Bauer](../media/swift/breathe.jpg)
+</a>
+
+<a href="https://twitter.com/anxlacc/status/929314045496262656">
+  ![To build a home, by Elsa Bleda](../media/swift/mourned.jpg)
 </a>

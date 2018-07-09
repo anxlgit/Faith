@@ -6,13 +6,20 @@ class: work
 
 # [anxl](../index.html) / work.
 
-## Producer & Designer
-[IN THE PALACE](http://inthepalace.com/en/home.html)
+## Project Manager & Designer
+[IN THE PALACE, Bulgaria](http://inthepalace.com/en/home.html)
 
-## Article Writer
-[Spanish Examples](words.html)
+## Social Media Designer
+[3lemon, Spain](http://www.3lemon.com/)
 
 ## Designer & Copywriter
 Freelance (UK, Denmark, India)
 
-etc.
+## Web Content Manager
+El Periódico, Spain
+
+## Article & Creative Writer
+[English Examples](../essays)<br>
+[Spanish Examples](words.html)
+
+and others.

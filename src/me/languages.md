@@ -6,12 +6,16 @@ class: languages
 
 # [anxl](me.html) / languages.
 
-<h2 class="langtree">Italic</h2>
-
 Spanish
 
 <div class="progressbar">
   <div id="spanish"></div>
+</div>
+
+English
+
+<div class="progressbar">
+  <div id="english"></div>
 </div>
 
 French
@@ -32,21 +36,17 @@ Italian
   <div id="italian"></div>
 </div>
 
-<h2 class="langtree">Germanic</h2>
-
-English
-
-<div class="progressbar">
-  <div id="english"></div>
-</div>
-
 German
 
 <div class="progressbar">
   <div id="german"></div>
 </div>
 
-<h2 class="langtree">Slavic</h2>
+Japanese
+
+<div class="progressbar">
+  <div id="japanese"></div>
+</div>
 
 Bulgarian
 
@@ -60,20 +60,10 @@ Russian
   <div id="russian"></div>
 </div>
 
-<h2 class="langtree">Indic</h2>
-
 Hindi
 
 <div class="progressbar">
   <div id="hindi"></div>
-</div>
-
-<h2 class="langtree">Altaic</h2>
-
-Japanese
-
-<div class="progressbar">
-  <div id="japanese"></div>
 </div>
 
 Korean
@@ -82,15 +72,11 @@ Korean
   <div id="korean"></div>
 </div>
 
-<h2 class="langtree">Sinic</h2>
-
 Chinese
 
 <div class="progressbar">
   <div id="chinese"></div>
 </div>
-
-<h2 class="langtree">Semitic</h2>
 
 Arabic
 

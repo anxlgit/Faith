@@ -14,11 +14,11 @@ class: projects
   ![Bodyes](../media/projects/hand.jpg)
 </a>
 
-<a href="https://www.behance.net/gallery/55951363/Fazes">
+<a href="fazes.html">
   ![Fazes](../media/projects/fazes.png)
 </a>
 
-<a href="https://www.behance.net/gallery/52850991/Visions">
+<a href="visions.html">
   ![Visions](../media/projects/visions.png)
 </a>
 

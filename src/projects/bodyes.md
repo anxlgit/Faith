@@ -1,7 +1,7 @@
 ---
-title: Luminiscencia
+title: Bodyes
 layout: basic.hbs
-class: luminiscencia
+class: gallery
 ---
 
 # [anxl](projects.html) / bodyes.
