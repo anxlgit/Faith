@@ -1,0 +1,359 @@
+
+
+  /************************            *****************************
+  *************************    BASE    *****************************
+  *************************            *****************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: white;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 10pt;
+  line-height: 1.2em;
+  text-align: center;
+  animation: fadeInUp 1s both ease; }
+
+section {
+  margin: 0 auto;
+  margin-top: 80px; }
+
+section h1 {
+  margin-bottom: 50px; }
+
+h1 {
+  font-size: 1.3em; }
+
+h2 {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-bottom: 10px; }
+
+nav {
+  margin-top: 40px;
+  animation: fadeInUp 2.5s both ease; }
+
+nav h2 {
+  display: inline-block;
+  padding: 0 6px; }
+
+a {
+  text-decoration: underline;
+  color: inherit; }
+
+a a:hover {
+    animation: shine 1s both ease; }
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0; }
+
+li {
+  margin-bottom: 20px; }
+
+p {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.3em; }
+
+::selection {
+  background: inherit;
+  color: #DAA520; }
+
+::-moz-selection {
+  background: inherit;
+  color: #DAA520; }
+
+footer {
+  font-size: 0.8em;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  animation: fadeInUp 3s both ease; }
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 10pt; }
+
+  p {
+    line-height: 1.3em; } }
+
+@media screen and (min-width: 1000px) {
+  section {
+    margin-top: 120px; } }
+
+
+  /************************            *****************************
+  *************************   LANDING  *****************************
+  *************************            *****************************/
+
+.landing h1 {
+  margin-bottom: 78px; }
+
+.landing h2 {
+  line-height: 0.6em; }
+
+.landing p img {
+  max-width: 200px;
+  z-index: -1;
+  margin-bottom: -175px;
+  position: relative;
+  animation: fadeInUp 2s both ease; }
+
+.landing nav a {
+  display: inline-block;
+  margin: 0px 7px 14px 7px; }
+
+@media screen and (min-width: 700px) {
+  .landing h2 {
+    line-height: 0.6; } }
+
+@media screen and (min-width: 1000px) {
+  .landing h2 {
+    margin-bottom: 10px; }
+
+  header {
+    margin-top: 400px; } }
+
+
+  /************************            *****************************
+  *************************    WORK    *****************************
+  *************************            *****************************/
+
+  .work h2 {
+    margin-bottom: 0.2em;
+    line-height: 1.2em; }
+
+  .work p {
+    line-height: 1.5em; }
+
+  .work .roles {
+    animation: fadeInUp 2s both ease; }
+
+
+  /************************            *****************************
+  *************************  LANGUAGES *****************************
+  *************************            *****************************/
+
+.languages h2 {
+  margin-bottom: 10px; }
+
+.languages p {
+  margin-bottom: 5px; }
+
+.langtree:first-of-type {
+  margin-top: 0; }
+
+.langtree {
+  margin-top: 60px; }
+
+.progressbar {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background: gainsboro;
+  border-radius: 13px;
+  padding: 2px; }
+
+.progressbar > div {
+  background-color: black;
+  height: 5px;
+  border-radius: 10px; }
+
+@media screen and (min-width: 700px) {
+  .progressbar {
+    max-width: 40%; } }
+
+@media screen and (min-width: 1000px) {
+  .progressbar {
+    max-width: 20%; } }
+
+#spanish {
+  width: 100%; }
+
+#french {
+  width: 60%; }
+
+#portuguese {
+  width: 50%; }
+
+#italian {
+  width: 50%; }
+
+#english {
+  width: 100%; }
+
+#german {
+  width: 40%; }
+
+#bulgarian {
+  width: 30%; }
+
+#russian {
+  width: 20%; }
+
+#hindi {
+  width: 10%; }
+
+#japanese {
+  width: 30%; }
+
+#korean {
+  width: 10%; }
+
+#chinese {
+  width: 20%; }
+
+#arabic {
+  width: 20%; }
+
+
+  /************************            *****************************
+  *************************  PROJECTS  *****************************
+  *************************            *****************************/
+
+.projects h1 {
+  margin-bottom: 70px; }
+
+.projects img {
+  animation: fadeInUp 2s both ease;
+  max-width: 120px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 120px; }
+
+@media screen and (min-width: 700px) {
+  .projects {
+    max-width: 80%; }
+    .projects p {
+      max-width: 17%;
+      margin: 0 1em;
+      display: inline-block;
+      margin-bottom: 0; }
+    .projects img {
+      margin-bottom: 0; } }
+  .gallery {
+    overflow: hidden; }
+  .gallery img {
+    width: 120%;
+    margin-left: -9%;
+    margin-top: 0;
+    margin-bottom: 100px; }
+  .gallery h1 {
+    clear: both; }
+
+.gallery p:last-of-type {
+  margin-bottom: 0; }
+
+.gallery p:last-of-type img {
+  margin-bottom: 0; }
+
+@media screen and (min-width: 700px) {
+  .gallery img {
+    width: 70%;
+    margin-left: 0;
+    margin-bottom: 150px; }
+
+  .gallery p:last-of-type img {
+    margin-bottom: 0; } }
+
+.swift h1 {
+  margin-bottom: 100px; }
+.swift p {
+  margin-bottom: 170px; }
+.swift img {
+  max-width: 100%;
+  box-shadow: 3px 3px 3px #888888; }
+
+.swift p:last-of-type {
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 700px) {
+  .swift {
+    max-width: 70%; }
+    .swift p {
+      margin-bottom: 300px; }
+
+  .swift p:last-of-type {
+    margin-bottom: 100px; } }
+
+@media screen and (min-width: 1000px) {
+  .swift {
+    max-width: 50%; } }
+
+
+  /************************            *****************************
+  *************************    BLOG    *****************************
+  *************************            *****************************/
+
+.blog p {
+  animation: fadeInUp 2s both ease; }
+
+.blog h2 {
+  margin: 0px;
+  animation: fadeInUp 2s both ease; }
+
+.blog p {
+  margin-bottom: 0; }
+
+.post h1 {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.5em; }
+
+.post h1 + p {
+  text-align: center;
+  animation: fadeInUp 3s both ease; }
+
+.post p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  animation: fadeInUp 4s both ease; }
+
+.post img {
+  width: 130%;
+  margin: 1.7em auto;
+  margin-left: -15%;
+  animation: fadeInUp 2s both ease; }
+
+.post p:last-of-type {
+  text-align: center; }
+
+@media screen and (min-width: 700px) {
+  .post {
+    max-width: 70%; }
+    .post img {
+      width: 180%;
+      margin-left: -40%; } }
+
+@media screen and (min-width: 1000px) {
+  .post {
+    font-size: 12pt; } }
+
+
+  /************************            *****************************
+  ************************* ANIMATIONS *****************************
+  *************************            *****************************/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes grow {
+  0% {
+    transform: none; }
+  100% {
+    transform: scale(1.3); } }
+@keyframes shine {
+  0% {
+    color: inherit; }
+  100% {
+    color: darkred; } }
