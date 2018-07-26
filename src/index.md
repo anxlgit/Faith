@@ -9,15 +9,13 @@ class: landing
 # anxl.
 
 ## art director.
-## writer.
-## graphic designer.
+## writer.
+## project manager.
 
 <nav>
   [me](me/me.html)
   [projects](projects/projects.html)
   [work](work/work.html)
-  <br>
-  [essays](essays/index.html)
   <br>
   [webring](http://webring.xxiivv.com/#random)
 </nav>

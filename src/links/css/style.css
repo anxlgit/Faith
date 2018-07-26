@@ -188,9 +188,9 @@ footer {
 .gallery {
   overflow: hidden; }
   .gallery img {
-    width: 100%;
+    width: 120%;
+    margin-left: -9%;
     margin-top: 0;
-    margin-left: -24%;
     margin-bottom: 100px; }
   .gallery h1 {
     clear: both; }

@@ -7,7 +7,7 @@ class: work
 # [anxl](../index.html) / work.
 
 ## Project Manager & Designer
-[IN THE PALACE, Bulgaria](http://inthepalace.com/en/home.html)
+[IN THE PALACE, Bulgaria](https://twitter.com/InThePalaceISFF)
 
 ## Social Media Designer
 [3lemon, Spain](http://www.3lemon.com/)
@@ -19,7 +19,6 @@ Freelance (UK, Denmark, India)
 El Periódico, Spain
 
 ## Article & Creative Writer
-[English Examples](../essays)<br>
-[Spanish Examples](words.html)
+[Examples](words.html)
 
-and others.
+etc.

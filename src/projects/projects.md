@@ -6,10 +6,6 @@ class: projects
 
 # [anxl](../index.html) / projects.
 
-<a href="swift.html">
-  ![Swift](../media/projects/swift.jpg)
-</a>
-
 <a href="bodyes.html">
   ![Bodyes](../media/projects/hand.jpg)
 </a>
@@ -20,6 +16,10 @@ class: projects
 
 <a href="visions.html">
   ![Visions](../media/projects/visions.png)
+</a>
+
+<a href="swift.html">
+  ![Swift](../media/projects/swift.jpg)
 </a>
 
 <a href="oxnhm.html">

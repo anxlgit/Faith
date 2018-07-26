@@ -6,7 +6,7 @@ class: me
 
 # [anxl](../index.html) / me.
 
-Hi, my name is Anxl. I make and devour art constantly.
+Hi, my name is Anxl. I devour and [make art](../projects/projects.html) constantly.
 
 I'm quietly learning [13 different languages](languages.html).
 
