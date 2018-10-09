@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   background: white;
@@ -20,8 +20,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 section {
+  width: 100%;
   margin: 0 auto;
-  margin-top: 80px; }
+  margin-top: 20vh; }
 
 h1 {
   visibility: hidden;
@@ -35,8 +36,8 @@ a:hover {
     color: #DAA520; }
 
 p {
-  margin-bottom: 10px;
-  margin-left: 70px; }
+  margin-bottom: 1em;
+  margin-left: 20vw; }
 
 strong {
   font-weight: bold; }
@@ -51,20 +52,6 @@ strong {
 
 @media screen and (min-width: 700px) {}
 
-@media screen and (min-width: 1000px) {
-  section {
-    margin-top: 120px; }
-  p {
-    margin-left: 150px;
-    } }
-
-
-  /************************            *****************************
-  **********************   LANDING & ME  *****************************
-  *************************            *****************************/
-
-@media screen and (min-width: 700px) {}
-
 @media screen and (min-width: 1000px) {}
 
   /************************            *****************************
@@ -75,7 +62,7 @@ strong {
   visibility: visible;
   font-size: 14px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 20vh;
   position: relative; }
 
 .projects p {
@@ -93,13 +80,18 @@ strong {
   margin-bottom: 200px;
 }
 
-.luminiscencia p {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 200px;
-}
+@media screen and (min-width: 700px) {
+  .projects {
+    text-align: center;
+  }
+  .projects div {
+    display: inline-block;
+    margin: 0 auto;
+  }
 
-@media screen and (min-width: 700px) {}
+  .projects p {
+    display: inline-block;
+    margin: 0 2em; } }
 
 @media screen and (min-width: 1000px) {}
 
