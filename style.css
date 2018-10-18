@@ -75,7 +75,6 @@ strong {
   max-width: 100%; }
 
 .gallery p {
-  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 200px;
 }
@@ -83,10 +82,7 @@ strong {
 @media screen and (min-width: 700px) {
   .projects {
     text-align: center;
-  }
-  .projects div {
-    display: inline-block;
-    margin: 0 auto;
+    max-width: 700px;
   }
 
   .projects p {
