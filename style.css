@@ -41,7 +41,7 @@ section {
 .projects p {
   display: block;
   margin: 0 auto;
-  max-width: 100px;
+  max-width: 120px;
   margin-bottom: 300px; }
 .gallery {
   margin-top: 30vh; }
@@ -66,15 +66,16 @@ section {
     float: right;
     text-align: left;
     margin-right: 7vw;
-    max-width: 370px; }
+    max-width: 400px; }
   .projects p {
     display: inline-block;
+    max-width: 100px;
     margin-bottom: 30px;
     margin: 0 10px; } }
 
 @media screen and (min-width: 1000px) {
-  .info { margin: 25vh 0 0 20vw ;}
-  .projects { margin: 22vh 20vw 0 0;}
+  .info { margin: 25vh 0 0 15vw ;}
+  .projects { margin: 20vh 20vw 0 0;}
 }
 
 /************************            *****************************
