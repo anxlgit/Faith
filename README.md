@@ -6,4 +6,4 @@ Faith is a personal website / project in which try to apply all knowledge on web
 2.0 was developed in Metalsmith.
 3.0 went back to old school HTML and CSS.
 
-![Faith Preview](faith preview.png)
+![Faith Preview](preview.png)
