@@ -19,28 +19,67 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-section {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 20vh; }
-
-h1 {
-  visibility: hidden;
-  position: absolute; }
-
-a {
-  text-decoration: underline;
+img { max-width: 100%; }
+h1 { display: none; }
+p { margin-bottom: 1em; }
+a { text-decoration: underline;
   color: inherit; }
+a:hover { color: #DAA520; }
+strong { font-weight: bold; }
 
-a:hover {
-    color: #DAA520; }
+.gallery { display: block; }
 
-p {
-  margin-bottom: 1em;
-  margin-left: 20vw; }
+section {
+  display: block;
+  max-width: 100%;
+  margin: 40px; }
+.info {
+  margin-left: 20vw;
+  margin-top: 20vh; }
+.projects {
+  margin-top: 200px; }
+.projects p {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  margin-bottom: 300px; }
+.gallery {
+  margin-top: 30vh; }
+.gallery p {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 300px; }
+.gallery .last {
+  margin-top: -200px;
+  margin-bottom: 0; }
 
-strong {
-  font-weight: bold; }
+@media screen and (min-width: 700px) {
+  #call { display: none; }
+  section {
+    display: inline-block; }
+  .info {
+    margin-top: 15vh;
+    margin-left: 10vw;
+    max-width: 200px; }
+  .projects {
+    margin-top: 12vh;
+    float: right;
+    text-align: left;
+    margin-right: 7vw;
+    max-width: 370px; }
+  .projects p {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin: 0 10px; } }
+
+@media screen and (min-width: 1000px) {
+  .info { margin: 25vh 0 0 20vw ;}
+  .projects { margin: 22vh 20vw 0 0;}
+}
+
+/************************            *****************************
+************************* ANIMATIONS *****************************
+*************************            *****************************/
 
 .one {animation: fadeInUp 3s both ease; }
 .two {animation: fadeInUp 4s both ease; }
@@ -49,52 +88,6 @@ strong {
 .five {animation: fadeInUp 7s both ease; }
 .six {animation: fadeInUp 8s both ease; }
 .seven {animation: fadeInUp 9s both ease; }
-
-@media screen and (min-width: 700px) {}
-
-@media screen and (min-width: 1000px) {}
-
-  /************************            *****************************
-  *************************  PROJECTS  *****************************
-  *************************            *****************************/
-
-.projects h1, .gallery h1 {
-  visibility: visible;
-  font-size: 14px;
-  text-align: center;
-  margin-bottom: 20vh;
-  position: relative; }
-
-.projects p {
-  display: block;
-  max-width: 100px;
-  margin: 0 auto;
-  margin-bottom: 200px; }
-
-.projects img, .gallery img{
-  max-width: 100%; }
-
-.gallery p {
-  margin: 0 auto;
-  margin-bottom: 200px;
-}
-
-@media screen and (min-width: 700px) {
-  .projects {
-    text-align: center;
-    max-width: 700px;
-  }
-
-  .projects p {
-    display: inline-block;
-    margin: 0 2em; } }
-
-@media screen and (min-width: 1000px) {}
-
-
-  /************************            *****************************
-  ************************* ANIMATIONS *****************************
-  *************************            *****************************/
 
 @keyframes fadeInUp {
   0% {
