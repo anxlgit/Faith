@@ -58,24 +58,28 @@ section {
   section {
     display: inline-block; }
   .info {
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: 10vw;
-    max-width: 200px; }
+    max-width: 170px; }
   .projects {
-    margin-top: 12vh;
+    margin-top: 11vh;
     float: right;
     text-align: left;
-    margin-right: 7vw;
-    max-width: 400px; }
+    margin-right: 5vw;
+    max-width: 380px; }
   .projects p {
     display: inline-block;
-    max-width: 100px;
+    max-width: 90px;
     margin-bottom: 30px;
     margin: 0 10px; } }
 
 @media screen and (min-width: 1000px) {
-  .info { margin: 25vh 0 0 15vw ;}
-  .projects { margin: 20vh 20vw 0 0;}
+  .info { margin: 25vh 0 0 23vw ;}
+  .projects {
+    margin: 24vh 10vw 0 0;
+    max-width: 500px;
+  }
+  .projects p { max-width: 110px;}
 }
 
 /************************            *****************************
