@@ -1,110 +1,91 @@
 
+/* Base */
+*{margin:0; padding:0; max-width:100%;}
+body {text-align:left; overflow-x:hidden;}
+h1 {margin-bottom:1em;}
+img {max-width:100%;}
+p {max-width:90%; margin:1.5em auto;}
+span {display:block}
 
-  /************************            *****************************
-  *************************    BASE    *****************************
-  *************************            *****************************/
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background: white;
-  color: #303133;
-  font-family: "Amiri", serif;
-  font-size: 14px;
-  line-height: 1.15em;
-  text-align: left;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+/* Font Sizes */
+body, h1, h2, h3, h4, h5 {font-weight:400;}
+body {font-family:'Amiri', serif;
+      font-size:16px; line-height:1.15em;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;}
+h1 {font-size:1.8em; line-height:1.2em;}
+h2 {font-size:1.5em; line-height:1.2em;}
+h3 {font-size:1.4em; line-height:1em;}
+h4 {font-size:1em; line-height:1em;}
+h5 {font-size:1.5em; line-height:1.2em;}
 
-img { max-width: 100%; }
-h1 { display: none; }
-p { margin-bottom: 1em; }
-a { text-decoration: underline;
-  color: inherit; }
-a:hover { color: #DAA520; }
-strong { font-weight: bold; }
 
-.gallery { display: block; }
+/* Colors */
+body {background:white; color:#303133;}
+a {text-decoration:none; color:black;}
 
-section {
-  display: block;
-  max-width: 100%;
-  margin: 40px; }
-.info {
-  margin-left: 20vw;
-  margin-top: 20vh; }
-.projects {
-  margin-top: 200px; }
-.projects p {
-  display: block;
-  margin: 0 auto;
-  max-width: 120px;
-  margin-bottom: 300px; }
-.gallery {
-  margin-top: 30vh; }
-.gallery p {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 300px; }
-.gallery .last {
-  margin-top: -200px;
-  margin-bottom: 0; }
 
-@media screen and (min-width: 700px) {
-  #call { display: none; }
-  section {
-    display: inline-block; }
-  .info {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    max-width: 170px; }
-  .projects {
-    margin-top: 11vh;
-    float: right;
-    text-align: left;
-    margin-right: 5vw;
-    max-width: 380px; }
-  .projects p {
-    display: inline-block;
-    max-width: 90px;
-    margin-bottom: 30px;
-    margin: 0 10px; } }
+/* Top Navigation */
+h3.navigation {position:fixed; top:3vh; z-index:2;}
+#home {left:4vw;}
+#about {right:4vw;}
 
-@media screen and (min-width: 1000px) {
-  .info { margin: 25vh 0 0 23vw ;}
-  .projects {
-    margin: 24vh 10vw 0 0;
-    max-width: 500px;
-  }
-  .projects p { max-width: 110px;}
-}
 
-/************************            *****************************
-************************* ANIMATIONS *****************************
-*************************            *****************************/
+/* Portfolio Index */
+h1.maintitle {max-width:300px; margin:0 auto;
+  margin-top:40vh; margin-bottom:100px;
+  font-size:1.5em; line-height:1.1em;
+  text-align:center; font-weight:400;}
+section.portfolio {max-width:80%; margin:0 auto; margin-bottom:100px; opacity:0;}
+h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
+   letter-spacing:5px; position:relative; text-transform:uppercase;}
+/* Hidden positions*/
+h2.lefttitle{float:left; text-align:left; left:10px; top:10px;}
+h2.righttitle{float:right; text-align:right; right:10px; top:-10px;}
 
-.one {animation: fadeInUp 3s both ease; }
-.two {animation: fadeInUp 4s both ease; }
-.three {animation: fadeInUp 5s both ease; }
-.four {animation: fadeInUp 6s both ease; }
-.five {animation: fadeInUp 7s both ease; }
-.six {animation: fadeInUp 8s both ease; }
-.seven {animation: fadeInUp 9s both ease; }
 
+/* Projects */
+/* Description of the Project */
+section.projdescription {max-width:80%; margin:0 auto; margin-top:15vh;}
+section.projdescription h1 {margin-bottom: 1em;}
+section.about h1 {font-size: 1.8em;}
+/* Gallery and Image Sizes */
+section.gallery img {opacity:0;}
+section.gallery img.first {opacity:1;}
+section.experiments {margin-top:-3vh; margin-bottom:25vh;}
+section.isomeros {margin:0 auto; margin-top:10vh; max-width:90%; }
+section.about {margin-top:20px;}
+section.author {margin-top: 10vh;}
+
+
+/* Media Queries */
+/* Tablet Query */
+@media (min-width: 600px) {
+  body {font-size:12px;}
+  section, section.about, section.author {margin-top: 13vh;}
+  section.about h1 {font-size:1.4em;}
+  section.projdescription {position:fixed; max-width:30%; float:left; margin-left:5vw;}
+  section.gallery {max-width:50%; float:right; margin-right: 10vw;} /* endquery */ }
+/* Desktop Query */
+@media (min-width: 1000px) {
+  h3#home {left:2vw;}
+  h3#about {right:2vw;}
+  /* Portfolio Adjustments */
+  section.portfolio {margin-bottom: 100px;}
+  h2.lefttitle, h2.righttitle {font-size:2em;}
+  /* Gallery Adjustments into Two Column */
+  section.projdescription {margin-left:5vw; max-width:20%;}
+  section.gallery {max-width:66%; margin-right:5vw;}
+  section.gallery img {margin:0 auto;}
+  section.isomeros img {margin-bottom:80px;}
+  section.experiments img {max-width: 70%;} /* endquery */ }
+
+
+/* Animations */
+h3 {animation: fadeInUp 2s both ease;}
+h1, h2, .projdescription p,
+.gallery img.first, .about p {animation: fadeInUp 4s both ease;}
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(40px, 20px, 0); }
-  100% {
-    opacity: 1;
-    transform: none; } }
-
-  @keyframes shine {
-    0% {
-      color: black;}
-    100% {
-      color: gold;
-    } }
+  0% {opacity: 0;transform: translate3d(0,10px,0);}
+  100% {opacity: 1;} }
