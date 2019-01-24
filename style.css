@@ -2,9 +2,8 @@
 /* Base */
 *{margin:0; padding:0; max-width:100%;}
 body {text-align:left; overflow-x:hidden;}
-h1 {margin-bottom:1em;}
 img {max-width:100%;}
-p {max-width:90%; margin:1.5em auto;}
+p {max-width:90%; margin:1em auto;}
 span {display:block}
 
 
@@ -15,7 +14,7 @@ body {font-family:'Amiri', serif;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;}
 h1 {font-size:1.8em; line-height:1.2em;}
-h2 {font-size:1.5em; line-height:1.2em;}
+h2 {font-size:1.2em; line-height:1.2em;}
 h3 {font-size:1.4em; line-height:1em;}
 h4 {font-size:1em; line-height:1em;}
 h5 {font-size:1.5em; line-height:1.2em;}
@@ -26,10 +25,11 @@ body {background:white; color:#303133;}
 a {text-decoration:none; color:black;}
 
 
-/* Top Navigation */
-h3.navigation {position:fixed; top:3vh; z-index:2;}
-#home {left:4vw;}
-#about {right:4vw;}
+/* Navigation */
+.navigation {position:fixed; z-index:2;}
+#home {top:3vh; left:4vw;} #about {top:3vh; right:4vw;}
+#prevproj, #nextproj {top:50vh; opacity: 0.2;}
+#prevproj {left:4vw;} #nextproj {right:4vw;}
 
 
 /* Portfolio Index */
@@ -47,45 +47,59 @@ h2.righttitle{float:right; text-align:right; right:10px; top:-10px;}
 
 /* Projects */
 /* Description of the Project */
-section.projdescription {max-width:80%; margin:0 auto; margin-top:15vh;}
-section.projdescription h1 {margin-bottom: 1em;}
+section {margin-top:10vh;}
+section.projdescription {max-width:80%; margin:0 auto; margin-top:10vh;}
+section.projdescription h1 {margin-bottom:0.7em;}
 section.about h1 {font-size: 1.8em;}
 /* Gallery and Image Sizes */
 section.gallery img {opacity:0;}
 section.gallery img.first {opacity:1;}
-section.experiments {margin-top:-3vh; margin-bottom:25vh;}
 section.isomeros {margin:0 auto; margin-top:10vh; max-width:90%; }
 section.about {margin-top:20px;}
 section.author {margin-top: 10vh;}
+section.authorhz {visibility:hidden; position:fixed;}
 
 
 /* Media Queries */
 /* Tablet Query */
 @media (min-width: 600px) {
-  body {font-size:12px;}
-  section, section.about, section.author {margin-top: 13vh;}
+  #prevproj {left:2vw;} #nextproj {right:2vw;}
+  section, section.about, section.author {margin-top: 18vh;}
   section.about h1 {font-size:1.4em;}
-  section.projdescription {position:fixed; max-width:30%; float:left; margin-left:5vw;}
-  section.gallery {max-width:50%; float:right; margin-right: 10vw;} /* endquery */ }
+  /* Gallery Adjustments */
+  section.projdescription {position:fixed; max-width:30%; float:left; margin-left:5vw;
+                            margin-top:15vh;}
+  section.gallery {max-width:50%; float:right; margin-right:5vw; text-align:center;}
+  section.gallery img {margin:0 auto; margin-bottom:2em;}
+  .nanopassio, .covers {margin-top:0; margin-bottom:17vh;}
+  .bodyes, .isomeros {margin-bottom:17vh;}
+  section.bodyes img {max-width:80%;}
+  section.nanopassio img {margin-bottom:0;}
+ /* endquery */ }
+
 /* Desktop Query */
 @media (min-width: 1000px) {
   h3#home {left:2vw;}
   h3#about {right:2vw;}
-  /* Portfolio Adjustments */
+  /* Main Portfolio Adjustments */
   section.portfolio {margin-bottom: 100px;}
   h2.lefttitle, h2.righttitle {font-size:2em;}
-  /* Gallery Adjustments into Two Column */
-  section.projdescription {margin-left:5vw; max-width:20%;}
-  section.gallery {max-width:66%; margin-right:5vw;}
-  section.gallery img {margin:0 auto;}
-  section.isomeros img {margin-bottom:80px;}
-  section.experiments img {max-width: 70%;} /* endquery */ }
+  /* Gallery Adjustments */
+  section.projdescription {margin-left:6vw; max-width:20%;}
+  section.gallery {margin-right:6vw; max-width:60%;}
+  section.author {visibility:hidden; height:0; width:0;}
+  section.authorhz {visibility:visible; max-width:60%; position:absolute;
+                    top:-20px; right:0;}
+  section.bodyes img {max-width: 50%; margin-bottom:10vh;}
+  section.covers img {max-width:70%;}
+  /* endquery */ }
 
 
 /* Animations */
 h3 {animation: fadeInUp 2s both ease;}
 h1, h2, .projdescription p,
-.gallery img.first, .about p {animation: fadeInUp 4s both ease;}
+.gallery img.first, .about p, iframe {animation: fadeInUp 4s both ease;}
+h2.lefttitle, h2.righttitle {animation: none;}
 @keyframes fadeInUp {
   0% {opacity: 0;transform: translate3d(0,10px,0);}
   100% {opacity: 1;} }
