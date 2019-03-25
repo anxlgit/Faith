@@ -1,105 +1,136 @@
 
-/* Base */
-*{margin:0; padding:0; max-width:100%;}
-body {text-align:left; overflow-x:hidden;}
+/* BASE */
+*{margin:0 auto; padding:0; max-width:100%;}
+body {text-align:left; overflow-x:hidden; margin-bottom:10vh;}
 img {max-width:100%;}
-p {max-width:90%; margin:1em auto;}
 span {display:block}
+p {margin:1em auto;}
+
+/* COLORS */
+body {background:white; color:#303133;}
+h1 a, h2 a, h3 a, h4 a {text-decoration:none;}
+a {text-decoration:underline; color:black;}
 
 
-/* Font Sizes */
+/* BASE TYPOGRAPHY */
 body, h1, h2, h3, h4, h5 {font-weight:400;}
 body {font-family:'Amiri', serif;
-      font-size:14px; line-height:1.15em;
+      font-size:12pt; line-height:1.2em;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;}
-h1 {font-size:1.8em; line-height:1.2em;}
-h2 {font-size:1.2em; line-height:1.2em;}
+h1 {font-size:2.4em; line-height:1.2em;}
+h2 {font-size:1em; line-height:1.2em;}
 h3 {font-size:1.4em; line-height:1em;}
-h4 {font-size:1em; line-height:1em;}
+h4 {font-size:1.6em; line-height:1em;}
 h5 {font-size:1.5em; line-height:1.2em;}
+span {text-align:center; margin-bottom:1em;}
+@media /* Tablet */ (min-width: 600px) {
+  body {font-size:10pt;}
+  h2.lefttitle, h2.righttitle {font-size:1.5em;} }
+@media /* Desktop */ (min-width:1000px) {}
 
 
-/* Colors */
-body {background:white; color:#303133;}
-a {text-decoration:none; color:black;}
-
-
-/* Navigation */
+/* NAVIGATION */
 .navigation {position:fixed; z-index:2;}
 #home {top:3vh; left:4vw;} #about {top:3vh; right:4vw;}
-#prevproj, #nextproj {top:50vh; opacity: 0.2;}
+#prevproj, #nextproj {top:50vh; opacity: 0.5;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
-
-
-/* Portfolio Index */
-h1.maintitle {max-width:300px; margin:0 auto;
-  margin-top:40vh; margin-bottom:100px;
-  font-size:1.5em; line-height:1.1em;
-  text-align:center; font-weight:400;}
-section.portfolio {max-width:80%; margin:0 auto; margin-bottom:100px; opacity:0;}
-h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
-   letter-spacing:5px; position:relative; text-transform:uppercase;}
-/* Hidden positions*/
-h2.lefttitle{float:left; text-align:left; left:10px; top:10px;}
-h2.righttitle{float:right; text-align:right; right:10px; top:-10px;}
-
-
-/* Projects */
-/* Description of the Project */
-section {margin-top:10vh;}
-section.projdescription {max-width:80%; margin:0 auto; margin-top:10vh;}
-section.projdescription h1 {margin-bottom:0.7em;}
-section.about h1 {font-size: 1.8em;}
-/* Gallery and Image Sizes */
-section.gallery img {opacity:0;}
-section.gallery img.first {opacity:1;}
-section.isomeros {margin:0 auto; margin-top:10vh; max-width:90%; }
-section.about {margin-top:20px;}
-section.author {margin-top: 10vh;}
-section.authorhz {visibility:hidden; position:fixed;}
-
-
-/* Media Queries */
-/* Tablet Query */
-@media (min-width: 600px) {
-  #prevproj {left:2vw;} #nextproj {right:2vw;}
-  section, section.about, section.author {margin-top: 18vh;}
-  section.about h1 {font-size:1.4em;}
-  /* Gallery Adjustments */
-  section.projdescription {position:fixed; max-width:30%; float:left; margin-left:5vw;
-                            margin-top:15vh;}
-  section.gallery {max-width:50%; float:right; margin-right:5vw; text-align:center;}
-  section.gallery img {margin:0 auto; margin-bottom:2em;}
-  .nanopassio, .covers {margin-top:0; margin-bottom:17vh;}
-  .bodyes, .isomeros {margin-bottom:17vh;}
-  section.bodyes img {max-width:80%;}
-  section.nanopassio img {margin-bottom:0;}
- /* endquery */ }
-
-/* Desktop Query */
-@media (min-width: 1000px) {
+@media /* Tablet */ (min-width: 600px) {
+  h2.lefttitle {top:7px;} h2.righttitle {top:-8px;}
+  #prevproj {left:2vw;}
+  #nextproj {right:2vw;} }
+@media /* Desktop */ (min-width: 1000px) {
   h3#home {left:2vw;}
-  h3#about {right:2vw;}
-  /* Main Portfolio Adjustments */
+  h3#about {right:2vw;} }
+
+
+/* PORTFOLIO INDEX */
+h1.presentation {max-width:300px;
+  margin-top:40vh; margin-bottom:100px;
+  font-size:1.5em; line-height:1.1em; text-align:center;}
+section.portfolio {max-width:80%; margin:0 auto;
+  margin-bottom:100px; opacity:0;}
+h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
+   letter-spacing:3px; position:relative;
+   text-transform:uppercase;}
+/* Hidden positions */
+h2.lefttitle {float:left; text-align:left; left:10px; top:14px;}
+h2.righttitle {float:right; text-align:right; right:10px; top:-18px;}
+@media /* Tablet */ (min-width: 600px) {
   section.portfolio {margin-bottom: 100px;}
-  h2.lefttitle, h2.righttitle {font-size:2em;}
-  /* Gallery Adjustments */
-  section.projdescription {margin-left:6vw; max-width:20%;}
-  section.gallery {margin-right:6vw; max-width:60%;}
-  section.author {visibility:hidden; height:0; width:0;}
-  section.authorhz {visibility:visible; max-width:60%; position:absolute;
-                    top:-20px; right:0;}
-  section.bodyes img {max-width: 50%; margin-bottom:10vh;}
-  section.covers img {max-width:70%;}
-  /* endquery */ }
+  h2.lefttitle {top:13px;} h2.righttitle {top:-13px;} }
+@media /* Desktop */ (min-width: 1000px) {
+  section.portfolio {max-width:60%;} }
 
 
-/* Animations */
-h3 {animation: fadeInUp 2s both ease;}
-h1, h2, .projdescription p,
-.gallery img.first, .about p, iframe {animation: fadeInUp 4s both ease;}
-h2.lefttitle, h2.righttitle {animation: none;}
+/* PROJECT DESCRIPTIONS */
+section.projdescription {margin-top:15vh; max-width: 300px;}
+.projdescription h2 {font-style:italic;}
+@media /* Tablet */ (min-width: 600px) {
+  section.projdescription {position:fixed; max-width:30%;
+    float:left; margin-left:8vw;}
+  section.gallery {max-width:50%; float:right;
+      margin-top: 16vh; margin-right:5vw; text-align:center;}
+  section.gallery img {margin:0 auto; margin-bottom:2em;}
+  /* Particular Image Sizes */
+  section.bodyes img {max-width:80%;}
+  section.nanopassio img {margin-bottom:0;} }
+@media  /* Desktop */ (min-width: 1000px) {
+  section.projdescription {margin-left:7vw; max-width:20%;}
+  section.gallery {margin-right:6vw; max-width:60%; margin-top:15vh;}
+  /* Particular Image Sizes */
+  section.bodyes img {max-width:50%; margin-bottom:10vh;}
+  section.covers img {max-width:70%;} }
+
+
+/* ABOUT PAGE */
+/* top margin */
+section.author {margin-top:10vh;}
+section.about h1 {max-width:310px;
+  font-size:1.7em; text-align:center; margin-bottom: 20px;}
+section.about p {max-width: 300px;}
+/* pictures */
+section.author, .authorhz {margin-bottom:20px;}
+section.authorhz {visibility:hidden; position:fixed;}
+span.separator {margin: 50px auto; font-size:1.5em;}
+/* quotations */
+section.quotations {text-align:center;}
+section.quote {display:inline-block; margin:auto 20px; vertical-align:middle;}
+section.quote h4 {max-width: 360px; text-align:center;
+  font-variant:small-caps; margin-bottom:10px;}
+@media /* Tablet */ (min-width: 600px) {
+  section.about h1 {max-width: 500px;}
+  section.author {visibility:hidden; position:fixed;}
+  section.authorhz {visibility:visible; position:static;
+    margin-top: 15vh; max-width: 600px;}
+  span.separator {margin: 60px auto 50px auto;} }
+@media /* Desktop */ (min-width: 1000px) {}
+
+
+/* AGENCIES */
+section.split p, .centered {max-width: 300px;}
+hr {max-width:100px;}
+section.centered {text-align:center;}
+.split h2, .centered h2 {font-size: 1.2em;
+  text-align:center; font-variant:small-caps;
+  letter-spacing:5px; margin-bottom:40px;}
+.split img {margin-bottom:20px;}
+@media /* Tablet */ (min-width: 600px) {
+  /* center images */
+  .split {text-align:center;}
+  .split p {text-align:left;}
+  .split img {max-width:600px;}
+  .split .quotations {margin-top:30px;} }
+@media /* Desktop */ (min-width: 1000px) {}
+
+/* BLOG */
+/* TO DO !!!! */
+
+
+/* ANIMATIONS */
+img, span, h1, h3, h4, p {opacity:0}
+h3, section.projdescription * {animation:fadeInUp 2s both ease;}
+*.visible {animation:fadeInUp 4s both ease;}
 @keyframes fadeInUp {
   0% {opacity: 0;transform: translate3d(0,10px,0);}
   100% {opacity: 1;} }
