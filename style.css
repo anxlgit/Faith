@@ -54,7 +54,7 @@ h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
    letter-spacing:3px; position:relative;
    text-transform:uppercase;}
 /* Hidden positions */
-h2.lefttitle {float:left; text-align:left; left:10px; top:14px;}
+h2.lefttitle {float:left; text-align:left; left:10px; top:18px;}
 h2.righttitle {float:right; text-align:right; right:10px; top:-18px;}
 @media /* Tablet */ (min-width: 600px) {
   section.portfolio {margin-bottom: 100px;}
@@ -63,7 +63,7 @@ h2.righttitle {float:right; text-align:right; right:10px; top:-18px;}
   section.portfolio {max-width:60%;} }
 
 
-/* PROJECT DESCRIPTIONS */
+/* PROJECTS */
 section.projdescription {margin-top:15vh; max-width: 300px;}
 .projdescription h2 {font-style:italic;}
 @media /* Tablet */ (min-width: 600px) {
@@ -77,9 +77,10 @@ section.projdescription {margin-top:15vh; max-width: 300px;}
   section.nanopassio img {margin-bottom:0;} }
 @media  /* Desktop */ (min-width: 1000px) {
   section.projdescription {margin-left:7vw; max-width:20%;}
-  section.gallery {margin-right:6vw; max-width:60%; margin-top:15vh;}
+  section.gallery {margin-right:8vw; max-width:60%; margin-top:15vh;}
   /* Particular Image Sizes */
   section.bodyes img {max-width:50%; margin-bottom:10vh;}
+  section.lands img {max-width: 80%;}
   section.covers img {max-width:70%;} }
 
 
