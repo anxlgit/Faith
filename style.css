@@ -15,19 +15,20 @@ a {text-decoration:underline; color:black;}
 /* BASE TYPOGRAPHY */
 body, h1, h2, h3, h4, h5 {font-weight:400;}
 body {font-family:'Amiri', serif;
-      font-size:12pt; line-height:1.2em;
+      font-size:8pt; line-height:1.2em;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;}
-h1 {font-size:2.4em; line-height:1.2em;}
+h1 {font-size:1.4em; line-height:1.2em;}
 h2 {font-size:1em; line-height:1.2em;}
 h3 {font-size:1.4em; line-height:1em;}
 h4 {font-size:1.6em; line-height:1em;}
 h5 {font-size:1.5em; line-height:1.2em;}
 span {text-align:center; margin-bottom:1em;}
 @media /* Tablet */ (min-width: 600px) {
-  body {font-size:10pt;}
-  h2.lefttitle, h2.righttitle {font-size:1.5em;} }
-@media /* Desktop */ (min-width:1000px) {}
+  h2.lefttitle, h2.righttitle {font-size:1.4em;} }
+@media /* Desktop */ (min-width:1000px) {
+  body {font-size:9pt;}
+}
 
 
 /* NAVIGATION */
@@ -36,7 +37,6 @@ span {text-align:center; margin-bottom:1em;}
 #prevproj, #nextproj {top:50vh; opacity: 0.5;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
 @media /* Tablet */ (min-width: 600px) {
-  h2.lefttitle {top:7px;} h2.righttitle {top:-8px;}
   #prevproj {left:2vw;}
   #nextproj {right:2vw;} }
 @media /* Desktop */ (min-width: 1000px) {
@@ -54,17 +54,19 @@ h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
    letter-spacing:3px; position:relative;
    text-transform:uppercase;}
 /* Hidden positions */
-h2.lefttitle {float:left; text-align:left; left:10px; top:18px;}
-h2.righttitle {float:right; text-align:right; right:10px; top:-18px;}
+h2.lefttitle {float:left; text-align:left; left:10px; top:6px;}
+h2.righttitle {float:right; text-align:right; right:10px; top:-6px;}
 @media /* Tablet */ (min-width: 600px) {
   section.portfolio {margin-bottom: 100px;}
-  h2.lefttitle {top:13px;} h2.righttitle {top:-13px;} }
+  h2.lefttitle {top:10px;} h2.righttitle {top:-10px;} }
 @media /* Desktop */ (min-width: 1000px) {
   section.portfolio {max-width:60%;} }
 
 
 /* PROJECTS */
-section.projdescription {margin-top:15vh; max-width: 300px;}
+section.projdescription {margin-top:15vh; max-width:200px;
+  margin-left: 4em; margin-bottom:4em;}
+section.projdescription h1 {margin-bottom: 0.8em;}
 .projdescription h2 {font-style:italic;}
 @media /* Tablet */ (min-width: 600px) {
   section.projdescription {position:fixed; max-width:30%;
@@ -89,18 +91,19 @@ section.projdescription {margin-top:15vh; max-width: 300px;}
 section.author {margin-top:10vh;}
 section.about h1 {max-width:310px;
   font-size:1.7em; text-align:center; margin-bottom: 20px;}
-section.about p {max-width: 300px;}
+section.about p {max-width: 200px;}
 /* pictures */
 section.author, .authorhz {margin-bottom:20px;}
 section.authorhz {visibility:hidden; position:fixed;}
-span.separator {margin: 50px auto; font-size:1.5em;}
+span.separator {margin: 20px auto; font-size:1.5em;}
 /* quotations */
 section.quotations {text-align:center;}
-section.quote {display:inline-block; margin:auto 20px; vertical-align:middle;}
+section.quote {display:inline-block; margin:10px 20px; vertical-align:top;}
 section.quote h4 {max-width: 360px; text-align:center;
   font-variant:small-caps; margin-bottom:10px;}
 @media /* Tablet */ (min-width: 600px) {
   section.about h1 {max-width: 500px;}
+  section.about p {max-width: 280px;}
   section.author {visibility:hidden; position:fixed;}
   section.authorhz {visibility:visible; position:static;
     margin-top: 15vh; max-width: 600px;}
