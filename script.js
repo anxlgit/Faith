@@ -14,4 +14,4 @@ $(document).ready(function() {
         $(this).animate({ opacity: "1" }, 1000),
         $(this).find('.lefttitle').animate({left:"0px"}, 1500),
         $(this).find('.righttitle').animate({right:"0px"}, 1500);
-      } }); }); });
+      }}); }); });
