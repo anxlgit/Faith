@@ -2,16 +2,16 @@
 
 Faith is a personal website/project with the objectives of both betterment in web design and personal marketing.
 
-1.0 was made in PHP/HTML/SASS.
+4.0 added some jQuery to make it flashier.
 
-![First Version](previews/first.png)
+![Current Version](previews/fourth.png)
+
+3.0 went back to old school HTML and CSS.
 
 2.0 was developed in Metalsmith.
 
 ![Second Version](previews/second.png)
 
-3.0 went back to old school HTML and CSS.
+1.0 was made in PHP/HTML/SASS.
 
-4.0 added some jQuery to make it flashier.
-
-![Current Version](previews/fourth.png)
+![First Version](previews/first.png)
