@@ -85,6 +85,35 @@ section.projdescription h1 {margin-bottom: 0.8em;}
   section.lands img {max-width: 80%;}
   section.covers img {max-width:70%;} }
 
+/* BEAMS */
+.lines h1 {font-variant:small-caps; letter-spacing:20px; font-size:14px;
+  text-align:center; animation:title ease 5s; opacity:1; z-index: 2}
+.lines {width:200px; height: 100px; margin:0 auto; margin-top: 150px;}
+.one,.two,.thr,.fou {height:120px; width:200px; position:relative; opacity:50%; transform:rotate(0deg);
+}
+.one {top:-80px; left:10px; animation:fadeInOne ease 2.5s;}
+.two {top:-190px; left:20px; animation:fadeInTwo ease 3s;}
+.thr {top:-305px; left:-10px; animation:fadeInThr ease 4s;}
+.fou {top:-420px; left:-25px; animation:fadeInFou ease 4.5s;}
+
+@keyframes fadeInOne {
+  0% {opacity:0;transform:translate3d(-30px, -20px, 0); transform:rotate(-10deg)}
+  100% {} }
+@keyframes fadeInTwo {
+  0% {opacity:0;transform:translate3d(20px, 10px, 0); transform:rotate(-10deg)}
+  100% {} }
+@keyframes fadeInThr {
+  0% {opacity:0;transform:translate3d(-20px, 10px, 0); transform:rotate(-10deg)}
+  100% {} }
+@keyframes fadeInFou {
+  0% {opacity:0;transform:translate3d(20px, 10px, 0); transform:rotate(-10deg)}
+  100% {} }
+@keyframes title {
+  0% {opacity:0;}
+  30% {opacity:0; letter-spacing: 10px;}
+  100% {opacity:100%;}
+}
+
 
 /* ABOUT PAGE */
 /* top margin */
