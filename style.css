@@ -31,22 +31,34 @@ span {text-align:center; margin-bottom:1em;}
 }
 
 /* NAVIGATION */
-.navigation {position:fixed; z-index:2;}
-#home {top:3vh; left:4vw;} #about {top:3vh; right:4vw;}
+.navigation {position: fixed; z-index:2;}
+#home {top:3vh; left:7vw;} #about {top:3vh; right:7vw;}
+#projects {top: 3vh; left: 42vw;}
 #prevproj, #nextproj {top:50vh; opacity: 0.5;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
 @media /* Tablet */ (min-width: 600px) {
-  #prevproj {left:2vw;}
-  #nextproj {right:2vw;} }
+  #home{left:4vw;} #about{right:4vw;} #projects {left:47vw;}
+  #prevproj {left:2vw;} #nextproj {right:2vw;} }
 @media /* Desktop */ (min-width: 1000px) {
   h3#home {left:2vw;}
   h3#about {right:2vw;} }
 
 
+/* DEFINITION */
+.definition {margin-top: 10vh;}
+.definition a {text-decoration: underline;}
+.definition h1 {opacity: 1; font-size: 3.3em; margin-bottom: 20px; max-width: 87%;}
+.definition h2 {font-size: 1.7em; max-width: 85%;}
+.definition h3 {opacity: 1; margin-bottom: 40px; text-align: center; font-style: italic;}
+@media /* Tablet */ (min-width: 600px) {
+  .definition {text-align: center; margin-top: 28vh;} }
+
 /* PORTFOLIO INDEX */
 h1.presentation {max-width:300px;
   margin-top:40vh; margin-bottom:100px;
   font-size:1.5em; line-height:1.1em; text-align:center;}
+
+section.portfolio.visible {margin-top: 100px;}
 section.portfolio {max-width:80%; margin:0 auto;
   margin-bottom:100px; opacity:0;}
 h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
@@ -88,8 +100,9 @@ section.projdescription h1 {margin-bottom: 0.8em;}
 /* top margin */
 section.author {margin-top:10vh;}
 section.about h1 {max-width:310px;
-  font-size:1.7em; text-align:center; margin-bottom: 20px;}
-section.about p {max-width: 200px;}
+  font-size: 1.8em; text-align:center; margin-bottom: 20px;}
+section.about p {max-width: 85%;
+  font-size: 1.3em; line-height: 1.2em;}
 /* pictures */
 section.author, .authorhz {margin-bottom:20px;}
 section.authorhz {visibility:hidden; position:fixed;}
