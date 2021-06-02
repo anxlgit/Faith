@@ -1,6 +1,7 @@
 
 /* BASE */
 *{margin:0 auto; padding:0; max-width:100%;}
+html {scroll-behavior: smooth;}
 body {text-align:left; overflow-x:hidden; margin-bottom:10vh;}
 img {max-width:100%;}
 span {display:block}
@@ -45,22 +46,26 @@ span {text-align:center; margin-bottom:1em;}
 
 
 /* DEFINITION */
-.definition {margin-top: 10vh;}
+span#definition {height: 3px;}
+.definition {margin-top: 13vh; margin-bottom: 10vh;}
 .definition a {text-decoration: underline;}
-.definition h1 {opacity: 1; font-size: 3.3em; margin-bottom: 20px; max-width: 87%;}
-.definition h2 {font-size: 1.7em; max-width: 85%;}
+.definition h1 {opacity: 1; font-size: 3.5em; margin-bottom: 20px; max-width: 87%;}
+.definition h2 {font-size: 1.8em; line-height: 1.4em; max-width: 85%;}
 .definition h3 {opacity: 1; margin-bottom: 40px; text-align: center; font-style: italic;}
 @media /* Tablet */ (min-width: 600px) {
-  .definition {text-align: center; margin-top: 28vh;} }
+  .definition {text-align: center; margin-top: 25vh;}
+  .definition h1 {font-size: 3.3em;}
+  .definition h2 {font-size: 1.6em;}
+ }
 
 /* PORTFOLIO INDEX */
 h1.presentation {max-width:300px;
   margin-top:40vh; margin-bottom:100px;
   font-size:1.5em; line-height:1.1em; text-align:center;}
-
 section.portfolio.visible {margin-top: 100px;}
 section.portfolio {max-width:80%; margin:0 auto;
-  margin-bottom:100px; opacity:0;}
+  padding-top: 300px; opacity:0;}
+section.portfolio.last {margin-bottom: 300px;}
 h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
    letter-spacing:3px; position:relative;
    text-transform:uppercase;}
@@ -68,10 +73,11 @@ h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
 h2.lefttitle {float:left; text-align:left; left:10px; top:6px;}
 h2.righttitle {float:right; text-align:right; right:10px; top:-6px;}
 @media /* Tablet */ (min-width: 600px) {
-  section.portfolio {margin-bottom: 100px;}
+  section.portfolio {margin-bottom: 100px; padding-top: 200px;}
+  section.portfolio.last {margin-bottom: 250px;}
   h2.lefttitle {top:10px;} h2.righttitle {top:-10px;} }
 @media /* Desktop */ (min-width: 1000px) {
-  section.portfolio {max-width:60%;} }
+  section.portfolio {max-width:60%; padding-top: 120px;} }
 
 
 /* PROJECTS */
@@ -87,7 +93,9 @@ section.projdescription h1 {margin-bottom: 0.8em;}
   section.gallery img {margin:0 auto; margin-bottom:2em;}
   /* Particular Image Sizes */
   section.bodyes img {max-width:80%;}
-  section.nanopassio img {margin-bottom:0;} }
+  section.nanopassio img {margin-bottom:0;}
+  section.perdida img {max-width: 57%;}
+  }
 @media  /* Desktop */ (min-width: 1000px) {
   section.projdescription {margin-left:7vw; max-width:20%;}
   section.gallery {margin-right:8vw; max-width:60%; margin-top:15vh;}
@@ -143,9 +151,9 @@ section.centered {text-align:center;}
 
 
 /* ANIMATIONS */
-img, span, h1, h3, h4, p {opacity:0}
-h3, section.projdescription * {animation:fadeInUp 2s both ease;}
-*.visible {animation:fadeInUp 4s both ease;}
+img, span, h1, h3, h4, p {opacity:0;}
+h3, section.projdescription h1 {animation: fadeInUp 2s both ease;}
+*.visible, section.projdescription, section.projdescription p {animation: fadeInUp 4s both ease;}
 @keyframes fadeInUp {
   0% {opacity: 0;transform: translate3d(0,10px,0);}
   100% {opacity: 1;} }
