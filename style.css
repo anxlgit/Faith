@@ -1,11 +1,10 @@
 
 /* BASE */
-* {margin:0; padding:0; max-width:100%;}
+* {margin:0; padding:0;}
 html {scroll-behavior: smooth;}
-body {overflow-x:hidden;}
+body {overflow-x:hidden; }
 img {max-width:100%;}
 span {display:block;}
-p {margin:1em auto;}
 
 /* COLORS & DECORATIONS */
 body {background: white; color: black;}
@@ -41,11 +40,13 @@ body {font-family:'Crimson Text', serif;
       font-size:11pt; line-height:1.2em;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;}
+p {margin-bottom: 10px; line-height: 1.1em;}
 em {font-style: normal;}
 section.projdescription h2 {font-family: 'Crimson Italic'}
-.portfolio, h1, footer h2, li {font-family: 'Giornata';}
+.portfolio, h1, footer h2, li, #home, #about {font-family: 'Giornata';}
+li {margin-bottom: 10px;}
 h1 {font-size:1.4em; line-height:1.1em;}
-h2 {font-size:1em; line-height:1.2em;}
+h2 {font-size:1.8em; line-height:1.2em;}
 h3 {font-size:1.4em; line-height:1em;}
 h4 {font-size:1.6em; line-height:1em;}
 h5 {font-size:1.5em; line-height:1.2em;}
@@ -119,30 +120,34 @@ img.backpiece {
 /* VIDEO */
 iframe.presentation {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 section.video {margin: 0 auto; position: relative; margin-top: 50px;
-  max-width: 100%; height: 0; padding-bottom: 57%;}
+  max-width: 100%; height: 0; padding-bottom: 57%; margin-bottom: 100px;}
 @media /* Tablet */ (min-width: 600px) {
   section.video {max-width: 80%; padding-bottom: 45%;}
 }
 
 
 /* PORTFOLIO INDEX */
-h1.portfolioTitle {font-size: 3em; letter-spacing: 5px;
-  text-transform: uppercase; text-align: center; overflow-x: hidden; margin: 30px auto;}
+h1.portfolioTitle {font-size: 1.5em; letter-spacing: 5px;
+  text-transform: uppercase; text-align: center; overflow-x: hidden; margin-bottom: 100px;}
 section.portfolio {max-width: 500px; margin: 0 auto; margin-bottom: 100px;}
 .portfolio h2 {font-size: 3em; text-transform: uppercase;}
 h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
-   letter-spacing:3px; position:relative;
-   text-transform:uppercase;}
+   letter-spacing: 3px; position: relative;
+   text-transform: uppercase;}
 h2.lefttitle {float:left; text-align:left;}
 h2.righttitle {float:right; text-align:right;}
 @media /* Tablet */ (min-width: 600px) {
-  h1.portfolioTitle {margin-top: 100px; font-size: 8em;}
-  section.portfolio {margin-bottom: 50px; padding-top: 140px; max-width: 800px;}
+  h1.portfolioTitle {font-size: 6em;}
+  section.portfolio {margin-bottom: 100px; max-width: 600px;}
   h2.lefttitle {top:8px;} h2.righttitle {top:-8px;}
 }
 @media /* Desktop */ (min-width: 1000px) {
-  section.portfolio {max-width: 800px; padding-top: 120px;}
-  h2.righttitle {top: -10px;}
+  section.portfolioWrap {
+    max-width: 1000px; margin: 0 auto;}
+  section.portfolio {
+    display: inline-block; margin-left: 50px;
+    max-width: 430px; margin-bottom: 50px;}
+  h2.righttitle {top: -6px;}
   }
 
 
@@ -151,13 +156,14 @@ section.projdescription {margin-top:11vh; max-width:230px;
   margin-left: 40px; margin-bottom:4em;}
 section.projdescription h1 {font-size: 2.5em; max-width: 230px;
   margin-bottom: 10px;}
-.projdescription h2 {font-size: 1.1em;}
+.projdescription h2 {font-size: 1em; margin-bottom: 10px;}
 @media /* Tablet */ (min-width: 600px) {
   section.projdescription {position:fixed; max-width:30%;
     float:left; margin-left:8vw;}
   section.gallery {max-width:50%; float:right;
       margin-top: 16vh; margin-right:5vw; text-align:center;}
   section.gallery img {margin:0 auto; margin-bottom:2em;}
+  iframe.hiperdimentia {width: 360px; height: 220px;}
   /* Particular Image Sizes */
   section.bodyes img {max-width:80%;}
   section.nanopassio img {margin-bottom:0;}
@@ -165,11 +171,52 @@ section.projdescription h1 {font-size: 2.5em; max-width: 230px;
 @media  /* Desktop */ (min-width: 1000px) {
   section.projdescription {margin-left:7vw; max-width:20%;}
   section.gallery {margin-right:8vw; max-width:60%; margin-top:12vh;}
+  iframe.hiperdimentia {width: 550px; height: 320px;}
   /* Particular Image Sizes */
   section.bodyes img {max-width:50%; margin-bottom:10vh;}
   section.lands img {max-width: 80%;}
   section.covers img {max-width:70%;}
 }
+
+
+/* ABOUT PAGE */
+/* top margin */
+section.author {margin: 0 auto; margin-top:10vh;}
+section.about { max-width: 280px; margin: 0 auto;}
+section.about h1 {max-width: 560px;
+  font-size: 1.8em; text-align:center;
+  margin: 0 auto; margin-bottom: 20px;}
+section.about p {font-size: 1.2em; line-height: 1.2em;}
+/* pictures */
+section.author, .authorhz {margin: 0 auto; margin-bottom:20px;}
+section.authorhz {visibility:hidden; position:fixed;}
+section.about h2 {margin-bottom: 10px; text-align: center;}
+span.separator {margin: 20px auto; font-size:2em;}
+section.skills h3 {line-height: 1.4em;}
+/* quotations */
+section.quotations {text-align:center; margin: 0 auto; margin-bottom: 40px;}
+section.quote {display:inline-block; margin:10px 40px; vertical-align:top;}
+section.quote h4 {max-width: 500px; text-align:center;
+  font-variant:small-caps; margin-bottom:10px;}
+@media /* Tablet */ (min-width: 600px) {
+  section.about {max-width: 80%; margin: 0 auto;}
+  section.about h1 {max-width: 500px; margin-bottom: 30px;}
+  section.about p {font-size: 1.1em; max-width: 100%;}
+  section.author {visibility:hidden; position:fixed;}
+  section.authorhz {visibility:visible; position:static;
+    margin-top: 10vh; max-width: 600px;}
+  span.separator {margin: 60px auto 50px auto;}
+  section.skills {float: left; max-width: 300px;}
+  section.information {float: right; max-width: 320px;
+    margin-bottom: 50px;}
+  span.separator {clear: both;}
+}
+@media /* Desktop */ (min-width: 1000px) {
+  section.authorhz {margin-top: 4vh;}
+  section.about {max-width: 60%;}
+  section.quotations {max-width: 900px;}
+}
+
 
 /* FOOTER AND CONTACT */
 footer { margin-top: 12vh;
@@ -190,48 +237,15 @@ ul.copyright {margin-bottom: 20px;}
     font-size: 1.7em; line-height: 1.3em;}
   footer img {position: absolute; width: 60%; top: 25vh; left: 4vw;}
   footer h2 {text-align: right;
-    margin-bottom: 200px; margin-right: 7vw;
+    margin-bottom: 10px; margin-right: 7vw;
     font-size: 1.5em;}
-  footer h2:first-of-type {margin-bottom: 20px;}
-  footer ul {position: absolute; bottom: 0px; padding: 0; font-size: 1em;}
-  footer ul.links {left: 0;}
-  footer ul.copyright {right: 0;}
+  footer h2:last-of-type {margin-bottom: 200px;}
+  footer ul {position: absolute; bottom: 0px; padding: 0; font-size: 0.9em;}
+  footer ul.links {left: 10px;}
+  footer ul.copyright {right: 10px;}
 }
-
 @media /* Desktop */ (min-width: 1000px) {
   footer img {width: 35%; top: 30vh; left: 20vw;}
-}
-
-
-
-/* ABOUT PAGE */
-/* top margin */
-section.author {margin: 0 auto; margin-top:10vh;}
-section.about h1 {max-width: 560px;
-  font-size: 1.8em; text-align:center;
-  margin: 0 auto; margin-bottom: 20px;}
-section.about p {max-width: 280px;
-  font-size: 1em; line-height: 1.2em;}
-/* pictures */
-section.author, .authorhz {margin: 0 auto; margin-bottom:20px;}
-section.authorhz {visibility:hidden; position:fixed;}
-span.separator {margin: 20px auto; font-size:2em;}
-/* quotations */
-section.quotations {text-align:center; margin: 0 auto; margin-bottom: 40px;}
-section.quote {display:inline-block; margin:10px 40px; vertical-align:top;
-}
-section.quote h4 {max-width: 500px; text-align:center;
-  font-variant:small-caps; margin-bottom:10px;}
-@media /* Tablet */ (min-width: 600px) {
-  section.about h1 {max-width: 500px;}
-  section.about p {max-width: 280px;}
-  section.author {visibility:hidden; position:fixed;}
-  section.authorhz {visibility:visible; position:static;
-    margin-top: 15vh; max-width: 600px;}
-  span.separator {margin: 60px auto 50px auto;} }
-@media /* Desktop */ (min-width: 1000px) {
-  section.authorhz {margin-top: 4vh;}
-  section.quotations {max-width: 800px; margin-bottom: 50px;}
 }
 
 /* ANIMATIONS */
@@ -245,11 +259,6 @@ section, span.scroll, footer, h1, section.gallery, img {
 .visible, span.scroll.visible, h2.lefttitle, h2.righttitle,
   section.gallery, img.visible {opacity: 1; padding-top: 0px;}
 img.visible {transition-duration: 0.5s;}
-.portfolioTitle {transition: transform 20s linear, opacity 1s ease;
-  transform: translateX(10px);
-  opacity: 0;}
-.portfolioTitle.visible {transform: translateX(-1000px);
-  opacity: 1;}
 h1.presentation.visible {transition-duration: 1s;}
 h2.presentation.visible {transition-duration: 5s;}
 h2.lefttitle {transform: translateX(15px);
