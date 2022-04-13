@@ -14,13 +14,14 @@ a, .portfolio h2, section.projdescription h1, em {color: orangered;}
 
 /* TYPE LOADS */
 @font-face {
-    font-family: 'Giornata';
-    src: url('fonts/GiornataRegular.eot');
-    src: url('fonts/GiornataRegular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/GiornataRegular.woff2') format('woff2'),
-        url('fonts/GiornataRegular.woff') format('woff'),
-        url('fonts/GiornataRegular.svg#GiornataRegular') format('svg');
-    font-weight: normal; font-style: normal; font-display: swap; }
+    font-family: 'Percheno';
+    src: url('fonts/PerchenoRegular.eot');
+    src: url('fonts/PerchenoRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PerchenoRegular.woff2') format('woff2'),
+        url('fonts/PerchenoRegular.woff') format('woff'),
+        url('fonts/Percheno-Regular.ttf')  format('truetype'),
+        url('fonts/PerchenoRegular.svg#PerchenoRegular') format('svg');
+    font-weight: normal; font-style: normal; font-display: swap;}
 @font-face {
   font-family: 'Crimson Italic';
   src: url('fonts/crimsontext-italic-webfont.woff2') format('woff2'),
@@ -37,13 +38,15 @@ body, h1, h2, h3, h4, h5 {font-weight:400;}
 body {font-family:'Crimson Text', serif;
       font-weight: normal;
       text-align:left;
-      font-size:11pt; line-height:1.2em;
+      font-size:12pt; line-height:1.2em;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;}
 p {margin-bottom: 10px; line-height: 1.1em;}
 em {font-style: normal;}
 section.projdescription h2 {font-family: 'Crimson Italic'}
-.portfolio, h1, footer h2, li, #home, #about {font-family: 'Giornata';}
+.portfolio, h1, footer h2, li, #home, #about {font-family: 'Percheno';
+  font-weight: 800;}
+h1 {text-transform: uppercase;}
 li {margin-bottom: 10px;}
 h1 {font-size:1.4em; line-height:1.1em;}
 h2 {font-size:1.8em; line-height:1.2em;}
@@ -51,20 +54,21 @@ h3 {font-size:1.4em; line-height:1em;}
 h4 {font-size:1.6em; line-height:1em;}
 h5 {font-size:1.5em; line-height:1.2em;}
 span {text-align:center; margin-bottom:1em;}
-@media /* Tablet */ (min-width: 600px) {
-  h2.lefttitle, h2.righttitle {font-size:1.4em;}
-}
-@media /* Desktop */ (min-width:1000px) {
-  body {font-size:11pt; line-height: 1.1em;}
-}
+  @media /* Tablet */ (min-width: 600px) {
+    h2.lefttitle, h2.righttitle {font-size:1.4em;}
+  }
+  @media /* Desktop */ (min-width:1000px) {
+    body {font-size:11pt; line-height: 1.1em;}
+  }
 
 /* NAVIGATION */
 .navigation {position: fixed; padding: 1px 5px;
   z-index:2; background: white;
   max-width: 100%; border-radius: 100px;}
 #home {top:3vh; left:7vw;} #about {top:3vh; right:7vw;}
-#prevproj, #nextproj {top:50vh; background: white;
-  padding: 0px 5px 5px 5px; border-radius: 100px;}
+#prevproj, #nextproj {top:50vh; background: orangered; color: black;
+  padding: 0px 5px; border-radius: 100%;}
+h3#prevproj, a#prevproj {color: black;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
 @media /* Tablet */ (min-width: 600px) {
   #home, #about {font-size: 1.5em; top: 4vh;}
@@ -84,7 +88,7 @@ span#definition {height: 3px;}
 img.backpiece {
   position: absolute;
   margin: 0 auto; display: block;
-  width: 100%; margin-top: -130px;
+  width: 100%; margin-top: -110px;
   z-index: -2; overflow: hidden; }
 .definition a {text-decoration: underline;}
 .definition h1 {opacity: 1; font-size: 1.8em; line-height: 1.1em;
@@ -110,28 +114,40 @@ img.backpiece {
   .definition {text-align: left;}
   img.backpiece {width: 40%;
     top: 40vh; left: 60vw;}
-  .definition h1 {font-size: 3em; max-width: 700px;
+  .definition h1 {font-size: 2.6em; max-width: 600px;
     margin-top: 7vh; margin-left: 5vw;}
-  .definition h2 {font-size: 1.2em; max-width: 600px; margin-left: 5vw;}
+  .definition h2 {font-size: 1.2em; max-width: 550px; margin-left: 5vw;}
   .definition h3 {margin-left: 5vw; margin-bottom: 0px; text-align: left;}
 }
 
-
 /* VIDEO */
-iframe.presentation {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-section.video {margin: 0 auto; position: relative; margin-top: 50px;
-  max-width: 100%; height: 0; padding-bottom: 57%; margin-bottom: 100px;}
+section.video {margin: 0 auto; margin-top: 50px;
+  max-width: 700px; margin-bottom: 50px;}
+  video {width: 100%;}
 @media /* Tablet */ (min-width: 600px) {
-  section.video {max-width: 80%; padding-bottom: 45%;}
+  section.video {max-width: 70%; padding-top: 10vh;
+    margin-bottom: 30px;}
+  iframe.video {max-width: 100%;}
+}
+
+/* PORTFOLIO TITLE */
+h1.portfolioTitleWeb, h1.portfolioTitleMobile {
+  letter-spacing: 5px; text-transform: uppercase;
+  text-align: center; overflow-x: hidden;}
+h1.portfolioTitleMobile {display: block;
+  font-size: 1.8em; text-align: center; margin-bottom: 50px;}
+h1.portfolioTitleWeb {display: none;}
+@media /* Tablet */ (min-width: 600px) {
+  h1.portfolioTitleMobile {display: none;}
+  h1.portfolioTitleWeb {display: block; font-size: 5em; margin: 60px auto;}
 }
 
 
 /* PORTFOLIO INDEX */
-h1.portfolioTitle {font-size: 1.5em; letter-spacing: 5px;
-  text-transform: uppercase; text-align: center; overflow-x: hidden; margin-bottom: 100px;}
+section.portfolioWrap {max-width: 100%; overflow-x: hidden;}
 section.portfolio {max-width: 500px; margin: 0 auto; margin-bottom: 100px;}
-.portfolio h2 {font-size: 3em; text-transform: uppercase;}
-h2.lefttitle, h2.righttitle {z-index:-1; opacity: 1;
+.portfolio h2 {font-size: 2.3em; text-transform: uppercase;}
+h2.lefttitle, h2.righttitle {z-index:2; opacity: 1;
    letter-spacing: 3px; position: relative;
    text-transform: uppercase;}
 h2.lefttitle {float:left; text-align:left;}
@@ -145,18 +161,21 @@ h2.righttitle {float:right; text-align:right;}
   section.portfolioWrap {
     max-width: 1000px; margin: 0 auto;}
   section.portfolio {
-    display: inline-block; margin-left: 50px;
+    display: inline-block; margin-left: 40px;
     max-width: 430px; margin-bottom: 50px;}
+  section.last {margin-bottom: 100px;}
+  section.right {position: relative; top: 100px;}
   h2.righttitle {top: -6px;}
   }
 
 
 /* INDIVIDUAL PROJECTS */
 section.projdescription {margin-top:11vh; max-width:230px;
-  margin-left: 40px; margin-bottom:4em;}
-section.projdescription h1 {font-size: 2.5em; max-width: 230px;
+  margin-left: 40px; margin-bottom: 30px;}
+section.projdescription h1 {font-size: 2em; max-width: 230px;
   margin-bottom: 10px;}
 .projdescription h2 {font-size: 1em; margin-bottom: 10px;}
+section.gallery h1 {margin: 30px 0; text-align: center;}
 @media /* Tablet */ (min-width: 600px) {
   section.projdescription {position:fixed; max-width:30%;
     float:left; margin-left:8vw;}
@@ -170,31 +189,62 @@ section.projdescription h1 {font-size: 2.5em; max-width: 230px;
 }
 @media  /* Desktop */ (min-width: 1000px) {
   section.projdescription {margin-left:7vw; max-width:20%;}
-  section.gallery {margin-right:8vw; max-width:60%; margin-top:12vh;}
-  iframe.hiperdimentia {width: 550px; height: 320px;}
+  section.gallery {margin-right:9vw; max-width:55%; margin-top:12vh;}
+  iframe.video {height: 370px; margin-bottom: 20px;}
   /* Particular Image Sizes */
   section.bodyes img {max-width:50%; margin-bottom:10vh;}
-  section.lands img {max-width: 80%;}
   section.covers img {max-width:70%;}
+}
+
+
+/* FOOTER AND CONTACT */
+footer {margin-top: 12vh; text-align: center; font-size: 1.1em;}
+footer h1 {font-size: 1.9em; margin-bottom: 20px; }
+footer h2 {font-size: 1.2em; max-width: 270px; margin: 0 auto;}
+footer img {position: relative; z-index: -2; margin-top: -30px; margin-bottom: -50px;
+  width: 80%;}
+footer h2:last-of-type {margin-bottom: 25px;}
+footer ul li {display: inline-block; margin: 0 10px; margin-bottom: 10px;}
+ul.links, ul.copyright  {margin-bottom: 20px;}
+@media /* Tablet */ (min-width: 600px) {
+  footer {
+    margin-top: 0;
+    text-align: left; position: absolute;
+    width: 100%; height: 100%;}
+  footer h1 {margin-left: 5vw; margin-top: 70px; margin-bottom: 140px;
+    font-size: 1.7em; line-height: 1.3em;}
+  footer img {position: absolute; width: 60%; top: 30vh; left: 4vw;}
+  footer h2 {text-align: right;
+    max-width: 400px;
+    margin-bottom: 30px; margin-right: 7vw;
+    font-size: 1.5em;}
+  footer h2:last-of-type {margin-bottom: 200px;}
+  footer ul {position: absolute; bottom: 0px; padding: 0; font-size: 0.9em;}
+  footer ul.links {left: 10px;}
+  footer ul.copyright {right: 10px;}
+}
+@media /* Desktop */ (min-width: 1000px) {
+  footer img {width: 35%; top: 20vh; left: 20vw;}
 }
 
 
 /* ABOUT PAGE */
 /* top margin */
 section.author {margin: 0 auto; margin-top:10vh;}
-section.about { max-width: 280px; margin: 0 auto;}
-section.about h1 {max-width: 560px;
-  font-size: 1.8em; text-align:center;
+section.about {max-width: 90%; margin: 0 auto; margin-top: 20px;}
+section.about h1 {font-size: 1.7em; text-align:center;
   margin: 0 auto; margin-bottom: 20px;}
 section.about p {font-size: 1.2em; line-height: 1.2em;}
 /* pictures */
 section.author, .authorhz {margin: 0 auto; margin-bottom:20px;}
 section.authorhz {visibility:hidden; position:fixed;}
-section.about h2 {margin-bottom: 10px; text-align: center;}
-span.separator {margin: 20px auto; font-size:2em;}
+/* sections */
+section.information, section.skills {margin-bottom: 50px;}
+section.about h2 {margin-bottom: 20px; text-align: center;}
+section.quotations h2 {margin-bottom: 30px;}
 section.skills h3 {line-height: 1.4em;}
 /* quotations */
-section.quotations {text-align:center; margin: 0 auto; margin-bottom: 40px;}
+section.quotations {clear: both; text-align:center; margin: 0 auto;}
 section.quote {display:inline-block; margin:10px 40px; vertical-align:top;}
 section.quote h4 {max-width: 500px; text-align:center;
   font-variant:small-caps; margin-bottom:10px;}
@@ -218,38 +268,7 @@ section.quote h4 {max-width: 500px; text-align:center;
 }
 
 
-/* FOOTER AND CONTACT */
-footer { margin-top: 12vh;
-  text-align: center; font-size: 1.3em; line-height: 1.3em;}
-footer h1 {margin-bottom: 40px; line-height: 1.6em;}
-footer img {position: relative; z-index: -2; margin-top: -40px; margin-bottom: -50px;
-  width: 80%;}
-footer h2:last-of-type {margin-bottom: 45px;}
-footer ul li {display: inline-block; margin: 0 10px;}
-ul.links {margin-bottom: 20px;}
-ul.copyright {margin-bottom: 20px;}
-@media /* Tablet */ (min-width: 600px) {
-  footer {
-    margin-top: 0;
-    text-align: left; position: absolute;
-    width: 100%; height: 100%;}
-  footer h1 {margin-left: 5vw; margin-top: 70px; margin-bottom: 140px;
-    font-size: 1.7em; line-height: 1.3em;}
-  footer img {position: absolute; width: 60%; top: 25vh; left: 4vw;}
-  footer h2 {text-align: right;
-    margin-bottom: 10px; margin-right: 7vw;
-    font-size: 1.5em;}
-  footer h2:last-of-type {margin-bottom: 200px;}
-  footer ul {position: absolute; bottom: 0px; padding: 0; font-size: 0.9em;}
-  footer ul.links {left: 10px;}
-  footer ul.copyright {right: 10px;}
-}
-@media /* Desktop */ (min-width: 1000px) {
-  footer img {width: 35%; top: 30vh; left: 20vw;}
-}
-
 /* ANIMATIONS */
-
 a {transition: color 1s ease;}
 a:hover {color: blue;}
 section, span.scroll, footer, h1, section.gallery, img {
