@@ -106,9 +106,9 @@ img.backpiece {
   img.backpiece {
     top: 20vh; left: 25vw; width: 50%;}
   .definition h3 {font-size: 1em;}
-  .definition h1 {font-size: 2em;  line-height: 1.1em; max-width: 600px;}
+  .definition h1 {font-size: 2em;  line-height: 1.1em; max-width: 550px;}
   .definition h2 {font-size: 1em; line-height: 1.2em; max-width: 500px;}
-  span.scroll {margin-top: 50px;}
+  span.scroll {margin-top: 30px;}
 }
 @media /* Desktop */(min-width: 1000px){
   .definition {text-align: left;}
@@ -118,28 +118,29 @@ img.backpiece {
     margin-top: 7vh; margin-left: 5vw;}
   .definition h2 {font-size: 1.2em; max-width: 550px; margin-left: 5vw;}
   .definition h3 {margin-left: 5vw; margin-bottom: 0px; text-align: left;}
+  span.scroll {margin-top: 0px;}
 }
 
 /* VIDEO */
-section.video {margin: 0 auto; margin-top: 50px;
+section.video {margin: 0 auto; padding-top: 50px;
   max-width: 700px; margin-bottom: 50px;}
   video {width: 100%;}
 @media /* Tablet */ (min-width: 600px) {
-  section.video {max-width: 70%; padding-top: 10vh;
+  section.video {max-width: 70%;
     margin-bottom: 30px;}
   iframe.video {max-width: 100%;}
 }
 
 /* PORTFOLIO TITLE */
-h1.portfolioTitleWeb, h1.portfolioTitleMobile {
-  letter-spacing: 5px; text-transform: uppercase;
-  text-align: center; overflow-x: hidden;}
-h1.portfolioTitleMobile {display: block;
-  font-size: 1.8em; text-align: center; margin-bottom: 50px;}
-h1.portfolioTitleWeb {display: none;}
+h1.portfolioTitle {
+  letter-spacing: 4px;
+  text-align: center; display: block; font-size: 1.8em;
+  margin-bottom: 50px;}
 @media /* Tablet */ (min-width: 600px) {
-  h1.portfolioTitleMobile {display: none;}
-  h1.portfolioTitleWeb {display: block; font-size: 5em; margin: 60px auto;}
+  h1.portfolioTitle {font-size: 3em; margin: 60px auto;}
+}
+@media /* Desktop */(min-width: 1000px){
+  h1.portfolioTitle {font-size: 4em; margin: 60px auto;}
 }
 
 
@@ -153,13 +154,12 @@ h2.lefttitle, h2.righttitle {z-index:2; opacity: 1;
 h2.lefttitle {float:left; text-align:left;}
 h2.righttitle {float:right; text-align:right;}
 @media /* Tablet */ (min-width: 600px) {
-  h1.portfolioTitle {font-size: 6em;}
   section.portfolio {margin-bottom: 100px; max-width: 600px;}
   h2.lefttitle {top:8px;} h2.righttitle {top:-8px;}
 }
 @media /* Desktop */ (min-width: 1000px) {
   section.portfolioWrap {
-    max-width: 1000px; margin: 0 auto;}
+    max-width: 80vw; margin: 0 auto;}
   section.portfolio {
     display: inline-block; margin-left: 40px;
     max-width: 430px; margin-bottom: 50px;}
@@ -201,30 +201,35 @@ section.gallery h1 {margin: 30px 0; text-align: center;}
 footer {margin-top: 12vh; text-align: center; font-size: 1.1em;}
 footer h1 {font-size: 1.9em; margin-bottom: 20px; }
 footer h2 {font-size: 1.2em; max-width: 270px; margin: 0 auto;}
-footer img {position: relative; z-index: -2; margin-top: -30px; margin-bottom: -50px;
+.footerimg {position: relative; z-index: -2; margin-top: -30px; margin-bottom: -50px;
   width: 80%;}
 footer h2:last-of-type {margin-bottom: 25px;}
-footer ul li {display: inline-block; margin: 0 10px; margin-bottom: 10px;}
+footer ul li {display: inline-block;}
+footer ul li img {width: 35px; height: 35px; margin: 0 15px;}
 ul.links, ul.copyright  {margin-bottom: 20px;}
 @media /* Tablet */ (min-width: 600px) {
   footer {
     margin-top: 0;
     text-align: left; position: absolute;
     width: 100%; height: 100%;}
-  footer h1 {margin-left: 5vw; margin-top: 70px; margin-bottom: 140px;
+  footer h1 {margin-left: 5vw; margin-top: 100px; margin-bottom: 300px;
     font-size: 1.7em; line-height: 1.3em;}
-  footer img {position: absolute; width: 60%; top: 30vh; left: 4vw;}
+  .footerimg {position: absolute; width: 60%; top: 15vh; left: 4vw;}
+  ul.links, ul.copyright  {margin-bottom: 0px;}
+  footer ul li img {position: relative;}
   footer h2 {text-align: right;
-    max-width: 400px;
-    margin-bottom: 30px; margin-right: 7vw;
+    max-width: 400px; margin-bottom: 30px; margin-right: 7vw;
     font-size: 1.5em;}
-  footer h2:last-of-type {margin-bottom: 200px;}
-  footer ul {position: absolute; bottom: 0px; padding: 0; font-size: 0.9em;}
+  footer h2:last-of-type {margin-bottom: 170px;}
+  footer ul {position: absolute; bottom: 10px; padding: 0; font-size: 0.9em;}
   footer ul.links {left: 10px;}
-  footer ul.copyright {right: 10px;}
+  footer ul.copyright {right: 30px;}
+  ul.copyright li {margin-left: 20px;}
 }
 @media /* Desktop */ (min-width: 1000px) {
-  footer img {width: 35%; top: 20vh; left: 20vw;}
+  footer h1 {margin-top: 70px; margin-bottom: 200px;}
+  .footerimg {width: 35%; top: 20vh; left: 20vw;}
+  footer ul li img {width: 30px; margin: 0 15px;}
 }
 
 
