@@ -2,7 +2,8 @@
 /* BASE */
 * {margin:0; padding:0;}
 html {scroll-behavior: smooth;}
-body {overflow-x:hidden; }
+body {overflow-x:hidden; max-width: 100%;
+  zoom: normal; }
 img {max-width:100%;}
 span {display:block;}
 
@@ -44,7 +45,7 @@ body {font-family:'Crimson Text', serif;
 p {margin-bottom: 10px; line-height: 1.1em;}
 em {font-style: normal;}
 section.projdescription h2 {font-family: 'Crimson Italic'}
-.portfolio, h1, footer h2, li, #home, #about {font-family: 'Percheno';
+.portfolio, h1, footer h2, li, #home, #about, .service h2 {font-family: 'Percheno';
   font-weight: 800;}
 h1 {text-transform: uppercase;}
 li {margin-bottom: 10px;}
@@ -64,14 +65,15 @@ span {text-align:center; margin-bottom:1em;}
 /* NAVIGATION */
 .navigation {position: fixed; padding: 1px 5px;
   z-index:2; background: white;
-  max-width: 100%; border-radius: 100px;}
+  max-width: 100%; border-radius: 100px;
+  font-size: 1.2em;}
 #home {top:3vh; left:7vw;} #about {top:3vh; right:7vw;}
 #prevproj, #nextproj {top:50vh; background: orangered; color: black;
   padding: 0px 5px; border-radius: 100%;}
 h3#prevproj, a#prevproj {color: black;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
 @media /* Tablet */ (min-width: 600px) {
-  #home, #about {font-size: 1.5em; top: 4vh;}
+  #home, #about {font-size: 1.3em; top: 4vh;}
   #home{left:4vw;} #about{right:4vw;} #projects {left:47vw;}
   #prevproj {left:2vw;} #nextproj {right:2vw;}
 }
@@ -84,20 +86,21 @@ h3#prevproj, a#prevproj {color: black;}
 
 /* INITIAL DEFINITION */
 span#definition {height: 3px;}
-.definition {margin: 0 auto; margin-top: 10vh;}
+.definition {margin: 0 auto;
+  margin-top: 10vh;}
 img.backpiece {
   position: absolute;
   margin: 0 auto; display: block;
-  width: 100%; margin-top: -110px;
+  max-width: 100%; margin-top: -110px;
   z-index: -2; overflow: hidden; }
 .definition a {text-decoration: underline;}
 .definition h1 {opacity: 1; font-size: 1.8em; line-height: 1.1em;
   margin: 0 auto; margin-top: 30vh;
   margin-bottom: 20px;
-  max-width: 280px; letter-spacing: -1px;}
+  max-width: 270px; letter-spacing: -1px;}
 .definition h2 {font-size: 1.3em; line-height: 1.2em;
     margin: 0 auto; margin-top: 1em; margin-bottom: 15px;
-  max-width: 280px; letter-spacing: -0.5px; }
+  max-width: 270px; letter-spacing: -0.5px; }
 .definition h3 {margin: 0 auto; text-align: center; margin-bottom: 40px;
   font-style: italic;}
   span.scroll {margin-top: 50px;}
@@ -105,9 +108,9 @@ img.backpiece {
   .definition {text-align: center; margin-top: 13vh;}
   img.backpiece {
     top: 20vh; left: 25vw; width: 50%;}
-  .definition h3 {font-size: 1em;}
+  .definition h3 {font-size: 1.3em;}
   .definition h1 {font-size: 2em;  line-height: 1.1em; max-width: 550px;}
-  .definition h2 {font-size: 1em; line-height: 1.2em; max-width: 500px;}
+  .definition h2 {font-size: 1.2em; line-height: 1.2em; max-width: 550px;}
   span.scroll {margin-top: 30px;}
 }
 @media /* Desktop */(min-width: 1000px){
@@ -121,16 +124,78 @@ img.backpiece {
   span.scroll {margin-top: 0px;}
 }
 
+/*********/
 /* VIDEO */
-section.video {margin: 0 auto; padding-top: 50px;
+section.video {margin: 0 auto; padding-top: 30px;
   max-width: 700px; margin-bottom: 50px;}
   video {width: 100%;}
 @media /* Tablet */ (min-width: 600px) {
-  section.video {max-width: 70%;
+  section.video {max-width: 100%;
     margin-bottom: 30px;}
   iframe.video {max-width: 100%;}
 }
+@media /* Desktop */ (min-width: 1000px) {
+  section.video {max-width: 70%;}
+}
 
+
+
+/************/
+/* SERVICES */
+section.services {
+  position: inherit;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+div.service {
+  padding-top: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.service img {
+  position: relative; top: 0;
+  overflow-x: hidden;
+  max-width: 270px;
+  transform: rotate(-300deg);
+  transition: transform 3s ease;
+  pointer-events:none;
+}
+.service img.visible {
+  transform: rotate(0deg);
+  transition-duration: 100s;
+}
+div.service h2 {font-size: 1.3em; letter-spacing: 3px;
+  margin-top: -230px; margin-bottom: 20px;
+}
+div.service p {max-width: 200px; margin:0 auto;}
+
+@media /* Tablet */ (min-width: 600px) {
+  section.services {
+    max-width: 90%;
+    margin: 50px auto 50px auto;
+    text-align: center;
+  }
+  div.service {
+    display: inline-block; width: 220px;
+  }
+  div.left {float: left;}
+  div.right {float: right;}
+  div.center {margin: auto;}
+  div.service img {max-width: 100%;}
+  div.service h2 {font-size: 1em; margin-top: -200px;}
+  div.service p {font-size: 1em; max-width: 190px;}
+}
+@media /* Desktop */(min-width: 1000px){
+  section.services {max-width: 900px; padding-bottom: 70px;}
+  div.service {width: 250px; margin: 0 10px;}
+  div.service h2 {margin-top: -205px; font-size: 1.1em;}
+  div.service p {max-width: 180px;}
+}
+
+
+/*******************/
 /* PORTFOLIO TITLE */
 h1.portfolioTitle {
   letter-spacing: 4px;
@@ -144,6 +209,7 @@ h1.portfolioTitle {
 }
 
 
+/*******************/
 /* PORTFOLIO INDEX */
 section.portfolioWrap {max-width: 100%; overflow-x: hidden;}
 section.portfolio {max-width: 500px; margin: 0 auto; margin-bottom: 100px;}
@@ -153,29 +219,43 @@ h2.lefttitle, h2.righttitle {z-index:2; opacity: 1;
    text-transform: uppercase;}
 h2.lefttitle {float:left; text-align:left;}
 h2.righttitle {float:right; text-align:right;}
+
 @media /* Tablet */ (min-width: 600px) {
   section.portfolio {margin-bottom: 100px; max-width: 600px;}
   h2.lefttitle {top:8px;} h2.righttitle {top:-8px;}
 }
+
 @media /* Desktop */ (min-width: 1000px) {
   section.portfolioWrap {
-    max-width: 80vw; margin: 0 auto;}
+    max-width: 95vw; margin: 0 auto;
+    overflow-y: hidden;
+    padding-bottom: 60px;
+    text-align: center;
+  }
   section.portfolio {
-    display: inline-block; margin-left: 40px;
-    max-width: 430px; margin-bottom: 50px;}
+    display: inline-block;
+    margin: 30px;
+    max-width: 400px;}
+    /* Add color on Hover state */
+  .portfolio img {filter: saturate(0);}
+  .portfolio img:hover {filter: saturate(1);
+    transition: filter 0.5s ease;}
   section.last {margin-bottom: 100px;}
   section.right {position: relative; top: 100px;}
   h2.righttitle {top: -6px;}
   }
 
-
+/***********************/
 /* INDIVIDUAL PROJECTS */
-section.projdescription {margin-top:11vh; max-width:230px;
-  margin-left: 40px; margin-bottom: 30px;}
-section.projdescription h1 {font-size: 2em; max-width: 230px;
+section.projdescription {
+  margin: 11vh auto 30px auto;
+  max-width:230px;}
+section.projdescription h1 {font-size: 2em; max-width: 250px;
   margin-bottom: 10px;}
 .projdescription h2 {font-size: 1em; margin-bottom: 10px;}
 section.gallery h1 {margin: 30px 0; text-align: center;}
+iframe.video {height: 210px;}
+iframe.hiperdimentia {width: 200px; height: 200px;}
 @media /* Tablet */ (min-width: 600px) {
   section.projdescription {position:fixed; max-width:30%;
     float:left; margin-left:8vw;}
@@ -196,9 +276,9 @@ section.gallery h1 {margin: 30px 0; text-align: center;}
   section.covers img {max-width:70%;}
 }
 
-
+/**********************/
 /* FOOTER AND CONTACT */
-footer {margin-top: 12vh; text-align: center; font-size: 1.1em;}
+footer {margin-top: 12vh; text-align: center; font-size: 1.1em; margin-bottom: 50px;}
 footer h1 {font-size: 1.9em; margin-bottom: 20px; }
 footer h2 {font-size: 1.2em; max-width: 270px; margin: 0 auto;}
 .footerimg {position: relative; z-index: -2; margin-top: -30px; margin-bottom: -50px;
@@ -232,9 +312,8 @@ ul.links, ul.copyright  {margin-bottom: 20px;}
   footer ul li img {width: 30px; margin: 0 15px;}
 }
 
-
+/**************/
 /* ABOUT PAGE */
-/* top margin */
 section.author {margin: 0 auto; margin-top:10vh;}
 section.about {max-width: 90%; margin: 0 auto; margin-top: 20px;}
 section.about h1 {font-size: 1.7em; text-align:center;
@@ -244,9 +323,17 @@ section.about p {font-size: 1.2em; line-height: 1.2em;}
 section.author, .authorhz {margin: 0 auto; margin-bottom:20px;}
 section.authorhz {visibility:hidden; position:fixed;}
 /* sections */
-section.information, section.skills {margin-bottom: 50px;}
+section.skills, section.information {
+  margin: 0 auto;
+  margin-bottom: 50px;}
 section.about h2 {margin-bottom: 20px; text-align: center;}
 section.quotations h2 {margin-bottom: 30px;}
+section.information {
+  max-width: 300px;
+}
+section.skills {
+  max-width: 270px;
+}
 section.skills h3 {line-height: 1.4em;}
 /* quotations */
 section.quotations {clear: both; text-align:center; margin: 0 auto;}
@@ -268,7 +355,8 @@ section.quote h4 {max-width: 500px; text-align:center;
 }
 @media /* Desktop */ (min-width: 1000px) {
   section.authorhz {margin-top: 4vh;}
-  section.about {max-width: 60%;}
+  section.about {max-width: 800px;}
+  section.skills, section.information {margin: 30px 40px;}
   section.quotations {max-width: 900px;}
 }
 

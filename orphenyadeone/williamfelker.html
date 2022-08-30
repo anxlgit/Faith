@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Interview with William Felker, theOrphenyade, vol.1</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+ <body class="blog">
+   <header>
+     <a href="index.html"><h3 id="title">voices.</h3></a>
+     <a href="about.html"><h3 id="about">about.</h3></a>
+     <hr>
+   </header>
+
+   <footer>
+     <hr>
+     <h4>Interview with William Felker,<br>
+       the Orphenyade, vol.1</h4>
+     <audio id="myAudio" controls>
+       <source src="audio/william.mp3" type="audio/mpeg">
+     </audio>
+   </footer>
+
+   <h1>Nudging The Needle</h1>
+
+   <img class="heroimg" src="profiles/williamfelker.jpeg" alt="william felker">
+
+   <p>Yes so, my name is <a href="https://twitter.com/gndclouds" target="_blank">William</a> – and I think originally, a couple years
+    ago, I called myself an interaction designer, but I think more recently
+    my skills have become kind of a blend of doing design research and
+    software development.</p>
+
+    <p>And kind of the most recent evolution of that has been me understanding a
+    lot more of natural systems that are surrounded by nature, and trying to
+    figure out how we can productize solutions to those systems that help us
+    combat climate change.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(0,52)">You started your journey by working on research labs, right?</h2>
+
+    <p>I think out of school, it was a great opportunity to be able to work
+    right away in the Valley, and start getting into (...) these
+    larger companies.</p>
+
+    <p>I was a fairly technical and code-savvy designer coming out of school, so
+    research labs made a lot of sense for me at the time, because it meant that
+    I could typically communicate what the emerging technology was with an
+    engineering team, but then I could also prototype something quickly to test
+    with users, that kind of removed and abstracted whatever the emerging
+    technology was.</p>
+
+    <p>So you know, I could test something using blockchain, without actually
+    needing to tell people what blockchain [is] (...) and so that kind of process of
+    translation was I think a unique opportunity for me, because I technically
+    could build some of the stuff and understand how it worked, but my
+    background and degree was all design-based, and so I still could do the
+    actual full creation of what the thing was.</p>
+
+    <p>And then I also interviewed people with my research skills and got
+    feedback from them, understanding how we could make anything better in the
+    future, etc.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(2,00)">How did that develop into founding Tiny Factories?</h2>
+
+    <p>After leaving those research labs, I started to do freelance
+    software development, and in that process, I found that I really missed
+    having the kind of studio environment that you kind of get with that – I
+    don't think that people in labs would call it a studio environment (...) [but] I
+    think I really missed that once I started working as a freelance.</p>
+
+    <p>And with a couple of other friends I just met by traveling, we kind of
+    all agreed that we needed a way in which we could continue to have a studio,
+    and other people in the studio to just kind of support us emotionally, as we
+    did our own work.</p>
+
+    <p>Because many of us, we had full-time jobs or contracts (...) but
+    we also pursued our own personal projects, and it's those that tend to be
+    the projects where we do the most exploration and growth.</p>
+
+    <p>And so we felt it was really important to figure out how we could grow a
+    <a href="https://www.tinyfactories.space/" target="_blank">supportive community of people doing that</a>, and help that community become,
+    ideally, financially independent while doing that, which is kind of a hard I
+    think, transition for people to make.</p>
+
+    <img src="img/williamtiny.png" alt="Tiny Factories">
+
+    <p>Because suddenly now, you need to figure out your own work pipeline, and
+    you need to have a portfolio that appeals to clients, there is a lot of I
+    think baggage that comes with doing freelancing, that you're not necessarily
+    taught in school, and it's kind of hard thing to do.</p>
+
+    <p>And so, the goal has
+    really been to have a small controlled community of people [to whom] we can
+    occasionally provide work to, if they need it, but otherwise really just
+    allow them to figure out how they can thrive through their own independent
+    creative practice, whatever that may be.</p>
+
+    <p>It could be, for some it's writing, a couple people do pottery, some
+    people are kind of in the more traditional tech and code side and make games
+    and things like that; right now it's a pretty wide-reaching thing. And then
+    we just try to support them as much as we can.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(3,51)">The group has a kind of screening or admission process. Is this intentional?</h2>
+
+    <p>For us that was very intentional; we started out our community action by
+    having in-person gatherings, about I'd say every 3 to 4 weeks, and then
+    obviously Covid happened <em>(laughs)</em> so we had to move a lot of it
+    virtually.</p>
+
+    <p>At that time we were very open with letting anybody into the group, so
+    basically, if you would come to a gathering, at every gathering we would
+    present like, <em>"here's the Discord link, you can join here”</em> – and
+    the issue we had is that, you very quickly have exponential growth, but a
+    decline of overall engagement.</p>
+
+    <p>And therefore it felt like the service we were trying to offer wasn't
+    actually valuable to everybody, and yet everybody was still just kind of
+    present and not contributing all the time. And so, once Covid started, we
+    kind of did a reset, and we basically closed the group, and we switched to a
+    monthly payment model.</p>
+
+    <p>Not a lot, it's like 10 bucks, 10 to 20 bucks, I don't remember where
+    we're at right now; and the goal of that was to try to understand and
+    reinforce the fact that – in the same way you typically would pay to go to a
+    third space, like you a hackerspace, a library space or those types of
+    things (...) we tried to recreate that same type of environment and vibe.</p>
+
+    <img src="img/willmembers.gif" alt="Tiny Factories Members">
+
+    <p>Because for us, that reinforces this level of accountability that you
+    tend to get where people are there because they actually value the other
+    people in the group, and they want to contribute, and they also then want to
+    be active members of that community.</p>
+
+    <p>A lot of these other groups I think are great, it's great that they're
+    creating spaces for people to dwell on the internet, and we need to keep
+    getting better at that. But I think sometimes there's a lack of engagement
+    that happens after thei r sizestarts to become too big.</p>
+
+    <p>And we really wanted to figure out how can we avoid that that part of it
+    – and so right now, our current thinking is that, by having applications,
+    and you know, by talking to each new member usually at least two times
+    before they join us, we get to get to know them better.</p>
+
+    <p>And of course, we don't have in-person gatherings yet, but we still hold
+    virtual gatherings (...) and it's been a good way for the community to really get
+    to know everybody in the group (...) because I think otherwise you kind of,
+    you enter a group and you either have to be very active in the group or
+    everyone has to be very open to new members.</p>
+
+    <p>(…) We’re still a very trusting group nevertheless, and so it's easy for
+    people to say, <em>"this week at work was really bad"</em>, or I <em>"had this really
+    terrible freelance contract"</em> or what have you, and we've all been in those
+    situations.</p>
+
+    <p>And it means that we can kind of support each other not only in terms of
+    work, and what we're making, but also emotionally, when we need it to;
+    because it can be hard to be out on your own, and find contracts and
+    projects and all of this, it can be a very stressful thing.</p>
+
+    <p>So we try to support everyone in all kinds of aspects and journeys.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(6,52)">Let's talk a bit about your main field of interest now, which is climate change.</h2>
+
+    <p>It’s a crazy problem; and the thing I'm realizing right now, and the
+    thing that I finally owned up to, is that this is not something that I can
+    in any scale accomplish in my lifetime, and it won't be accomplished in the
+    generational lifetime after me either.</p>
+
+    <p>And so I think anything I can do right now to help kind of nudge that
+    needle towards us not hitting 4º, if that's still possible -it's not really
+    clear right now-, I think would be great.</p>
+
+    <p>But I think my approach right now has been, all of the
+    reading that I've done – and you know, I kind of approach these problems, if
+    I don't know a lot about the topic, I just try to find as many of the
+    current experts as possible, and then basically read everything they've
+    read, and kind of try get a good sense [of] the space.</p>
+
+    <h3 class="quote">We’ve faced a similar
+    challenge before, when there was a hole forming in the Ozone layer, and we
+    were able to come together globally and solve that. But the thing that
+    feels different now is that the scale of the problem is already out of
+    hand.</h3>
+
+    <p>And the thing that's surprising to me is that we've really had pretty
+    active knowledge about this since the 70s, and because of that we have a
+    tremendous amount of really fantastic scientific solutions that we know work,
+    and yet we're not implementing them fast enough <em>(laughs)</em> and we're not even
+    implementing some of them at all.</p>
+
+    <p>And so from my perspective, it's a mix of a politics problem, it's a
+    human systems problem, and it's just kind of a more broader natural systems
+    problem.</p>
+
+    <p>I think humans tend to think of themselves as being pretty isolated, and
+    separate from nature, and I think if there's anything I've learned from the
+    software work I've done is: there are a lot of really good opportunities to
+    figure out how to make, you know, anything happen.</p>
+
+    <p>In my background there's been a lot of, you know, <em>"how do we get someone
+    on board of this app"</em> or <em>"how do we increase user retention"</em>, and all that,
+    and so I think we have to apply that same kind of thinking to [this]. There's
+    some amazing research that's already been done, about how to interact with
+    the Earth.</p>
+
+    <p>[But] I think there isn't enough people I think, right now at least, that
+    are figuring out how do we actually think of the Earth as a living natural
+    system that we exist as a part of, and how do we start to participate in
+    that system, instead of just kind of being fully on the outside, doing
+    whatever we want and then being like <em>"oh no, it's getting warmer"</em>.</p>
+
+    <p>And so, right now, I think my hope is really, are there any things I can
+    be doing to really make the existing solutions that we know work,
+    actionable? Because a lot of them happen, you know, within these giant
+    government-funded research projects – sometimes they’re turned into policy
+    and sometimes they don't, and then the data is just kind of there.</p>
+
+    <img src="img/willsystem.jpg" alt="systemic change">
+
+    <p>And it's like <em>"well, we know we can replace all these coal power plants,
+    but that means we need to find new jobs for all those people, and that takes
+    a really long time"</em>. Nuclear as well has very widely varied opinions based
+    on where you are in the world, and all these other things.</p>
+
+    <p>And I think, sometimes the policies [may] support these ideas and provide
+    funding, but they don't really address just like, the needed human behavior
+    change. And I think a lot about how my degree and experience so far have taught
+    me is that we need a tremendous amount of human behavior change to actually
+    make this happen (laughs).</p>
+
+    <p>And actually the tech industry is very good at it, for better or for
+    worse. They're very good at behaviour change, and so applying that to the
+    way that we live, in a way that nudges us to -<em>not</em>- make the planet
+    uninhabitable, I think will be really important.</p>
+
+    <p>So I'm kind of trying to figure out – can I take my skill of being able
+    to translate technologically jargony things from the tech industry, for
+    people, and can I do the same thing with technologically jargony science and
+    translate to something that is actually actionable, so we can start
+    implementing solutions that we know work? We just need to do them.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(10,43)">Do you think this will continue to be a struggle going forward?</h2>
+
+    <p>I think so, I think it's going to be a challenging transition to make (…)
+    I’ve been doing right now a lot of materials research, to try to understand
+    if it's actually economically viable for us to be using some of these more
+    regenerative and biodegradable materials to replace some of the more toxic
+    plastic ones, and in most of the cases, they are.</p>
+
+    <p>Because we're talking about the byproducts of natural systems, and these
+    natural systems, I mean, have been evolving for billions of years, without
+    our help, so they are very good at doing what they do <em>(laughs)</em> and so if we
+    tweak portions of them to make you know, the particular bioplastic we need,
+    or something like that, we can do that – and then in return, they typically
+    have very good economic returns.</p>
+
+    <p>I mean even just the work presented in <a href="https://drawdown.org/" target="_blank">Project Drawdown</a>,
+      which is very,
+    I'd say, energy-focused, for the most part; almost all of the
+    infrastructure projects they recommend return 2/3 times what the initial
+    investment cost in them is. And yet we're not even building them, and I think a lot of it is an
+    upfront capital problem.</p>
+
+    <img src="img/willpetrol.jpg" alt="systemic change">
+
+    <p>I think a lot of it, anytime you are creating
+    something that works in tandem with an existing natural system, I think over
+    time, the cost will go down. I think the main issue is that we've been exploiting
+    natural systems instead of working in tandem with them for a long time, and I think because
+    of that, we tend to separate the cost of the cause and the effect of the
+    product.</p>
+
+    <p>And so, if we actually calculate out the cost of getting petroleum to make
+    a plastic, for example – and I’m using plastic as it seems to be the most
+    common thing people focus on, in terms of energy production.</p>
+
+    <p>If we think about the cost of getting plastic out of the ocean, by
+    getting petroleum, and then turning that into plastic, and all the eventual
+    healthcare costs that come from that, and how the burning of petroleum (…)
+    impacts the temperatures, which [exacerbates] natural weather events, and
+    all those other things, you know, that [cost of plastic] tends to escalate
+    pretty quickly.</p>
+
+    <p>It's actually like, a lot more expensive to be doing it the way we're
+    doing it <em>(laughs)</em>, but because of how systems are set up, within the actual
+    capitalist system, we don't associate those costs as being related, it's
+    <em>"oh, I'm making profits, I'm building this thing”</em>.</p>
+
+    <p>And it's not associating that <em>“well, technically, you know, some small tiny
+    portion of that, you know, hurricane that was worse because it was hotter out,
+    or all those little percentages over time, contribute back to the actual
+    cost of creating that material from oil"</em>, and I don't think we think about
+    those as being connected.</p>
+
+    <p>I think it's a lot easier to calculate that impact when you're doing
+    something that is a part of a natural system because you’re like, <em>“okay, if
+    this plastic needs to be broken back down, is it being used to regenerate
+    soil for farming, and then is that like replacing a fertilizer?”</em></p>
+
+    <p>Then you can sort of calculate more I think the end-to-end system cost,
+    because it's a system and it works together.</p>
+
+    <h3 class="quote">Right now, we kind of
+    break [the process] up into chunks, and everybody [takes] a part of the pie, and we
+    forget that it's actually still a pie <em>(laughs)</em>.</h3>
+
+    <p>And so I think, because of how capitalism frames [those] <em>“means of
+    production”</em>, I don't think we think a lot about [how] these costs probably
+    aren't really as cheap as we think. And I think the most common example that you start to see people hint at
+    that is probably in the automotive industry.</p>
+
+    <p>When people calculate the total like carbon tax on a vehicle or something like that, we almost always tend
+    to leave out the carbon included in the production of the
+    vehicle. We're just like thinking about you know, <em>"how much fuel it burns per per
+    hour"</em>, and it's like, <em>"well, technically there's a lot more embedded energy
+    in that object than just how many pounds of carbon it's burning per hour by
+    driving"</em>.</p>
+
+    <p>And so I think we need kind of that reframing and that shift, and we
+    really need to create systems that rely on each other, and I think that will
+    help make them a lot more resilient as well as things get a bit worse
+    climate-wise for a bit.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(14,59)">What kind of projects would you like to tackle in the future?</h2>
+
+    <p>That's a deep endless list of things <em>(laughs)</em> – yeah, there's never
+    a shortage of things I want to work on. Maybe I should clone myself,
+    and that could be potentially a way to get more of it done, but I think
+    right now kind of some of my current goals are:</p>
+
+    <p>For <em>Tiny Factories</em>, I want to really hone in on being able to make this
+    community both self-sustaining, in which a couple people can fully
+    contribute to helping maintain it full time; and I think right now, part of
+    the reason that works is because of the limited size that we're at, and at
+    some point that threshold will break, and I want to understand how we can
+    continue to provide a service to people without becoming a giant group.</p>
+
+    <p>And so I think <em>Tiny Factories</em> for me, in some ways, is kind of an
+    experiment on new forms of both kind of creative independent practice, and
+    working, and even kind of a little bit of an experiment on my how we school
+    and learn from each other.</p>
+
+    <img src="img/willconstellation.png" alt="Tiny Factories">
+
+    <p>Because there's this need for, I think, new schooling models to emerge. A
+    couple people in the group are transitioning disciplines, and I
+    mean even myself like, I feel like I'm transitioning disciplines, while
+    being in the group as well, by moving kind ouf out of from like the
+    traditional design stuff over the more energy-related things.</p>
+
+    <p>And so that would be kind of an ongoing experiment, to kind of let myself
+    and friends and other people (...) keep evolving our disciplines while
+    creating a safe space for that to happen. In the real world, it can be a
+    little tenuous if you try one experiment that goes wrong, and I think in
+    school you have a safe environment to do that, so hopefully, we can keep
+    providing that for people.</p>
+
+    <p>(…) I’d like to keep evolving the group towards some form of
+    [self-sustainability]. Also, we'd like to be able to provide eventually more
+    resources and scholarships for people as well (...) like [having some
+    location] where we could tell people, come stay at one of our locations for
+    like 3 months, figure out the transition, and kick off your new
+    thing.</p>
+
+    <p>We're quite -a ways- from being able to financially support people in doing
+    that <em>(laughs)</em> but I do think that's a goal that we definitely have, and I'd
+    like to keep working towards that. And I think in terms of my own practice,
+    I'm very much I think in the depths right now of figuring out how I can
+    transition to be more active on climate work.</p>
+
+    <p>I think a lot of the ways that I see people in my position transition
+    right now, is [that] they take their existing skill-set, and transition into
+    a climate company. So you know, making a website for an energy company, or
+    doing you know, design research with people.</p>
+
+    <p>And I think all that work is valuable and needs to happen, but I think my
+    current interest lies in creating an entity that creates climate companies;
+    and so that will obviously require a bit of capital, probably quite a lot
+    <em>(laughs)</em>, and so right now I'm kind of trying to transition into that (...)
+    climate domain where I want to focus on.</p>
+
+    <p>I think a lot of people are solving energy, and I think there are certain
+    climate technologies that are going to come over time; at some point,
+    maybe not in my lifetime, we will figure out fusion and will solve a
+    lot of really tricky energy problems, and so I don't think it makes sense
+    for me to put my energy there.</p>
+
+    <p>But I think there are a lot of other systems, and specifically, the way
+    we interact with natural systems, that have been kind of disrupted for
+    decades, and so disrupted that it's just become normalized.</p>
+
+    <img src="img/williamlake.jpeg" alt="top down lake">
+
+    <p>And so I kind of want to get us back into creating products and services
+    that act somehow in harmony with the natural system, because we're part of
+    all of them, whether we want to believe it or not, and if we weren't a part
+    of them the climate wouldn't be warming and it wouldn't be affecting us, but
+    it is, because we are indeed a part of these systems <em>(laughs)</em>.</p>
+
+    <p>And so for me, I'm trying to figure out what kind of starting projects I
+    think I could tackle; and I think it'll likely be ocean or water-related,
+    based on my current research (...) we're very early in thinking about carbon
+    capture, and I think we're very early in thinking about how we use materials
+    to build things, and so [I would] like to tie those two things together by
+    their relationship with oceanic systems, and see how those can all weave
+    themselves together.</p>
+
+    <p>It's a little vague, and I apologize for that, but I think I just kind
+    of, I think have carved out: <em>"ok, I'm gonna focus on oceans and I think
+    material usage, and carbon capture somewhere in there, and ideally get
+    really good on getting experts to solve the problem, and then help
+    productize with the experts in the same way you would with a tech company,
+    but doing more from a natural-systems and science point of view”</em>.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(20,22)">Quite a tough spot. Are you hopeful about humanity and the planet?</h2>
+
+    <p>I think honestly, this is a multi-generational problem with the climate,
+    and if it doesn't change I think we'll die. Like, we just won't
+    survive as a species, the Earth will be fine, other things will evolve, but
+    I don't think we will.</p>
+
+    <p>And so I think, in order for us to do that, I think capitalism is so
+    deeply embedded in how we function economically, and we associate so much
+    value with all these human-made things, instead of the things that already
+    exist in nature, that we need to radically shift that focus,
+     but that's going to take a very long time. </p>
+
+    <p>And so I think one of the only
+    ways we can start to do that, is honestly in some ways by fully
+    embracing capitalism, and purely undercutting all of the other competitors
+    in some capacity. So how do you make certain clean energies cheaper than coal?</p>
+
+    <p>You know,
+    solar [energy] is there now. I think there's a lot of transportation systems
+    that we need to be doing more of, like rail has almost always been cheaper
+    than driving or shipping stuff via car of boat, and yet if you look at
+    American rail systems, they’re still a complete mess, but other countries
+    really have it down because it makes much more sense, it’s better, it’s more
+    efficient.</p>
+
+    <p>And so I think, I would love to see a thing in which we kind of find this
+    next evolution of capitalism: because I do think it is very much just going
+    to be an evolution. I think everything we do is I think an evolution,
+    there's always, politically things tend to be presented as pretty like black
+    and white, all the time and like, like <em>"the only option"</em>, and realistically,
+    nothing we've ever done is that black and white.</p>
+
+    <p>Everything is just a small step, and it's in our own evolutionary process to
+    create and shift between these different economic systems, and I think we'll
+    get there – but I think in the meantime the solution I see is, you do need to
+    kind of use the existing system to your advantage as much as possible, to
+    help that transition happen.</p>
+
+    <p>(…) One thing that would definitely help the world is if we had a
+    healthier population of whales migrating up and down [our] coasts, that helps
+    with carbon sequestration in a very tremendous way, but there's not really a
+    direct economic incentive to help whales, right?</p>
+
+    <p>Like [who’s] going to be dumping a bunch of money into helping these
+    whales, by either getting them more food or creating safer paths for them to
+    go, by creating certain shipping embargoes, so the ships stop killing them?</p>
+
+    <p>Whatever the solution is, based on our current system, there's not a
+    visible kickback of like, <em>"the whale is going to pay us a thousand dollars
+    every week because it’s alive"</em>; so I think the tricky thing, and why I think
+    the framing that I'm leaning towards now myself towards natural systems research, is
+    because all of those economic systems in those current lenses of capitalism
+    almost always exclude us from being a part of nature, and I think [that’s
+    where] we need to shift [our] focus.</p>
+
+    <img src="img/willocean.jpg" alt="ocean turbines">
+
+    <p>Sure, the whale is not paying us because it’s alive (…) but there are
+    other byproducts of the systems that we can profit from purely by the fact
+    of more whales existing, and by the world being less polluted, [and so] all
+    these other systems become cheaper over time, it lowers healthcare costs,
+    and all these other things.</p>
+
+    <p>But it's a very hard sale to say that <em>"we need to save the whales so that
+    healthcare in 20 years is cheaper"</em>, right? That's not a
+    thing we're good at, dealing with based on the current capitalism
+    system.</p>
+
+    <p>I think we are starting to see this emerge though in construction, where –
+    there's a group in Detroit actually, they have this interesting model where
+    they are building wooden structures, and then across from the wooden
+    structures they're building a park, that's very densely forested.</p>
+
+    <p>And their thinking is, <em>"when this building is too old, we will knock it
+    down, and plant a new forest, and then we will take down the old forest and
+    use that to build a new building”</em>.</p>
+
+    <p>And so to me, that's an interesting example of <em>"okay, sure it's not great
+    we're cutting down a forest, but I think there's an interesting thing to
+    that model where we're getting new forests [being planted], and we're
+    realizing there's carbon sequestration there, and there's capital in the
+    woods"</em>, and acknowledging that a product of nature has value, which I think
+    we're very bad at doing right now, other than dead dinosaurs.</p>
+
+    <p>(...) And so I think, if we can shift that perspective to apply the same value
+    to all natural things that could be really beneficial, and I think in my own
+    daily life, one of the things that has amazed me lately is that, I'm back in
+    San Francisco right now, and one of the strangest and most interesting
+    things to me about the city is the fact that it has so many parks along the
+    coast.</p>
+
+    <p>So you can go and hike there, and I can take a break, and like just enjoy
+    it; but if we look at all those parks systems, they're only there because
+    they were all built as defence mechanisms for World War 2. And it's like, if
+    that hadn't happened, we may have you know, houses all the way up to the
+    edge of the water through the entire city, and no parks.</p>
+
+    <p>To me that's a really funny thing, that you can have such a beautiful
+    thing come out of what was one of the worst times in the history of the
+    world. And now we have these gorgeous parks that we can enjoy whenever we
+    want.</p>
+
+    <h3 class="quote">(…) I want to find the rest of the examples of how these systems can
+    become linked, because I think they will have to become linked we want to
+    survive.</h3>
+
+    <p>(…) Even at all these big tech companies, it’s quite amazing
+    that some of the work as well as they do. I’ve worked at companies where two
+    teams have been working on two different projects the same time, and then
+    launched them simultaneously in the same week, and not realise the other
+    team was working in the same product, because the company is so big.</p>
+
+    <p>Humans are – we're created systems that are too big for us to manage
+    effectively, because they’re just so big. And we’ve then applied that same
+    issue to the planet, where we have a lot of impact for beings of our size,
+    and we don’t know how these systems work, we don’t track them.</p>
+
+    <p>And so, just having a general understanding of systems and systems
+    literacy, I think that’s what getting us into this problem (…) we see so
+    much of it as being, how do I earn this dollar from this object? <em>(laughs)</em>
+    and we don’t think about [the whole] loop.</p>
+
+    <section class="bloglinks">
+      <h3 class="left"><a href="javedsterritt.html">&#8610;<br>The Human Condition</a></h3>
+      <h3 class="right"><a href="benpacker.html">Shapes of Red<br>&#8611;</a></h3>
+    </section>
+  </body>
+
+ </html>

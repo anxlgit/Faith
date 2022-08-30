@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Interview with Mika Naylor, theOrphenyade, vol.1</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+ <body class="blog">
+   <header>
+     <a href="index.html"><h3 id="title">voices.</h3></a>
+     <a href="about.html"><h3 id="about">about.</h3></a>
+     <hr>
+   </header>
+
+   <footer>
+     <hr>
+     <h4>Interview with Mika Naylor,<br>
+       the Orphenyade, vol.1</h4>
+     <audio id="myAudio" controls>
+       <source src="audio/mika.mp3" type="audio/mpeg">
+     </audio>
+   </footer>
+
+   <h1>A Naturallistic Fallacy</h1>
+
+   <img class="heroimg" src="profiles/mikanaylor.jpeg" alt="mikanaylor">
+
+    <p>[I'm <a href="https://autophagy.io/" target="_blank">Mika</a>]; I'm professionally a software engineer,
+      and that's kind of
+    what I tend to also do a lot in my personal time, mostly because I like
+    software engineering as a creative output – I really like
+    the ways in which you can kind of like pick up different things and
+    different ways of thinking about like both human-computer interaction
+    problems, but also like visual problems.</p>
+
+    <p>And I can pick up things from other people and kind of like, incorporate
+    them into [my] own kind of toolset, for solving open problems – and I kind of
+    I guess I characterize my role as a toolmaker. I like making mostly
+    programming tools, but I have made a few kind of in real-life tools, so to
+    say.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(1,08)">You've been a very vocal advocate of <em>"functional programming"</em>. Could you
+    explain what that is?</h2>
+
+    <p>Within kind of like, the programming world, people kind of
+    use different <em>"paradigms"</em> I guess, maybe is the right word? To structure
+    not only the code that they write, but the way they think about the problems
+    they're trying to solve, and the approach that they take for it.</p>
+
+    <p>A very common one is called <em>"object-oriented programming"</em>, in which you
+    model the problem that you're trying to solve by breaking it down into
+    <em>"classes"</em>, which are kind of like descriptions or outlines of <em>"entities"</em>, and
+    concrete instantiations of those entities – that have both a public
+    interface, and private components, or private information that they only
+    expose through that public interface.</p>
+
+    <p>And then you model your programs to solve those problems as interactions
+    between these <em>"instantiated"</em> objects, as it were. And that's quite a dominant
+    paradigm.</p>
+
+    <p>One that’s kind of less dominant, but is still quite interesting, is one
+    that you already mentioned, which is called <em>"functional programming"</em>, in
+    which the problem that you're attempting to solve – you don't muddle it as a
+    set of objects interacting with each other, but you essentially model it as a
+    <em>"function"</em>, which -to put kind of like a quick spin on it-, is something that
+    takes a set of inputs and maps that to a set of outputs.</p>
+
+    <p>Take for example the <em>"add"</em> function: it might take two inputs from the
+    set of say integers, and map that to a single output in a set of integers.
+    And so the way in which you model these computational problems, in
+    functional programming, is that you model them as functions that act on sets
+    on data, that tend to transform them or return data or do something like
+    that, and then you compose all those functions into essentially one giant
+    expression, and that is your program.</p>
+
+    <img src="img/mikamap.jpeg" alt="mika map website">
+
+    <p>This way of thinking about it allows for a lot of kind of programming
+    tricks, that are quite difficult to do in another paradigms. For example
+    like, <em>"composability"</em>, I really like – which is when you take functions that
+    have specific <em>"functions"</em> I guess, for the lack of a better word,
+    and you can link them with other ones in order to create bigger
+    functions.</p>
+
+    <p>So you might have a function that goes from type A to B, and another
+    function that goes from type B to C, and you can compose them to create a
+    new <em>"holistic"</em> function that goes from type A to C. You can do all sorts of kind of cool kind of programming tricks around
+    controlling effects, and being able to reason a lot better about what the
+    functions do.</p>
+
+    <p>Functional programming tends to have -not always-, but tends to have a
+    bit of an emphasis on principles of <em>"purity"</em>, in the sense that functions
+    shouldn't affect the world outside of them – which tends to happen quite a
+    lot in <em>OOP</em>, where the functions themselves may do
+    something outside of the function's scope.</p>
+
+    <p>A common example is that, for example in Python, you might have a function
+    <em>“add”</em> that takes sums two numbers, but there's no guarantee that when you
+    call this function it will not also trigger the release of a nuclear warhead
+    halfway around the world.</p>
+
+    <p>There is no way of locking down this kind of impurity. Whereas in
+    Haskell, it takes two integers and returns two integers, that's all it will
+    do. To have effects outside of it, they have to be marked as that.</p>
+
+    <p>I just like the way that functional programming forces you to think about
+    you all the problems you're trying to solve in a different way, and I really
+    like a lot of the principles around purity and being able to look at a chunk
+    of code and just reason about what it's doing, and the scope of the function
+    is, it's like more compressed, let's say.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(5,25)">As a coder, what is your perspective on the current omnipresence of
+      technology?</h2>
+
+    <p>It's a kind of a mixed bag. Like, it's fairly evident that the quality of
+    my life and the lives of the people that I know are enabled through this
+    kind of all-pervasive hegemony of computational technology; and in a lot of
+    cases, I feel that that has been a very positive thing.</p>
+
+    <p>I think the broadening of communication like, the kind of effective
+    communications [at our disposal] have kind of shrunk the world in a way that like I feel a lot
+    of people find is a negative, but I find it quite a positive you know.</p>
+
+    <p>I'm like – I was always a bit of a kind of like a loner growing up, but
+    being able to have kind of social connections outside of your immediate
+    geographical space, through communication technology, I always felt was like
+    incredibly important to my development, and I think it's a thing that a lot
+    of people take for granted.</p>
+
+    <img src="img/mikaprofile.jpeg" alt="mika">
+
+    <p>But on the other hand, I do feel that the all-pervasiveness of technology
+    today, especially when it comes to I guess kind of like, when it comes to
+    how we as human beings behave (...) these all pervasive systems pop up where they
+    ingrain quite perverse incentives when it comes to information seeking, in
+    terms of like the news that we consume or the kind of way that we relate to
+    other human beings.</p>
+
+    <p>It can sometimes I think – it has been almost like gamed by the sheer kind
+    of ubiquity of kind of technology, and how it's able to come to monitor
+    people's reactions to things and then reinforce like how information adapts
+    to people.</p>
+
+    <p>But I don't think that's a consequence of technology, I think it's more
+    of a sum between technology -plus- capitalism, in the sense of – yeah, it's kind
+    of difficult to think about one without the other.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(8,05)">What is it about programming that you love so deeply?</h2>
+
+    <p>For me the act of programming is kind of strange,
+    because it's, self-evidently – when you go through people's websites,
+    -especially if we speak about the <a href="https://webring.xxiivv.com/" target="_blank">Merveilles
+    webring</a>-, you are confronted with
+    quite a wide range of creative approaches to the problem of designing a
+    space, and so it's quite a creative act.</p>
+
+    <p>But at the same time, you produce something concrete – I feel like the
+    thing that I like a lot about coding is that it's this kind of creation –
+    it allows you to kind of create an assemblage of I guess, creative
+    output that oftentimes directly relates to other people's creative output,
+    in a kind of like network of artistic
+    endeavor.</p>
+
+    <p>I feel like coding has allowed myself to express myself creatively, but
+    also develop myself creatively. Before I kind of got involved in
+    Merveilles, the way I thought about web design, and tool design, and how you
+    present kind of information or yourself to like the internet, as it were,
+    was quite limited.</p>
+
+    <p>What I love about Merveilles is that it gave me this rich kind of
+    vocabulary of projects that you can like pull things from, and like learn
+    from, and find techniques and ways of like expressing yourself in
+    [different] ways.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(10,00)">Some of your projects focus on the tracking of different metrics.
+      Why is that?</h2>
+
+    <p>I feel like tracking, especially for me like, with my like
+      <em><a href="https://hraew.autophagy.io/faereld/" target="_blank">Færeld</a></em>,
+    project and with <em><a href="https://hraew.autophagy.io" target="_blank">Hrǽw</a></em>,
+    as well, which kind of produces a visualization of
+    the stuff that I track, it's mostly because I feel like tracking has become
+    quite important in Merveilles, just because it allows you to [pin down]
+    something that's quite abstract and nebulous, in a way that then you can
+    like present it to someone else in a kind of like, it kind of scratches that
+    itch in a way of seeing a number.</p>
+
+    <p>For me, when I made my <em>Færeld</em> time tracking tool, it was – the
+    purpose of it, the driving force behind it, was kind of twofold. One was
+    well, I find that <em>“metrification"</em> has often kind of affected outcomes in the
+    sense of: I think like a lot of us have had like experiences
+    of like in a day-to-day work, of being tracked on a metric, and then being
+    forced to optimize that metric as much as possible, for the gain of someone
+    else, whether it be an employer, or whatever.</p>
+
+    <p>So I thought <em>“it would be nice to metric-ify the things about myself
+    that I care about -in this case, how much time I spent on creative
+    projects-, in a way that allows me to optimize them for myself, and not for some
+    others seeking to extact value from me”</em>.</p>
+
+    <img src="img/mikafaereld.jpeg" alt="faereld tracking">
+
+    <p>And the kind of second driving motivation behind it was that at the time
+    I had quite low self-esteem about like the projects that I was doing; I felt
+    like I was never doing anything useful, I had this kind of like sinking
+    feeling that I was just kind of treading water, or stagnating, developing
+    the things that I care about myself.</p>
+
+    <p>And so time tracking was also a way to say, <em>"I am actually
+    developing, I am actually putting work into the things that I care about,
+    and progressing"</em>, and that allowed me to see the like distribution of what
+    kind of activities I was doing when it came to these things, it was kind of
+    self-affirming, in a way?</p>
+
+    <p>And yeah, it is kind of strange, that you feel like you're not doing
+    anything until you track what you're doing – and then you have a bar graph
+    and numbers like, the numbers don't lie to you in the same way that your
+    brain does.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(12,49)">Most Merveilles' projects seek a kind of autonomy from tradition.
+    Why do you think that is?</h2>
+
+    <p>Yeah, I definitely agree with what you said about like, people trying to
+    find some kind of clarity or, taking the messy systems that they have to
+    interact with, in this case like the Gregorian calendar, and trying
+    something else that they think might adhere more to their own
+    principles.</p>
+
+    <p>(...) When I first started using my calendar, that's like based on
+    the French Revolutionary calendar, I missed quite a few doctors appointments
+    just like updates and things like that <em>(laughs)</em> so in effect, even though
+    the calendar itself is kind of systematic and rational, I guess, it did
+    introduce a little bit of additional hassle into my life.</p>
+
+    <p>And I think maybe this also feeds into the almost kind of obsession that
+    there is within the Merveilles <em>"minimalism"</em>, when [we] create interfaces.
+     Like I'm thinking of a lot of Devine projects especially, the
+     <a href="https://wiki.xxiivv.com/site/orca.html" target="_blank">live music
+    coding tool [Orca]</a>, or whatever (…) there’s definitely a drive towards minimalism as
+    a way of I think having systems and interfaces that are smaller in scope,
+    but much clearer in what they're trying to do.</p>
+
+    <p>And I feel that yeah, I think this is a way of trying to fight back
+    against the messiness and clutter of like the systems of our
+    [day-to-day].</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(14,41)">You're speaking of technology as a creative act, but society at large seems
+    disquieted by it.</h2>
+
+    <p>(...) I'm not quite sure – I feel like this kind of tendency also happened with
+    the word <em>"algorithm"</em>; like, its simple definition [is that] an algorithm is
+    just something that follows a list of steps to produce a mathematical
+    result, or a computational result.</p>
+
+    <p>But like the word algorithm has become infused with this kind of
+    secondary meaning, or context, in which it speaks to a kind of like
+    almost <em>"kafka-esque"</em>, opaque kind of bureaucracy.</p>
+
+    <p>So for something to be algorithmic, is not like speaking in the sense
+    that maybe a computer scientist might understand it, but for something to
+    the algorithmic means to be kind of opaque and bureaucratic and a decision
+    made not only away from where you can see it, but also potentially made to
+    take advantage of you.</p>
+
+    <p>I think this trend will probably get worse. I feel like, as more and
+    more kinds of systems become codified, for lack of a better
+    word, or automated, people will tend to associate the bad things about these
+    systems with automation.</p>
+
+    <h3 class="quote">Coding itself is a hammer – you can use it to create
+    something or to hit someone in the head.</h3>
+
+    <p>I feel like a lot of the
+    kind of creative potentials of programming are maybe at least [right now]
+    being lost in kind of popular consciousness, and not for unfair reasons. A lot of
+    people's day-to-day interactions with automated systems are being colored by
+    this kind of opaque decision making.</p>
+
+    <p>I mean it's kind of bad because like if something works
+    well you don't tend to notice it, and I feel like that's often the case with
+    programming: if something that's programmed looks well,
+    and has a positive effect,
+    then it tends not to be noticed – but when something breaks, or has a
+    negative effect, then it kind of makes itself known and stands out.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(17,20)">So your perspective is that algorithms themselves
+      are not the cause, but the effect?</h2>
+
+    <p>Yeah, I often feel like [there’s] a <em>"naturalistic fallacy"</em>, when it comes
+    to algorightms. I'm I guess a computational materialist – I
+    believe that like <em>"nature"</em> in the sense of you know, like physics, all the
+    way up through like cells, to humans, to like everything else, is kind of
+    computational in a sense already.</p>
+
+    <p>And I feel [that] this kind of juxtaposition of like the messy natural
+    world, versus the orderly algorithmic world, is kind of a false one, in the
+    sense that like <em>"neat orderly algorithms"</em> get messy when they become kind of
+    dynamic, and when they interact with each other.</p>
+
+    <p>I feel that, kind of, the natural world is a consequence of just lots and
+    lots of dynamic algorithmic systems interacting all the time, and I feel
+    that people tend to associate one with kind of <em>"goodness"</em> and the other with
+    <em>"badness"</em>.</p>
+
+    <p>Mostly because the algorithms that we tend to deal with in our day-to-day
+    lives, that we consciously recognize as algorithms, tend to be quite simple,
+    in terms of both like kind of the domain that they're trying to like <em>"compute"</em>
+    over, and the kind of outcomes that they're trying to optimise for.</p>
+
+    <p>Like for example, human relationships are computational processes; but the
+    things that people dislike about like, <em>Tinder</em>, and relationship apps and
+    like this kind of <em>"algorithm-ization"</em> of human relationships, is not
+    necessarily that it's algorithmized – but it’s more that like the algorithm
+    itself is a lot smaller in scope, and it's not necessarily optimized towards
+    the end that -you- would like.</p>
+
+    <p>I feel like algorithms tend to get a bit of a bad rap (...)
+      and I feel, deep in my heart, that everything is one big
+    algorithm. (…) I do believe there is a way to design algorithms that humans
+    like.</p>
+
+    <hr>
+
+    <h2 onclick="audioTime(20,17)">Could you walk me through how you got into coding,
+      and where you want to go in the future?</h2>
+
+    <p>In terms of like, how I got into coding itself, it was not a path I
+    entirely decided by myself; when I was at school, a subject that I loved,
+    and still love, was English literature; especially Shakespeare – I was
+    really into Shakespeare, still am; and my entire kind of plan for myself
+    would be to go to University to study English literature.</p>
+
+    <p>But I came from a strict home, so my dad was quite adamant that I should
+    focus on a <em>"real"</em> subject, and at the time I liked computers, but [more] as a
+    kind of consumer object, like – I played like <em>Unreal Tournament</em> and stuff on
+    them, and <em>RuneScape</em>. I liked using computers, so I thought <em>"hey,
+    going to this computing class in
+    college might be cool"</em>.</p>
+
+    <p>(…) I had no real intention of learning to code [then], it was more like
+    <em>"well, computers seem useful"</em>. But
+    through that class, and also through the work that I did, I really came to
+    love programming and computing as creative endeavours.</p>
+
+    <p>And like, in a way, I kind of almost went back to where I was, in the
+    sense that like I feel like programming has a lot of the creative like,
+    <em>"positives"</em>, that I found when I did like English literature: a lot of like
+    analysis, and thinking about the context, and interpretation of texts.</p>
+
+    <h3 class="quote">When I program, I think a lot about analysis, context, and interpretation
+    of the programming text in front of me – so I feel like I've not deviated too
+    far.</h3>
+
+    <p>In terms of where I want to go – at the moment I'm reading quite a lot of
+    <em>"philosophy of mind"</em>, like neurobiology books, mostly popular books, a few
+    textbooks here in that because I started to kind of get interested in the
+    notion of, just, not <em>“rationality”</em> in the kind of like stoic kind of sense,
+    but just like, just thinking as a computational act.</p>
+
+    <p>I started to get quite interested in (…) this stance of <em>"eliminative
+    materialism"</em>, which is all about how the concept that we have about the
+    mind, and thinking, are all kind of like phantom concepts; and that they
+    don't actually have like a direct correlation in like the kind of neural
+    configuration of your brain, that kind of stuff.</p>
+
+    <p>Which I find quite interesting. I mean it's kind of self-refuting in the sense of like,
+       <em>"I think I don't exist"</em>, which is like, well
+    <em>(laughs)</em> but yeah, outside of that, I hope to build more tools that people
+    get to use; I'm trying to get more involved in software as a way of kind of
+    working on tools that other developers use, and get some kind of value and act
+    as a kind of force multiplier.</p>
+
+    <p>Other than that, I would love to continue listening to music and
+      making monochromatic websites and things.</p>
+
+    <section class="bloglinks">
+      <h3 class="left"><a href="benpacker.html">&#8610;<br>Shapes of Red</a></h3>
+    </section>
+
+   </body>
+</html>

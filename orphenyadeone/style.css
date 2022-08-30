@@ -1,0 +1,599 @@
+
+/********************/
+/* BASELINE + COLORS  */
+body {
+  background: #111111; color: ghostwhite;
+  margin: 0; padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+hr {
+  max-width: 100%;
+  border: 1px solid goldenrod;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+a:hover {
+  color: orangered;
+}
+
+
+/***************/
+/*** FONTS ****/
+
+@font-face {
+    font-family: 'Percheno';
+    src: url('fonts/PerchenoItalic.eot');
+    src: url('fonts/PerchenoItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PerchenoItalic.woff2') format('woff2'),
+        url('fonts/PerchenoItalic.woff') format('woff'),
+        url('fonts/PerchenoItalic.svg#PerchenoItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Percheno';
+    src: url('fonts/PerchenoRegular.eot');
+    src: url('fonts/PerchenoRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PerchenoRegular.woff2') format('woff2'),
+        url('fonts/PerchenoRegular.woff') format('woff'),
+        url('fonts/PerchenoRegular.svg#PerchenoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Percheno';
+    src: url('fonts/PerchenoBold.eot');
+    src: url('fonts/PerchenoBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PerchenoBold.woff2') format('woff2'),
+        url('fonts/PerchenoBold.woff') format('woff'),
+        url('fonts/PerchenoBold.svg#PerchenoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  font-family: "Crimson Text",serif;
+  font-size: 14pt; line-height: 1.1em;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Percheno';
+  line-height: 1.2em;
+}
+
+@media (min-device-width: 600px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+/**********/
+/* HEADER */
+
+header {
+  width: 100%;
+  text-align: center;
+  background: #111111;
+  font-size: 0.9em;
+}
+
+header h3 {
+  opacity: 0;
+  margin-bottom: 20px;
+  font-variant: small-caps;
+}
+
+header hr {
+  margin: 0; padding: 0;
+  clear: both;
+}
+
+header h3#title {
+  float: left;
+  margin-left: 20px;
+}
+
+header h3#about {
+  float: right;
+  margin-right: 20px;
+}
+
+@media (min-device-width: 600px) {
+  header h3 {
+    font-size: 1.4em;
+  }
+
+  .mobilehr {
+    display: none;
+  }
+
+  audio {
+    width: 70%;
+    margin-top: 5px;
+  }
+}
+
+
+/****************/
+/* FOOTER AUDIO */
+
+footer {
+  width: 100%;
+  background: #111111;
+  z-index: 2;
+  position: fixed;
+  /* Align audio */
+  text-align: center;
+  bottom: 0;
+}
+
+.blog footer hr {margin-top: 0;}
+
+footer hr {
+  margin: 0;
+  margin-top: 0;
+}
+
+footer h4 {
+  margin: 10px auto;
+  font-size: 0.8em;
+  text-align: center;
+  max-width: 300px;
+}
+
+audio {
+  height: 30px;
+  filter: invert(100%);
+  width: 90%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-device-width: 600px) {
+  footer h4 {max-width: none;}
+  footer br {display: none;}
+  footer hr {margin-bottom: 0}
+  audio {margin-bottom: 20px;}
+}
+
+
+/*********/
+/* INDEX */
+
+.index section {
+  width: 100%;
+}
+
+.index h1 {
+  margin-top: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.index h3.intro {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 330px;
+  margin-bottom: 20px;
+  font-variant: small-caps;
+}
+
+.index section a {
+  color: white;
+}
+
+.index section h3 {
+  max-width: 90%;
+  margin: 10px auto;
+  font-size: 1.3em;
+  font-variant: small-caps;
+  margin-bottom: 30px;
+}
+
+.index h2 {
+  font-size: 1.8em;
+  margin-left: 40px;
+  max-width: 260px;
+  text-align: left;
+}
+
+.index img {
+  display: block;
+  max-width: 70%;
+  margin: 30px auto;
+}
+
+.index section h3 {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  /* kill blog styling */
+  font-variant: normal;
+  text-transform: none;
+  color: white;
+  letter-spacing: 1px;
+  text-align: right;
+  margin-right: 20px;
+  max-width: 300px;
+
+}
+
+@media (min-device-width: 600px) {
+
+  .index h1 {
+    font-size: 2.5em;
+  }
+
+  .index h3.intro {
+    font-size: 1.5em;
+    max-width: 400px;
+  }
+
+  .index section h2 {
+    max-width: 380px;
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  .index section h3 {
+    font-size: 1.2em;
+    max-width: 370px;
+  }
+
+  .index section img {
+    max-width: 300px;
+    margin: 10px auto 20px auto;
+  }
+}
+
+@media (min-device-width: 1000px) {
+
+  body.index {
+    margin-bottom: 100px;
+  }
+  .index h1 {
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 40px;
+    max-width: 60%;
+    float: none;
+    font-size: 2em;
+}
+
+  .index h3.intro {
+    font-size: 1.3em;
+    text-align: left;
+    max-width: 380px;
+    margin-left: 40px;
+  }
+
+  .index section h2 {
+    font-size: 2.3em;
+    max-width: 300px;
+  }
+
+  .index section h3 {
+    font-size: 1em;
+    position: absolute;
+    vertical-align: bottom;
+    max-width: 300px;
+    margin-left: 40px;
+    right: 40px;
+    bottom: 0px;
+  }
+
+  .index section {transition: height 2s ease;
+    vertical-align: top;
+    height: 100px;}
+  .index section:hover {height: 300px;}
+  .index section img {
+    max-height: 200px;
+    margin: 0 auto;
+    margin-top: -40px;
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+  .index section:hover img {
+    opacity: 1;
+  }
+}
+
+
+/**************/
+/* BLOG POST */
+
+body.blog {
+  margin-bottom: 300px;
+}
+
+.blog hr {
+  margin: 0; padding: 0;
+  clear: both;
+  border: 1px solid goldenrod;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.blog h1 {
+  clear: both;
+  font-size: 2.5em;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.blog img {
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.blog h2 {
+  color: goldenrod;
+  font-size: 1.1em;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog h3.quote {
+  text-align: center;
+  color: white;
+  padding: 20px 10px;
+  margin: 30px auto;
+  border-top: 1.5px dashed goldenrod;
+  border-bottom: 1.5px dashed goldenrod;
+  border-radius: 50px;
+  max-width: 280px;
+  font-size: 1.2em;
+  line-height: 1em;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+.blog p {
+  margin: 0 auto;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.blog em {
+  text-align: left;
+}
+
+.bloglinks {max-width: 100%;}
+
+.bloglinks h3 {
+  max-width: 120px;
+}
+
+h3.left {
+  float: left;
+  text-align: left;
+  margin-left: 40px;
+}
+
+h3.right {
+  float: right;
+  text-align: right;
+  margin-right: 40px;
+}
+
+@media (min-device-width: 600px) {
+
+  body.blog {
+    margin-bottom: 250px;
+  }
+  .blog p {
+    float: right;
+    clear: right;
+    margin-right: 40px;
+    width: 350px;
+  }
+
+  .blog h1 {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    font-size: 3em;
+  }
+
+  .blog img {
+    float: left;
+    max-width: 300px;
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 40px;
+    border-radius: 20px;
+  }
+
+  .blog h2 {
+    cursor: pointer;
+    float: left;
+    text-align: left;
+    max-width: 280px;
+    margin-left: 40px;
+  }
+
+  .blog h2:hover {
+    color: orangered;
+  }
+
+  .blog h3.quote {
+    float: left;
+    color: white;
+    font-size: 1.3em;
+    max-width: 300px;
+    text-align: right;
+    border: none; /* normalize border */
+    border-right: 1.5px solid goldenrod;
+    padding: 0; /* normalize padding */
+    border-radius: 0;
+    padding-right: 20px;
+    margin-left: 80px;
+  }
+
+  .bloglinks {
+    clear: both;
+  }
+
+  .bloglinks h3 {
+    font-size: 1.5em;
+    max-width: 200px;
+  }
+
+  .bloglinks h3.left {margin-left: 40px;}
+  .bloglinks h3.right {margin-right: 40px;}
+}
+
+@media (min-device-width: 1000px) {
+
+  .blog h1 {
+    max-width: 350px;
+  }
+  .blog p {
+    min-width: 480px;
+    margin-right: 50px;
+  }
+
+  .blog h2 {
+    max-width: 400px;
+    font-size: 1.6em;
+  }
+
+  .blog img {
+    max-width: 400px;
+  }
+
+  .blog img.heroimg {
+    float: none;
+    position: absolute;
+    max-width: 230px;
+    margin: 0 auto;
+    margin-top: -70px;
+    margin-left: 320px;
+  }
+}
+
+
+/**************/
+/* ABOUT PAGE */
+
+body.about {
+  min-height: 100vh;
+}
+
+.first {
+  margin-top: 40px;
+}
+
+.about p {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.about h2 {text-align: center;
+  font-weight: normal;
+  color: goldenrod;
+}
+
+.poem {
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.explanation {
+  margin-bottom: 150px;
+}
+
+@media (min-device-width: 600px) {
+  body.about {
+    margin-bottom: 0;
+  }
+  p.first {
+    margin-top: 0;
+  }
+  .about h2 {
+    display: none;
+  }
+
+  .about p {
+    margin-left: 40px;
+  }
+  .about footer {
+    bottom: 0;
+  }
+  section.poem, section.explanation {margin-top: 30px;}
+  .poem {
+    font-style: italic;
+    float: left;
+  }
+  .explanation {
+    float: right;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  .explanation p {
+    font-size: 0.9em;
+    max-width: 330px;
+    margin-top: 0;
+  }
+}
+  @media (min-device-width: 1000px) {
+
+    .about p {
+      max-width: 320px;
+    }
+
+    .explanation p {
+      max-width: 310px;
+    }
+  }
+
+
+/**************/
+/* ANIMATIONS */
+
+h1, h2, h3, h4, section, p, hr, img {
+  /* Initial conditions and transitions */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.visible {
+  /* Visible ending state after scroll */
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+p.visible {
+  opacity: 1;
+}
