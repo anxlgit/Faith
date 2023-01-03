@@ -492,11 +492,12 @@ h3.right {
 
   .blog img.heroimg {
     float: none;
+    z-index: -2;
     position: absolute;
-    max-width: 230px;
+    max-width: 220px;
     margin: 0 auto;
     margin-top: -70px;
-    margin-left: 320px;
+    margin-left: 22vw;
   }
 }
 
