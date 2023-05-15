@@ -1,7 +1,8 @@
 const observerOptions = {
      root: null,
      threshold: 0,
-     rootMargin: '0px 0px -70px 0px'
+     /* higher negative number, wait to load */
+     rootMargin: '0px 0px -30px 0px'
  };
 
 const observer = new IntersectionObserver(entries => {
@@ -11,14 +12,13 @@ const observer = new IntersectionObserver(entries => {
              observer.unobserve(entry.target);
          }
      });
- }, observerOptions);
+   }, observerOptions);
 
-window.addEventListener('DOMContentLoaded', (event) => {
+  window.addEventListener('DOMContentLoaded', (event) => {
 
-const sections = Array.from(document.querySelectorAll("*"));
+  const sections = Array.from(document.querySelectorAll("*"));
 
-for (let section of sections) {
-observer.observe(section);
-}
-
+  for (let section of sections) {
+  observer.observe(section);
+  }
 });

@@ -6,6 +6,7 @@ body {overflow-x:hidden; max-width: 100%;
   zoom: normal; }
 img {max-width:100%;}
 span {display:block;}
+html{scroll-behavior:smooth}
 
 /* COLORS & DECORATIONS */
 body {background: white; color: black;}
@@ -57,9 +58,10 @@ h5 {font-size:1.5em; line-height:1.2em;}
 span {text-align:center; margin-bottom:1em;}
   @media /* Tablet */ (min-width: 600px) {
     h2.lefttitle, h2.righttitle {font-size:1.4em;}
+    body {font-size: 10pt;}
   }
   @media /* Desktop */ (min-width:1000px) {
-    body {font-size:11pt; line-height: 1.1em;}
+    body {font-size:10pt; line-height: 1.1em;}
   }
 
 /* NAVIGATION */
@@ -73,7 +75,7 @@ span {text-align:center; margin-bottom:1em;}
 h3#prevproj, a#prevproj {color: black;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
 @media /* Tablet */ (min-width: 600px) {
-  #home, #about {font-size: 1.3em; top: 4vh;}
+  #home, #about {font-size: 1.2em; top: 4vh;}
   #home{left:4vw;} #about{right:4vw;} #projects {left:47vw;}
   #prevproj {left:2vw;} #nextproj {right:2vw;}
 }
@@ -89,15 +91,16 @@ span#definition {height: 3px;}
 .definition {margin: 0 auto;
   margin-top: 10vh;}
 img.backpiece {
+  left: 0; right: 0;
   position: absolute;
   margin: 0 auto; display: block;
-  max-width: 100%; margin-top: -110px;
+  width: 350px; top:50px;
   z-index: -2; overflow: hidden; }
 .definition a {text-decoration: underline;}
 .definition h1 {opacity: 1; font-size: 1.8em; line-height: 1.1em;
   margin: 0 auto; margin-top: 30vh;
   margin-bottom: 20px;
-  max-width: 270px; letter-spacing: -1px;}
+  max-width: 270px}
 .definition h2 {font-size: 1.3em; line-height: 1.2em;
     margin: 0 auto; margin-top: 1em; margin-bottom: 15px;
   max-width: 270px; letter-spacing: -0.5px; }
@@ -107,7 +110,8 @@ img.backpiece {
 @media /* Tablet */ (min-width: 600px) {
   .definition {text-align: center; margin-top: 13vh;}
   img.backpiece {
-    top: 20vh; left: 25vw; width: 50%;}
+    width:400px; top: 50px;
+    margin: 0 auto;}
   .definition h3 {font-size: 1.3em;}
   .definition h1 {font-size: 2em;  line-height: 1.1em; max-width: 550px;}
   .definition h2 {font-size: 1.2em; line-height: 1.2em; max-width: 550px;}
@@ -116,28 +120,33 @@ img.backpiece {
 @media /* Desktop */(min-width: 1000px){
   .definition {text-align: left;}
   img.backpiece {width: 40%;
-    top: 40vh; left: 60vw;}
-  .definition h1 {font-size: 2.6em; max-width: 600px;
+    top: 15vh; left: 60vw;}
+  .definition h1 {font-size: 2.5em; max-width: 580px;
     margin-top: 7vh; margin-left: 5vw;}
-  .definition h2 {font-size: 1.2em; max-width: 550px; margin-left: 5vw;}
+  .definition h2 {font-size: 1.2em; max-width: 500px; margin-left: 5vw;}
   .definition h3 {margin-left: 5vw; margin-bottom: 0px; text-align: left;}
-  span.scroll {margin-top: 0px;}
+  span.scroll {margin-top: 40px;}
 }
 
 /*********/
 /* VIDEO */
+iframe.hiperdimentia {
+  width: 400px; height: 300px;
+  margin: 0 auto;
+}
 section.video {margin: 0 auto; padding-top: 30px;
   max-width: 700px; margin-bottom: 50px;}
   video {width: 100%;}
 @media /* Tablet */ (min-width: 600px) {
+  iframe.hiperdimentia {width: 600px;}
   section.video {max-width: 100%;
     margin-bottom: 30px;}
   iframe.video {max-width: 100%;}
 }
 @media /* Desktop */ (min-width: 1000px) {
   section.video {max-width: 70%;}
+  iframe.hiperdimentia {width: 800px;}
 }
-
 
 
 /************/
@@ -184,13 +193,13 @@ div.service p {max-width: 200px; margin:0 auto;}
   div.right {float: right;}
   div.center {margin: auto;}
   div.service img {max-width: 100%;}
-  div.service h2 {font-size: 1em; margin-top: -200px;}
-  div.service p {font-size: 1em; max-width: 190px;}
+  div.service h2 {font-size: 1em; margin-top: -180px;}
+  div.service p {font-size: 1em; max-width: 160px;}
 }
 @media /* Desktop */(min-width: 1000px){
   section.services {max-width: 900px; padding-bottom: 70px;}
   div.service {width: 250px; margin: 0 10px;}
-  div.service h2 {margin-top: -205px; font-size: 1.1em;}
+  div.service h2 {margin-top: -205px; font-size: 1.3em; line-height: 1.2em;}
   div.service p {max-width: 180px;}
 }
 
@@ -202,7 +211,7 @@ h1.portfolioTitle {
   text-align: center; display: block; font-size: 1.8em;
   margin-bottom: 50px;}
 @media /* Tablet */ (min-width: 600px) {
-  h1.portfolioTitle {font-size: 3em; margin: 60px auto;}
+  h1.portfolioTitle {font-size: 5em; margin: 60px auto;}
 }
 @media /* Desktop */(min-width: 1000px){
   h1.portfolioTitle {font-size: 4em; margin: 60px auto;}
@@ -222,6 +231,7 @@ h2.righttitle {float:right; text-align:right;}
 
 @media /* Tablet */ (min-width: 600px) {
   section.portfolio {margin-bottom: 100px; max-width: 600px;}
+  .portfolio h2 {font-size: 3em;}
   h2.lefttitle {top:8px;} h2.righttitle {top:-8px;}
 }
 
@@ -242,6 +252,7 @@ h2.righttitle {float:right; text-align:right;}
     transition: filter 0.3s ease;}
   section.last {margin-bottom: 100px;}
   section.right {position: relative; top: 100px;}
+  .portfolio h2 {font-size: 2.3em;}
   h2.righttitle {top: -6px;}
   }
 
@@ -255,14 +266,13 @@ section.projdescription h1 {font-size: 2em; max-width: 250px;
 .projdescription h2 {font-size: 1em; margin-bottom: 10px;}
 section.gallery h1 {margin: 30px 0; text-align: center;}
 iframe.video {height: 210px;}
-iframe.hiperdimentia {width: 200px; height: 200px;}
+section.gallery {text-align: center;}
 @media /* Tablet */ (min-width: 600px) {
   section.projdescription {position:fixed; max-width:30%;
     float:left; margin-left:8vw;}
   section.gallery {max-width:50%; float:right;
       margin-top: 16vh; margin-right:5vw; text-align:center;}
   section.gallery img {margin:0 auto; margin-bottom:2em;}
-  iframe.hiperdimentia {width: 360px; height: 220px;}
   /* Particular Image Sizes */
   section.bodyes img {max-width:80%;}
   section.nanopassio img {margin-bottom:0;}
@@ -287,6 +297,7 @@ footer h2:last-of-type {margin-bottom: 25px;}
 footer ul li {display: inline-block;}
 footer ul li img {width: 35px; height: 35px; margin: 0 15px;}
 ul.links, ul.copyright  {margin-bottom: 20px;}
+footer img {border-radius: 100px;}
 @media /* Tablet */ (min-width: 600px) {
   footer {
     margin-top: 0;
@@ -294,13 +305,13 @@ ul.links, ul.copyright  {margin-bottom: 20px;}
     width: 100%; height: 100%;}
   footer h1 {margin-left: 5vw; margin-top: 100px; margin-bottom: 300px;
     font-size: 1.7em; line-height: 1.3em;}
-  .footerimg {position: absolute; width: 60%; top: 15vh; left: 4vw;}
+  .footerimg {position: absolute; width: 50%; top: 20vh; left: 4vw;}
   ul.links, ul.copyright  {margin-bottom: 0px;}
   footer ul li img {position: relative;}
   footer h2 {text-align: right;
     max-width: 400px; margin-bottom: 30px; margin-right: 7vw;
     font-size: 1.5em;}
-  footer h2:last-of-type {margin-bottom: 170px;}
+  footer h2:last-of-type {margin-bottom: 100px;}
   footer ul {position: absolute; bottom: 10px; padding: 0; font-size: 0.9em;}
   footer ul.links {left: 10px;}
   footer ul.copyright {right: 30px;}
@@ -342,12 +353,12 @@ section.quote h4 {max-width: 500px; text-align:center;
   font-variant:small-caps; margin-bottom:10px;}
 @media /* Tablet */ (min-width: 600px) {
   section.about {max-width: 80%; margin: 0 auto;}
-  section.about h1 {max-width: 500px; margin-bottom: 30px;}
+  section.about h1 {max-width: 450px; margin-bottom: 10px;}
   section.about p {font-size: 1.1em; max-width: 100%;}
   section.author {visibility:hidden; position:fixed;}
   section.authorhz {visibility:visible; position:static;
-    margin-top: 10vh; max-width: 600px;}
-  span.separator {margin: 60px auto 50px auto;}
+    margin-top: 10vh; max-width: 500px;}
+  span.separator {margin: 0px auto 50px auto;}
   section.skills {float: left; max-width: 300px;}
   section.information {float: right; max-width: 320px;
     margin-bottom: 50px;}
