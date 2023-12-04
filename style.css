@@ -8,22 +8,38 @@ img {max-width:100%;}
 span {display:block;}
 html{scroll-behavior:smooth}
 
+
+/**********************/
+/**********************/
 /* COLORS & DECORATIONS */
 body {background: white; color: black;}
 .navigation a {text-decoration: none;}
 a {text-decoration: underline;}
 a, .portfolio h2, section.projdescription h1, em {color: orangered;}
+a:hover {cursor: pointer;}
 
+
+/**********************/
+/**********************/
 /* TYPE LOADS */
 @font-face {
-    font-family: 'Percheno';
-    src: url('fonts/PerchenoRegular.eot');
-    src: url('fonts/PerchenoRegular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PerchenoRegular.woff2') format('woff2'),
-        url('fonts/PerchenoRegular.woff') format('woff'),
-        url('fonts/Percheno-Regular.ttf')  format('truetype'),
-        url('fonts/PerchenoRegular.svg#PerchenoRegular') format('svg');
-    font-weight: normal; font-style: normal; font-display: swap;}
+    font-family: 'Sorts Mill Goudy';
+    src: url('fonts/SortsMillGoudy-Regular.woff2') format('woff2'),
+        url('fonts/SortsMillGoudy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url('fonts/SortsMillGoudy-Italic.woff2') format('woff2'),
+        url('fonts/SortsMillGoudy-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 @font-face {
   font-family: 'Crimson Italic';
   src: url('fonts/crimsontext-italic-webfont.woff2') format('woff2'),
@@ -35,7 +51,10 @@ a, .portfolio h2, section.projdescription h1, em {color: orangered;}
   url('fonts/crimsontext-regular-webfont.woff') format('woff');
   font-weight: normal; font-style: normal; }
 
-  /* TYPOGRAHY */
+
+/**********************/
+/**********************/
+/* TYPOGRAHY */
 body, h1, h2, h3, h4, h5 {font-weight:400;}
 body {font-family:'Crimson Text', serif;
       font-weight: normal;
@@ -46,7 +65,7 @@ body {font-family:'Crimson Text', serif;
 p {margin-bottom: 10px; line-height: 1.1em;}
 em {font-style: normal;}
 section.projdescription h2 {font-family: 'Crimson Italic'}
-.portfolio, h1, footer h2, li, #home, #about, .service h2 {font-family: 'Percheno';
+.portfolio, h1, footer h2, li, #home, #about, .service h2 {font-family: 'Sorts Mill Goudy';
   font-weight: 800;}
 h1 {text-transform: uppercase;}
 li {margin-bottom: 10px;}
@@ -64,14 +83,17 @@ span {text-align:center; margin-bottom:1em;}
     body {font-size:10pt; line-height: 1.1em;}
   }
 
+/**********************/
+/**********************/
 /* NAVIGATION */
-.navigation {position: fixed; padding: 1px 5px;
+.navigation {position: fixed; padding: 2px 6px;
   z-index:2; background: white;
   max-width: 100%; border-radius: 100px;
   font-size: 1.2em;}
 #home {top:3vh; left:7vw;} #about {top:3vh; right:7vw;}
-#prevproj, #nextproj {top:50vh; background: orangered; color: black;
-  padding: 0px 5px; border-radius: 100%;}
+#prevproj, #nextproj {top:50vh; background: orangered; color: white;
+  font-size: 1.3em;
+  padding: 0px 8px 6px 8px; border-radius: 100%;}
 h3#prevproj, a#prevproj {color: black;}
 #prevproj {left:4vw;} #nextproj {right:4vw;}
 @media /* Tablet */ (min-width: 600px) {
@@ -80,54 +102,62 @@ h3#prevproj, a#prevproj {color: black;}
   #prevproj {left:2vw;} #nextproj {right:2vw;}
 }
 @media /* Desktop */ (min-width: 1000px) {
+  #prevproj, #nextproj {font-size: 1.2em; padding: 0px 6px 3px 6px;}
   #home, #about {font-size: 1.2em;}
   h3#home {left:2vw;}
   h3#about {right:2vw;}
 }
 
 
-/* INITIAL DEFINITION */
+/**********************/
+/**********************/
+/* INTRODUCTION */
 span#definition {height: 3px;}
 .definition {margin: 0 auto;
   margin-top: 10vh;}
-img.backpiece {
-  left: 0; right: 0;
-  position: absolute;
-  margin: 0 auto; display: block;
-  width: 350px; top:50px;
-  z-index: -2; overflow: hidden; }
+img.projectsgif { margin-bottom: 10px; }
 .definition a {text-decoration: underline;}
-.definition h1 {opacity: 1; font-size: 1.8em; line-height: 1.1em;
-  margin: 0 auto; margin-top: 30vh;
+.definition h1 {opacity: 1; font-size: 1.5em; line-height: 1.2em;
+  margin: 0 auto;
   margin-bottom: 20px;
-  max-width: 270px}
+  max-width: 90vw;}
 .definition h2 {font-size: 1.3em; line-height: 1.2em;
     margin: 0 auto; margin-top: 1em; margin-bottom: 15px;
-  max-width: 270px; letter-spacing: -0.5px; }
+  max-width: 85vw; letter-spacing: -0.5px; }
 .definition h3 {margin: 0 auto; text-align: center; margin-bottom: 40px;
   font-style: italic;}
-  span.scroll {margin-top: 50px;}
+  span.scroll {margin-top: 30px; margin-bottom: 40px;}
 @media /* Tablet */ (min-width: 600px) {
   .definition {text-align: center; margin-top: 13vh;}
-  img.backpiece {
-    width:400px; top: 50px;
+  img.projectsgif {
+    max-width: 50vw; top: 70px;
     margin: 0 auto;}
   .definition h3 {font-size: 1.3em;}
-  .definition h1 {font-size: 2em;  line-height: 1.1em; max-width: 550px;}
+  .definition h1 {font-size: 1.5em;  line-height: 1.1em; max-width: 550px;}
   .definition h2 {font-size: 1.2em; line-height: 1.2em; max-width: 550px;}
   span.scroll {margin-top: 30px;}
 }
 @media /* Desktop */(min-width: 1000px){
-  .definition {text-align: left;}
-  img.backpiece {width: 40%;
-    top: 15vh; left: 60vw;}
-  .definition h1 {font-size: 2.5em; max-width: 580px;
+  .definition {text-align: left;
+  margin-top: 20vh;}
+  img.projectsgif {
+    float: right;
+    right: 50px;
+    z-index: -2;
+    top: 5vh;
+    max-width: 40vw;
+    position: absolute;
+    }
+  .definition h1 {font-size: 1.7em; line-height: 1.2em;
+    max-width: 45vw;
     margin-top: 7vh; margin-left: 5vw;}
   .definition h2 {font-size: 1.2em; max-width: 500px; margin-left: 5vw;}
   .definition h3 {margin-left: 5vw; margin-bottom: 0px; text-align: left;}
-  span.scroll {margin-top: 40px;}
+  span.scroll {margin-top: 100px;}
 }
 
+
+/**********************/
 /*********/
 /* VIDEO */
 iframe.hiperdimentia {
@@ -149,6 +179,7 @@ section.video {margin: 0 auto; padding-top: 30px;
 }
 
 
+/**********************/
 /************/
 /* SERVICES */
 section.services {
@@ -175,7 +206,7 @@ div.service {
   transform: rotate(0deg);
   transition-duration: 100s;
 }
-div.service h2 {font-size: 1.3em; letter-spacing: 3px;
+div.service h2 {font-size: 1.3em; letter-spacing: 1px;
   margin-top: -230px; margin-bottom: 20px;
 }
 div.service p {max-width: 200px; margin:0 auto;}
@@ -187,13 +218,13 @@ div.service p {max-width: 200px; margin:0 auto;}
     text-align: center;
   }
   div.service {
-    display: inline-block; width: 220px;
+    display: inline-block; width: 200px;
   }
   div.left {float: left;}
   div.right {float: right;}
   div.center {margin: auto;}
   div.service img {max-width: 100%;}
-  div.service h2 {font-size: 1em; margin-top: -180px;}
+  div.service h2 {font-size: 1em; margin-top: -170px;}
   div.service p {font-size: 1em; max-width: 160px;}
 }
 @media /* Desktop */(min-width: 1000px){
@@ -204,6 +235,7 @@ div.service p {max-width: 200px; margin:0 auto;}
 }
 
 
+/**********************/
 /*******************/
 /* PORTFOLIO TITLE */
 h1.portfolioTitle {
@@ -211,57 +243,62 @@ h1.portfolioTitle {
   text-align: center; display: block; font-size: 1.8em;
   margin-bottom: 50px;}
 @media /* Tablet */ (min-width: 600px) {
-  h1.portfolioTitle {font-size: 5em; margin: 60px auto;}
+  h1.portfolioTitle {font-size: 3em; margin: 60px auto;}
 }
 @media /* Desktop */(min-width: 1000px){
   h1.portfolioTitle {font-size: 4em; margin: 60px auto;}
 }
 
 
+/**********************/
 /*******************/
 /* PORTFOLIO INDEX */
 section.portfolioWrap {max-width: 100%; overflow-x: hidden;}
 section.portfolio {max-width: 500px; margin: 0 auto; margin-bottom: 100px;}
-.portfolio h2 {font-size: 2.3em; text-transform: uppercase;}
+.portfolio h2 {font-size: 1.8em; text-transform: uppercase;}
 h2.lefttitle, h2.righttitle {z-index:2; opacity: 1;
-   letter-spacing: 3px; position: relative;
+   letter-spacing: 1px; position: relative;
    text-transform: uppercase;}
-h2.lefttitle {float:left; text-align:left;}
-h2.righttitle {float:right; text-align:right;}
+h2.lefttitle {float:left; text-align:left; top: 10px;}
+h2.righttitle {float:right; text-align:right; top: -8px;}
 
 @media /* Tablet */ (min-width: 600px) {
-  section.portfolio {margin-bottom: 100px; max-width: 600px;}
-  .portfolio h2 {font-size: 3em;}
+  section.portfolio {margin-bottom: 100px; max-width: 90vw;}
+  .portfolio h2 {font-size: 2em;}
   h2.lefttitle {top:8px;} h2.righttitle {top:-8px;}
 }
 
 @media /* Desktop */ (min-width: 1000px) {
   section.portfolioWrap {
-    max-width: 95vw; margin: 0 auto;
+    max-width: 99vw; margin: 0 auto;
     overflow-y: hidden;
     padding-bottom: 60px;
     text-align: center;
   }
+
   section.portfolio {
     display: inline-block;
-    margin: 30px;
-    max-width: 400px;}
-    /* Add color on Hover state */
-  .portfolio img {filter: saturate(0);}
-  .portfolio img:hover {filter: saturate(1);
-    transition: filter 0.3s ease;}
-  section.last {margin-bottom: 100px;}
-  section.right {position: relative; top: 100px;}
-  .portfolio h2 {font-size: 2.3em;}
+    margin: 20px;
+    max-width: 28vw;
+    transition: max-width 1s ease, opacity 1s ease, padding-top 1s ease;
+  }
+  section.portfolio:hover{
+    max-width: 30vw;
+    cursor: pointer;
+  }
+
+  .portfolio h2 {font-size: 2em;}
   h2.righttitle {top: -6px;}
   }
 
+
+/**********************/
 /***********************/
 /* INDIVIDUAL PROJECTS */
 section.projdescription {
   margin: 11vh auto 30px auto;
-  max-width:230px;}
-section.projdescription h1 {font-size: 2em; max-width: 250px;
+  max-width: 265px;}
+section.projdescription h1 {font-size: 1.8em;
   margin-bottom: 10px;}
 .projdescription h2 {font-size: 1em; margin-bottom: 10px;}
 section.gallery h1 {margin: 30px 0; text-align: center;}
@@ -287,51 +324,15 @@ section.gallery {text-align: center;}
 }
 
 /**********************/
-/* FOOTER AND CONTACT */
-footer {margin-top: 12vh; text-align: center; font-size: 1.1em; margin-bottom: 50px;}
-footer h1 {font-size: 1.9em; margin-bottom: 20px; }
-footer h2 {font-size: 1.2em; max-width: 270px; margin: 0 auto;}
-.footerimg {position: relative; z-index: -2; margin-top: -30px; margin-bottom: -50px;
-  width: 80%;}
-footer h2:last-of-type {margin-bottom: 25px;}
-footer ul li {display: inline-block;}
-footer ul li img {width: 35px; height: 35px; margin: 0 15px;}
-ul.links, ul.copyright  {margin-bottom: 20px;}
-footer img {border-radius: 100px;}
-@media /* Tablet */ (min-width: 600px) {
-  footer {
-    margin-top: 0;
-    text-align: left; position: absolute;
-    width: 100%; height: 100%;}
-  footer h1 {margin-left: 5vw; margin-top: 100px; margin-bottom: 300px;
-    font-size: 1.7em; line-height: 1.3em;}
-  .footerimg {position: absolute; width: 50%; top: 20vh; left: 4vw;}
-  ul.links, ul.copyright  {margin-bottom: 0px;}
-  footer ul li img {position: relative;}
-  footer h2 {text-align: right;
-    max-width: 400px; margin-bottom: 30px; margin-right: 7vw;
-    font-size: 1.5em;}
-  footer h2:last-of-type {margin-bottom: 100px;}
-  footer ul {position: absolute; bottom: 10px; padding: 0; font-size: 0.9em;}
-  footer ul.links {left: 10px;}
-  footer ul.copyright {right: 30px;}
-  ul.copyright li {margin-left: 20px;}
-}
-@media /* Desktop */ (min-width: 1000px) {
-  footer h1 {margin-top: 70px; margin-bottom: 200px;}
-  .footerimg {width: 35%; top: 20vh; left: 20vw;}
-  footer ul li img {width: 30px; margin: 0 15px;}
-}
-
 /**************/
 /* ABOUT PAGE */
 section.author {margin: 0 auto; margin-top:10vh;}
-section.about {max-width: 90%; margin: 0 auto; margin-top: 20px;}
-section.about h1 {font-size: 1.7em; text-align:center;
-  margin: 0 auto; margin-bottom: 20px;}
-section.about p {font-size: 1.2em; line-height: 1.2em;}
+section.about {max-width: 330px; margin: 0 auto; margin-top: 30px;}
+section.about h1 {font-size: 1.3em; text-align:center; line-height: 1.2em;
+  margin: 0 auto; margin-top: 20px; margin-bottom: 20px;}
+section.about p {font-size: 1.1em; line-height: 1.1em;}
 /* pictures */
-section.author, .authorhz {margin: 0 auto; margin-bottom:20px;}
+section.author, .authorhz {margin: 0 auto;}
 section.authorhz {visibility:hidden; position:fixed;}
 /* sections */
 section.skills, section.information {
@@ -340,10 +341,10 @@ section.skills, section.information {
 section.about h2 {margin-bottom: 20px; text-align: center;}
 section.quotations h2 {margin-bottom: 30px;}
 section.information {
-  max-width: 300px;
+  max-width: 80vw;
 }
-section.skills {
-  max-width: 270px;
+section.skills, section.information {
+  max-width: 300px;
 }
 section.skills h3 {line-height: 1.4em;}
 /* quotations */
@@ -353,7 +354,7 @@ section.quote h4 {max-width: 500px; text-align:center;
   font-variant:small-caps; margin-bottom:10px;}
 @media /* Tablet */ (min-width: 600px) {
   section.about {max-width: 80%; margin: 0 auto;}
-  section.about h1 {max-width: 450px; margin-bottom: 10px;}
+  section.about h1 {max-width: 450px; margin-bottom: 10px; line-height: 1.4em;}
   section.about p {font-size: 1.1em; max-width: 100%;}
   section.author {visibility:hidden; position:fixed;}
   section.authorhz {visibility:visible; position:static;
@@ -372,6 +373,46 @@ section.quote h4 {max-width: 500px; text-align:center;
 }
 
 
+/**********************/
+/**********************/
+/* FOOTER AND CONTACT */
+footer {margin-top: 12vh; text-align: center; font-size: 1.1em; margin-bottom: 50px;}
+footer h1 {font-size: 1.4em; margin-bottom: 20px; }
+footer h2 {font-size: 1.2em; max-width: 270px; margin: 0 auto;}
+.footerimg {position: relative; z-index: -2; margin-top: -30px; margin-bottom: -50px;
+  width: 80%;}
+footer h2:last-of-type {margin-bottom: 25px;}
+footer ul li {display: inline-block;}
+footer ul li img {width: 35px; height: 35px; margin: 0 15px;}
+ul.links, ul.copyright  {margin-bottom: 20px;}
+@media /* Tablet */ (min-width: 600px) {
+  footer {
+    margin-top: 0;
+    text-align: left; position: absolute;
+    width: 100%;}
+  footer h1 {margin-left: 5vw; margin-top: 100px; margin-bottom: 200px;
+    font-size: 1.7em; line-height: 1.3em;}
+  .footerimg {position: absolute; width: 50%; top: 100px; left: 4vw;}
+  ul.links, ul.copyright  {margin-bottom: 0px;}
+  footer ul li img {position: relative;}
+  footer h2 {text-align: right;
+    max-width: 400px; margin-bottom: 30px; margin-right: 7vw;
+    font-size: 1.5em;}
+  footer h2:last-of-type {margin-bottom: 140px;}
+  footer ul {position: absolute; bottom: 10px; padding: 0; font-size: 0.9em;}
+  footer ul.links {left: 10px;}
+  footer ul.copyright {right: 30px;}
+  ul.copyright li {margin-left: 20px;}
+}
+@media /* Desktop */ (min-width: 1000px) {
+  footer h1 {margin-top: 70px; margin-bottom: 170px;}
+  .footerimg {width: 35%; top: 20vh; left: 20vw;}
+  footer ul li img {max-width: 30px; margin: 0 15px; overflow: hidden;}
+}
+
+
+/**********************/
+/**********************/
 /* ANIMATIONS */
 a {transition: color 1s ease;}
 a:hover {color: blue;}
