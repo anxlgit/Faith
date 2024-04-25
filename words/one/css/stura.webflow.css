@@ -223,10 +223,10 @@ p {
   float: right;
   clear: right;
   margin-bottom: 15px;
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 13px;
+  line-height: 1.4em;
   position: relative;
-  right: 10vw;
+  right: 15vw;
 }
 
 .paragraph.translation {
@@ -247,7 +247,7 @@ p {
   font-size: 12px;
   line-height: 20px;
   position: relative;
-  right: 10vw;
+  right: 15vw;
 }
 
 .question-title.white {

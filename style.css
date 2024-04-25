@@ -139,7 +139,7 @@ img.projectsgif { margin-bottom: 10px; }
 }
 @media /* Desktop */(min-width: 1000px){
   .definition {text-align: left;
-  margin-top: 20vh;}
+  margin-top: 26vh;}
   img.projectsgif {
     float: right;
     right: 50px;
@@ -149,8 +149,7 @@ img.projectsgif { margin-bottom: 10px; }
     position: absolute;
     }
   .definition h1 {font-size: 1.7em; line-height: 1.2em;
-    max-width: 45vw;
-    margin-top: 7vh; margin-left: 5vw;}
+    max-width: 45vw; margin-left: 5vw;}
   .definition h2 {font-size: 1.2em; max-width: 500px; margin-left: 5vw;}
   .definition h3 {margin-left: 5vw; margin-bottom: 0px; text-align: left;}
   span.scroll {margin-top: 100px;}
